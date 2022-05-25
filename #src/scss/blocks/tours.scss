@@ -1,0 +1,147 @@
+.tours {
+    &__in {
+        padding: 80px 0;
+    }
+
+    &__head {
+        
+        padding-left: 60px;
+        max-width: 600px;
+        margin-bottom: 25px;
+
+        &_title {
+            font-weight: 600;
+            font-size: 96px;
+            margin-bottom: 20px;
+            line-height: 135%;
+        }
+
+        &_text {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 135%;
+        }
+    }
+    &__body {
+        display: flex;
+
+        &_item.active {
+            
+
+            .tours__body_item_main {
+                // width: 880px;
+            }
+
+            .tours__body_item_head {
+                
+                &:after {
+                    width: 0;
+                }
+
+                &_name {
+                    opacity: 0;
+                }
+            }
+        }
+
+        &_item {
+            // width: 80px;
+            position: relative;
+            height: 500px;
+            display: flex;
+            background-image: url('../img/tours/tours-1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            cursor: pointer;
+
+
+            
+
+
+            &_main {
+                flex: 1 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 0px;
+                overflow: hidden;
+                @include def-anim;
+                position: relative;
+                
+                &_link {
+                    width: 130px;
+                    height: 130px;
+                    display: block;
+                    border-radius: 100%;
+                    background-color: $text;
+                    background-image: url('../img/icons/external.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 24px 24px;
+                    @include def-anim;
+
+                    &:hover {
+                        background-color: $green;
+                    }
+                }
+                
+                &_name {
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 145%;
+                    color: #fff;
+                    text-transform: uppercase;
+                    position: absolute;
+                    bottom: 45px;
+                    left: 60px;
+                }
+
+            }
+            &_head {
+                width: 80px;
+                // background-color: $text;
+                position: relative;
+                
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                color: #fff;
+                padding: 50px 0 25px 0;
+                align-items: center;
+                @include def-anim;
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $text;
+                    content: '';
+                    z-index: 0;
+                    @include def-anim;
+                }
+
+                &_name {
+                    @include def-anim;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 145%;
+                    white-space: nowrap;
+                    transform: rotate(-90deg) translateX(-50%);
+                    z-index: 1;
+                    
+                }
+
+                &_num {
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: 145%;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}

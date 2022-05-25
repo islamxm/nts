@@ -1,0 +1,8 @@
+$text: #042742;
+$text_gray: #99A8B4;
+$green: #50A627;
+$light_gray: #E3E8EC;
+
+@mixin def-anim {
+    transition: all .3s ease-in-out;
+}

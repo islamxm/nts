@@ -1,0 +1,43 @@
+.bc {
+    padding: 30px 0;
+    
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+
+        &_item {
+            position: relative;
+            padding: 0 10px 0 5px;
+            margin-bottom: 4px;
+
+            &:last-child {
+                padding-right: 0;
+
+                &:after {
+                    display: none;
+                }
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                content: '/';
+                color: $text_gray;
+            }
+
+            a {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 120%;
+                color: $text_gray;
+            }
+        }
+    }
+}

@@ -1,0 +1,253 @@
+.header{
+
+    .spacer {
+        background-color: #E3E8EC;
+        height: 1px;
+    }
+
+    &__top {
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_city {
+
+            &_select {
+
+                &_head {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 135%;
+                }
+            }
+        }
+
+        &_nav {
+            flex: 1 0 auto;
+            display: flex;
+            align-items: center;
+            padding: 0 70px;
+
+
+            &_item.active {
+                a {
+                    color: $text;
+                }
+            }
+            &_item {
+                margin: 0 20px;
+                
+                a {
+                    color: $text_gray;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 135%;
+                    @include def-anim;
+
+                    &:hover {
+                        color: $text;
+                    }
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &_action {
+            display: flex;
+            align-items: center;
+
+            &_item {    
+
+
+                margin: 0 15px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            &_like {
+                display: flex;
+                align-items: center;
+
+                &_icon {
+                    margin-right: 12px;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('../img/icons/heart.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    cursor: pointer;
+                }
+
+                &_value {
+                    font-weight: 600;
+                }
+            }
+
+            &_profile {
+                display: flex;
+                align-items: center;
+
+                &_btn {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 135%;
+                    margin-right: 20px;
+                    cursor: pointer;
+                }
+
+                &_icon {
+                    background-color: $green;
+                    border-radius: 100%;
+                    width: 40px;
+                    height: 40px;
+                    background-image: url('../img/icons/user.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 20px 20px;
+                }
+            }
+
+            &_lang {
+                display: flex;
+                align-items: center;
+
+                &_item.active {
+                    color: $text;
+                }
+
+                &_item {
+                    margin: 0 3px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 135%;
+                    color: $text_gray;
+                    
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &_nav {
+            display: flex;
+            align-items: center;
+            flex: 1 0 auto;
+            padding: 0 7%;
+
+            &_item {
+                margin: 0 20px;
+                
+                a {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 135%;
+                    @include def-anim;
+                    
+                    &:hover {
+                        color: $green;
+                    }
+                }
+            }
+        }
+
+        &_info {
+            display: flex;
+            align-items: center;
+
+            &:hover {
+
+                .header__main_info_value {
+                    color: $green;
+                }
+
+                .header__main_info_btn {
+
+                    &_text {
+                        color: $green;
+                    }
+                }
+            }
+            &_item {
+                padding: 0 40px;
+                position: relative;
+
+                &::after {
+                    position: absolute;
+                    content: '';
+                    height: 100%;
+                    width: 1px;
+                    background-color: #E3E8EC;
+                    top: 0;
+                    right: 0;
+                }
+
+                &:last-child {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            &_value {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 135%;
+                @include def-anim;
+            }
+
+            &_btn {
+                display: flex;
+                align-items: center;
+                
+                &_icon {    
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('../img/icons/tel.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    margin-right: 12px;
+                }
+
+                &_text {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 135%;
+                    @include def-anim;
+                }
+            }
+        }
+    }
+}
