@@ -1,0 +1,123 @@
+.services {
+    background-color: #fff;
+    
+    
+    &__in {
+        padding-top: 100px;
+    }
+
+    &__head {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 145%;
+        padding-bottom: 17px;
+        border-bottom: 1px solid #E3E8EC;
+    }
+
+    &__tabs {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 35px 0;
+
+        &_item {
+            margin-right: 75px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 135%;
+            margin-bottom: 20px;
+            color: #8A94AB;
+            @include def-anim;
+            cursor: pointer;
+
+            &:hover {
+                color: $text;
+            }
+        }
+
+        &_item.active {
+            color: $text;
+        }
+    }
+
+    &__content {
+        margin-bottom: -100px;
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        &_item {
+            display: none;
+            position: relative;
+            z-index: 2;
+
+            &_list {
+                display: flex;
+                
+                &_link {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 250px;
+                    background: #F9FAFD;
+                    width: calc(100% / 5);
+                    @include def-anim;
+                    padding: 50px 30px;
+
+                    &:hover {
+                        background-color: $green;
+
+                        .services__content_item_list_link_icon {
+
+                            svg {
+                                path {
+                                    fill: #Fff;
+                                }
+                            }
+                        }
+
+                        .services__content_item_list_link_name {
+                            color: #fff;
+                        }
+                    }
+
+                    &_icon {
+                        width: 30px;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        svg {
+                            width: 100%;
+                            height: 100%;
+                            path {
+                                @include def-anim;
+                            }
+                        }
+                    }
+                    &_name {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 125%;
+                        @include def-anim;
+
+                    }
+                }
+                
+            }
+
+        }
+
+        &_item.active {
+            display: block;
+            animation: fade .3s linear;
+        }
+    }
+}

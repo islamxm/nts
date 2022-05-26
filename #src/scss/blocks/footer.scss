@@ -1,0 +1,51 @@
+.footer {
+
+    &__in {
+
+    }
+
+    &__main {
+
+        &_left {
+
+        }
+        &_right {
+
+        }
+
+        &_logo {
+
+        }
+
+        &_info {
+
+            &_item {
+                display: block;
+                margin-bottom: 10px;
+                
+            }
+
+            &_item--tel {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 175%;
+            }
+
+            &_item--mail {
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 175%;
+            }
+        }
+
+        &_address {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 175%;
+            /* or 24px */
+
+
+            color: #8A94AB;
+        }
+    }
+}

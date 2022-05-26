@@ -1,0 +1,28 @@
+.expert {
+    background-color: 
+    #263044;
+    &__in {
+        padding: calc(386px - 150px) 0 95px 0;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(#FFFFFF, .1);
+    }
+
+    &__body {
+        
+        background-image: url('../img/expert/expert-bg.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        padding: 150px 0;
+        &_text {   
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 135%;
+            color: #fff;
+            span {
+                color: $green;
+            }
+        }
+    }
+}

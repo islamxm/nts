@@ -1,0 +1,79 @@
+.premium {
+    background-color: #263044;
+    color: #fff;
+
+    &__in {
+
+        padding-top: 196px;
+    }
+
+    &__head {
+        margin-bottom: -90px;
+        z-index: 2;
+        position: relative;
+        &_title {
+            font-weight: 600;
+            font-size: 96px;
+            line-height: 135%;
+        }
+        &_text {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 135%;
+        }
+    }
+
+    &__body > .container {
+        
+    }
+
+    &__body {
+        position: relative;
+
+        &_img {
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                display: flex;
+            }
+        }
+
+        &_content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            padding: 70px 0;
+
+            &_text {
+                font-weight: 600;
+                max-width: 517px;
+                width: 100%;
+            }
+
+            &_link {
+                width: 130px;
+                height: 130px;
+                border-radius: 100%;
+                background-color: #263044;
+                background-image: url('../img/icons/external.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 24px 24px;
+                position: absolute;
+                top: calc(50% - (130px / 2));
+                left: calc(50% - (130px / 2));
+                @include def-anim;
+
+                &:hover {
+                    background-color: $green;
+                }
+            }
+        }
+    }
+}

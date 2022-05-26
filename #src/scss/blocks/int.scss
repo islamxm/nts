@@ -1,0 +1,228 @@
+.int {
+    background-color: 
+    #263044;
+    color: #fff;
+
+    &__in {
+        padding: 90px 0;
+
+    }
+
+    &__head {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 135%;
+        opacity: 0.6;
+        margin-bottom: 15px;
+    }
+
+    &__body {
+
+    }
+
+    &__slider {
+
+        &_wr {
+
+        }
+
+        &_sl {
+
+            &_final {
+                width: 100%;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 135%;
+                color: #fff;
+
+                span {
+                    display: block;
+                }
+            }
+
+            &_title {
+
+                margin-bottom: 50px;
+                font-weight: 800;
+                font-size: 32px;
+                line-height: 135%;
+                
+            }
+
+            &_body {
+                display: flex;
+                margin-left: -10px;
+                margin-right: -10px;
+                flex-wrap: wrap;
+
+                &_item {
+                    margin-bottom: 20px;
+                    margin: 0 10px;
+                    height: 300px;
+                    width: calc((100% / 5) - 20px);
+                    background-color: #3C4557;
+                    position: relative;
+
+                    &_img {
+                        width: 100%;
+                        height: 100%;
+                        
+                        img {
+                            object-fit: cover;
+                            display: flex;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    &_action {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+
+                        input {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            visibility: hidden;
+                            z-index: -1;
+                            opacity: 0;
+                            pointer-events: none;
+                        }
+
+                        input:checked ~ label {
+
+                            .int__slider_sl_body_item_action_label_icon {
+                                background-color: $green;
+                                svg {
+                                    path {
+                                        fill: #fff;
+                                    }
+                                }
+                            }
+                        }
+
+                        &_label {
+                            display: flex;
+                            align-items: flex-start;
+                            width: 100%;
+                            height: 100%;
+                            padding: 30px;
+                            cursor: pointer;
+
+                            &_name {
+                                font-weight: 500;
+                                font-size: 20px;
+                                line-height: 135%;
+                            }
+    
+                            &_icon {
+                                position: absolute;
+                                bottom: 30px;
+                                right: 30px;
+                                width: 40px;
+                                height: 40px;
+                                background-color: #263044;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border-radius: 100%;
+                                @include def-anim;
+
+                                svg {
+                                    path {
+                                        @include def-anim;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    
+                }
+            }
+        }
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 85px;
+
+        &_btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(#fff, .1);
+            border-radius: 24px;
+            padding: 15px 35px;
+            cursor: pointer;
+            @include def-anim;
+
+            &:hover {
+                background-color: rgba(#fff, 1);
+
+                .int__action_btn_text {
+                    color: #263044;
+                }
+                .int__action_btn_icon {
+                    svg {
+                        path {
+                            fill: #263044;
+                        }
+                    }
+                }
+            }
+            &_text {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 135%;
+                color: #fff;
+            }
+
+            &_icon {
+                width: 20px;
+                height: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 28px;
+
+                svg {
+                    path {
+                        @include def-anim;
+                    }
+                }
+            }
+        }
+
+        &_pag {
+            flex: 1 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 9px;
+            width: unset !important;
+
+            &_item {
+                display: block;
+                width: 4px;
+                height: 4px;
+                border-radius: 100%;
+                background: #FFFFFF;
+                opacity: 0.4;
+                margin: 0 7px;
+                @include def-anim;
+            }   
+
+            &_item.active {
+                opacity: 1;
+                transform: scale(1.8);
+            }
+        }
+    }
+}
