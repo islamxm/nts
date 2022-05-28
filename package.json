@@ -45,6 +45,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "choices.js": "^10.1.0",
     "swiper": "^8.1.6"
   }
 }

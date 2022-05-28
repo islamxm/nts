@@ -66,7 +66,7 @@
                 justify-content: center;
                 width: 0px;
                 overflow: hidden;
-                @include def-anim;
+                @include slow-anim;
                 position: relative;
                 
                 &_link {

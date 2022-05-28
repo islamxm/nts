@@ -1,16 +1,92 @@
 .footer {
-
+    border-top: 1px solid #E3E8EC;
     &__in {
 
     }
 
     &__main {
-
+        display: flex;
+        justify-content: space-between;
+        padding: 65px 0;
+        
         &_left {
+            width: 49%;
+            display: flex;
+            flex-direction: column;
 
         }
         &_right {
+            width: 49%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &_item {
+                
+                &:nth-child(1) {
+                    width: calc(100% - 50px);
+                    margin-bottom: 60px;
+                }
+                &:nth-child(3) {
+                    width: 49%;
+                }
+                &:nth-child(4) {
+                    width: 49%;
+                }
+            }
 
+            &_item-action {
+                display: flex;
+                align-items: flex-start;
+
+                &_btn {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    background: #F2F4F9;
+                    @include def-anim;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transform: rotate(90deg);
+
+                    &:hover {
+                        transform: scale(1.1) rotate(90deg);
+                    }
+                }
+            }
+
+            &_item-menu {
+
+                &_head {
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 175%;
+                    /* identical to box height, or 24px */
+
+
+                    color: #8A94AB;
+                }   
+
+                &_list {
+
+                    &_item {
+                        margin-bottom: 10px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        a {
+                            font-weight: 600;
+                            @include def-anim;
+
+                            &:hover {
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         &_logo {
@@ -42,10 +118,31 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 175%;
+            flex: 1 0 auto;
+            display: flex;
+            align-items: flex-end;
             /* or 24px */
 
 
             color: #8A94AB;
+        }
+    }
+
+    &__ex {
+        border-top: 1px solid #E3E8EC;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 35px 0;
+
+        &_item {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 135%;
+            /* identical to box height, or 19px */
+
+
+            color: #C5CAD6;
         }
     }
 }

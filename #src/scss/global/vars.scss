@@ -4,5 +4,23 @@ $green: #50A627;
 $light_gray: #E3E8EC;
 
 @mixin def-anim {
-    transition: all .3s ease-in-out;
+    transition: all .3s ease;
+}
+
+@mixin slow-anim {
+    transition: all .9s ease;
+}
+
+@mixin fade-tab {
+    animation: fade .3s linear;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
