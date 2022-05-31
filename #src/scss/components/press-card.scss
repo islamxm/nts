@@ -1,0 +1,94 @@
+.press-card {
+    height: 430px;
+    background-color: #F2F4F9;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 24px;
+    position: relative;
+
+    &_img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        opacity: 0;
+        @include def-anim;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &:hover {
+        .press-card_img {
+            opacity: 1;
+        }
+        .press-card_text {
+            color: #fff;
+        }
+
+        .press-card_info {
+
+            &_day {
+
+            }
+
+            &_ex {
+                &_mnth {
+                    color: #fff;
+                }
+
+                &_yr {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &_text {
+        flex: 1 0 auto;
+        @include def-anim;font-weight: 500;
+        font-size: 20px;
+        line-height: 135%;
+        position: relative;
+        z-index: 2;
+    }
+
+    &_info {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #E3E8EC;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        &_day {
+            font-weight: 600;
+            font-size: 96px;
+            line-height: 135%;
+            /* identical to box height, or 130px */
+            
+            letter-spacing: -0.02em;
+            color: $green;
+        }
+
+        &_ex {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 135%;
+            /* identical to box height, or 22px */
+            
+            text-align: right;
+            &_mnth {
+                margin-bottom: 2px;
+            }
+
+            &_yr {
+
+            }
+        }
+    }
+}

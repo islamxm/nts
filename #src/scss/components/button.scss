@@ -1,0 +1,63 @@
+.button {
+    padding: 21px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include def-anim;
+    border-radius: 100px;
+    cursor: pointer;
+
+    &__text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 135%;
+        @include def-anim;
+        white-space: nowrap;
+    }
+
+    &__icon {
+
+    }
+}
+
+.button.button-dark {
+    background-color: $text;
+    border-radius: 100px;
+
+    &:hover {
+
+        background-color: $green;
+    }
+
+    .button__text {
+        color: #fff;
+    }
+}
+
+.button.button-light {
+    background-color: #fff;
+
+    .button__text {
+        color: $text;
+    }
+
+    &:hover {
+        background-color: $text;
+
+        .button__text {
+            color: #fff;
+        }
+    }
+}
+
+.button.button-green {
+    background-color: $green;
+
+    .button__text {
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: $text;
+    }
+}

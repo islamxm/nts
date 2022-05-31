@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     intSlider();
     tabs('.services', '.services__tabs', '.services__tabs_item', '.services__content_item');
     tabs('.press', '.press__tabs', '.press__tabs_item', '.press__tabscontent_item');
+    tabs('.press-page__body_main', '.press-page__body_main_tabs', '.press-page__body_main_tabs_item', '.press-page__body_main_list');
     tabs('.contacts-page__body_main', '.contacts-page__body_main_tabs', '.contacts-page__body_main_tabs_item', '.contacts-page__body_main_tabscontent_item');
     pressSlider();
     up();

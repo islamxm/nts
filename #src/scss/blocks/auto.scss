@@ -1,0 +1,32 @@
+.auto {
+    padding: 120px 0;
+
+    &__in {
+        padding: 65px 60px;
+        background-color: #F9FAFD;
+        border-radius: 6px;
+        display: flex;
+        position: relative;
+    }
+
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 440px;
+
+        &_head {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 125%;
+        }
+
+        
+    }
+    &__img {
+        position: absolute;
+        width: 50%;
+    }
+
+    
+}

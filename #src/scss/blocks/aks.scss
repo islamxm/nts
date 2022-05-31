@@ -1,0 +1,40 @@
+.aks {
+    padding: 50px 0;
+    &__in {
+        background: #F9FAFD;
+        border-radius: 6px;
+        display: flex;
+    }
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 70px 0 70px 60px;
+
+        &_head {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 125%;
+        }
+
+        &_text {
+
+        }
+    }
+
+    &__img {
+        background-image: url('../img/aks/aks-bg.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        img {
+            display: flex;
+        }
+    }
+
+    &__action {
+        padding: 55px 48px 55px 0;
+        display: flex;
+        align-items: flex-end;
+    }
+}

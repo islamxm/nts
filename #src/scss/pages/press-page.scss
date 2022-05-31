@@ -1,0 +1,109 @@
+.press-page {
+
+    &__in {
+        padding: 60px 0 200px;
+    }
+
+    &__head {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 135%;
+        margin-bottom: 20px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &_main {
+            width: calc(100% - 424px);
+            border-top: 1px solid #E3E8EC;
+
+            &_tabs {
+                display: flex;
+                align-items: center;
+                padding: 34px 0;
+
+                &_item.active {
+                    color: $text;
+                }
+
+                &_item {
+                    margin-right: 76px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #8A94AB;
+                    cursor: pointer;
+                    @include def-anim;
+
+                    &:hover {
+                        color: $text;
+                    }
+                }
+            }
+
+            &_list.active {
+                display: flex;
+            }
+
+            &_list {
+                flex-wrap: wrap;
+                margin-left: -15px;
+                margin-right: -15px;
+                display: none;
+                
+            }
+
+            &_item {
+                width: calc((100% / 2) - 30px);
+                margin: 0 15px;
+                margin-bottom: 30px;
+            }
+
+            &_item-action {
+                width: calc(100% - 30px);
+                margin: 30px 0;
+                
+
+            }
+        }
+
+        &_contacts {
+            width: 394px;
+            padding: 40px;
+            border: 1px solid #E3E8EC;
+
+            &_head {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 125%;
+                margin-bottom: 40px;
+                max-width: 280px;
+            }
+
+            &_info {
+                margin-bottom: 40px;
+
+                &_item {
+
+                }
+
+                &_item-tel {
+                    color: $green;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 125%;
+                    margin-bottom: 10px;
+                }
+
+                &_item-mail {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 125%;
+                }
+            }
+        }
+    }
+}

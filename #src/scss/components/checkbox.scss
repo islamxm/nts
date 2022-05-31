@@ -32,6 +32,7 @@
             align-items: center;
             justify-content: flex-start;
             border-radius: 15px;
+            @include def-anim;
             .checkbox__icon_el {
                 width: 27px;
                 height: 27px;
@@ -46,9 +47,10 @@
     input:checked ~ label {
         .checkbox__icon {
             // justify-content: flex-end;
+            background-color: $green;
             .checkbox__icon_el {
                 transform: translateX(calc(100% - 7px));
-                background-color: $green;
+                
             }
 
         }

@@ -9,6 +9,8 @@
 @import './components/bc.scss';
 @import './components/checkbox.scss';
 @import './components/btn-link.scss';
+@import './components/button.scss';
+@import './components/press-card.scss';
 
 //BLOCKS
 @import './blocks/header.scss';
@@ -25,7 +27,12 @@
 @import './blocks/press.scss';
 @import './blocks/contacts.scss';
 @import './blocks/footer.scss';
+@import './blocks/aks.scss';
+@import './blocks/auto.scss';
 
 //PAGES
 @import './pages/contacts-page.scss';
 @import './pages/team-page.scss';
+@import './pages/catalog-page.scss';
+@import './pages/product-page.scss';
+@import './pages/press-page.scss';
