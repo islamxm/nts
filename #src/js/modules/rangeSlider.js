@@ -11,13 +11,14 @@ export const rangeSlider = () => {
     };
 
     const price = document.querySelector('.product__snt_action_slider_el-price');
-    const priceValue = price.previousElementSibling;
+    
 
     const date = document.querySelector('.product__snt_action_slider_el-date')
-    const dateValue = date.previousElementSibling;
+    
 
 
     if(price) {
+        const priceValue = price.previousElementSibling;
         noUiSlider.create(price, {
             start: 10000000,
             animate: true,
@@ -36,6 +37,7 @@ export const rangeSlider = () => {
     }
 
     if(date) {
+        const dateValue = date.previousElementSibling;
         noUiSlider.create(date, {
             start: 24,
             animate: true,
