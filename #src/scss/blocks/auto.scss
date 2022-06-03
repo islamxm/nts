@@ -7,6 +7,7 @@
         border-radius: 6px;
         display: flex;
         position: relative;
+        // border: 1px solid red;
     }
 
     &__descr {
@@ -19,6 +20,7 @@
             font-weight: 600;
             font-size: 28px;
             line-height: 125%;
+            margin-bottom: 122px;
         }
 
         
@@ -26,6 +28,10 @@
     &__img {
         position: absolute;
         width: 50%;
+        right: 0;top: calc(50% - (570px / 2));
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     

@@ -1,0 +1,180 @@
+.about-page {
+
+    &__hero {
+
+        &_main {
+            background-image: url('../img/about-page/about-hero-bg.png');
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: contain;
+            &_in {
+                padding: 100px 0;
+                max-width: 510px;
+                width: 100%;
+            }
+            
+            &_title {
+                font-weight: 600;
+                font-size: 36px;
+                line-height: 135%;
+            }
+
+            &_text {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 155%;
+            }
+        }
+
+        &_list {
+            display: flex;
+            max-width: 1366px;
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+        &_item {
+            width: calc(100% / 4);
+            height: 346px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+
+            &:nth-child(odd) {
+                margin-top: -20px;
+            }
+
+            &_value {
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 125%;
+            }
+
+            &_text {
+                font-weight: 500;
+            }
+        }
+
+        &_item.gray {
+            background-color: #99A8B4;
+            color: #fff;
+        }
+
+        &_item.dark {
+            background-color: #042742;
+            color: #fff;
+        }
+
+        &_item.light {
+            background-color: #E3E8EC;
+            color: $text;
+        }
+
+        &_item.green {
+            background-color: $green;
+            color: #fff;
+        }
+    }
+    
+
+    &__mission {
+
+        &_in {
+            padding: 80px 0;
+        }
+
+        &_head {
+            padding: 20px 0;
+            border-bottom: 1px solid #E3E8EC;
+            margin-bottom: 70px;
+        }
+
+        &_body {
+            display: flex;
+            align-items: flex-end;
+            &_content {
+                max-width: 710px;
+                width: 100%;
+
+                &_text {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 155%;
+                    margin-bottom: 70px;
+                }
+            }
+
+            &_ex {
+                flex: 1 0 auto;
+
+                &_link {
+                    max-width: 150px;
+                    color: #99A8B4;
+                    font-weight: 500;
+                    @include def-anim;
+
+                    // &:hover {
+                    //     color: $text;
+                    // }
+                }
+            }
+        }
+    }
+
+    &__vls {
+        &_in {
+            padding: 40px 0;
+
+        }
+
+        &_head {
+            margin-bottom: 60px;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 145%;
+            span {
+                color: $green;
+            }
+        }
+
+        &_body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &_item {
+                width: 47%;
+                padding-left: 106px;
+                position: relative;
+                margin-bottom: 50px;
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 76px;
+                    height: 76px;
+                    border-radius: 100%;
+                    content: url('../img/icons/check-green.svg');
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #fff;
+                }
+
+                &_name {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 125%;
+                    margin-bottom: 30px;
+                }
+
+                &_text {
+
+                }
+            }
+        }
+    }
+}
