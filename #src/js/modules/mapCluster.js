@@ -73,13 +73,13 @@ export const mapCluster = () => {
         const plcSport = [
             new ymaps.Placemark([55.811585, 37.425337], null, {
                 iconLayout: 'default#imageWithContent',
-                iconImageHref: '../img/icons/mapIcon-sport.svg',
+                iconImageHref: '../netasset/img/icons/mapIcon-sport.svg',
                 iconImageSize: [30, 30],
                 iconImageOffset: [-15, -15],
             }),
             new ymaps.Placemark([55.870638, 37.537157], null, {
                 iconLayout: 'default#imageWithContent',
-                iconImageHref: '../img/icons/mapIcon-sport.svg',
+                iconImageHref: '../netasset/img/icons/mapIcon-sport.svg',
                 iconImageSize: [30, 30],
                 iconImageOffset: [-15, -15],
             }),
