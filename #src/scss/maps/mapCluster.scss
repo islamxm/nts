@@ -1,0 +1,109 @@
+.mapCluster {
+
+    &__in {
+
+    }
+
+    &__body {
+        display: flex;
+        
+        &_content {
+            flex: 1 0 auto;
+            // border: 1px solid red;
+
+            #clusterMap {
+                width: 100%;
+                height: 100%;
+                min-height: 650px;
+            }
+        }
+
+        &_tabs {
+            // border: 1px solid green;
+            width: 325px;
+            background: #F9FAFD;
+            padding: 60px 50px;
+            &_head {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 135%;
+                /* identical to box height, or 19px */
+
+
+                /* Text / Grey */
+
+                color: #99A8B4;
+                margin-bottom: 40px;
+            }
+
+            &_list {
+
+            }
+
+            &_item.active {
+
+                .mapCluster__body_tabs_item_icon {
+                    background-color: $text;
+                    svg {
+                        path {
+                            stroke: #fff;
+                        }
+                    }
+                }
+            }
+
+            &_item {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+
+                &:hover {
+                    
+
+                    .mapCluster__body_tabs_item_icon {
+                        background-color: #2D495F;
+
+                        svg {
+                            path {
+                                stroke: #fff;
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &_icon {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    background-color: #E3E8EC;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 25px;
+                    @include def-anim;
+
+                    svg {
+                        path {
+                            @include def-anim;
+                            stroke: $text;
+                        }
+                        
+                    }
+                    
+                }
+
+                &_text {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                }
+
+            }
+        }
+    }
+}
