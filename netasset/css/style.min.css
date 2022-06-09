@@ -4398,6 +4398,9 @@ body {
   height: 100%;
   min-height: 650px;
 }
+.mapCluster__body_content #clusterMap .ymaps-2-1-79-ground-pane {
+  filter: grayscale(1);
+}
 .mapCluster__body_tabs {
   width: 325px;
   background: #F9FAFD;

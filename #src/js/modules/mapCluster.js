@@ -43,17 +43,7 @@ export const mapCluster = () => {
         //         clusterCaption: 'метка <strong>' + index + '</strong>'
         //     };
         // },
-        
-        
-        let getPointOptions = function () {
-            return {
-                // preset: 'islands#violetIcon',
-                iconLayout: 'default#imageWithContent',
-                iconImageHref: '../img/icons/mapIcon-health.svg',
-                iconImageSize: [30, 30],
-                iconImageOffset: [-15, -15],
-            };
-        };
+
 
         const plcMedic = [
             new ymaps.Placemark([55.667276, 37.798068], null, {
@@ -79,9 +69,9 @@ export const mapCluster = () => {
             }),
             new ymaps.Placemark([55.870638, 37.537157], null, {
                 iconLayout: 'default#imageWithContent',
-                iconImageHref: '../netasset/img/icons/mapIcon-sport.svg',
-                iconImageSize: [30, 30],
-                iconImageOffset: [-15, -15],
+                iconImageHref: '../netasset/img/map-img.png',
+                iconImageSize: [80, 80],
+                iconImageOffset: [-40, -40],
             }),
         ]
 
