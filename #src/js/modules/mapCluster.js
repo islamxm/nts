@@ -58,13 +58,13 @@ export const mapCluster = () => {
         const plcMedic = [
             new ymaps.Placemark([55.667276, 37.798068], null, {
                 iconLayout: 'default#imageWithContent',
-                iconImageHref: '../img/icons/mapIcon-health.svg',
+                iconImageHref: '../netasset/img/icons/mapIcon-health.svg',
                 iconImageSize: [30, 30],
                 iconImageOffset: [-15, -15],
             }),
             new ymaps.Placemark([55.711450, 37.788567], null, {
                 iconLayout: 'default#imageWithContent',
-                iconImageHref: '../img/icons/mapIcon-health.svg',
+                iconImageHref: '../netasset/img/icons/mapIcon-health.svg',
                 iconImageSize: [30, 30],
                 iconImageOffset: [-15, -15],
             }),
