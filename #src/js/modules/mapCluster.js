@@ -111,8 +111,8 @@ export const mapCluster = () => {
             
         }
 
-        // clusterer.add(plcMedic);
-        // clusterer.add(plcSport);
+        clusterer.add(plcMedic);
+        clusterer.add(plcSport);
 
         myMap.geoObjects.add(clusterer);
 
