@@ -23,7 +23,7 @@ export const mapCluster = () => {
             geoObjectHideIconOnBalloonOpen: false,  
             clusterIcons: [
                 {
-                    href: '../img/icons/mapIcon.svg',
+                    href: '../netasset/img/icons/mapIcon.svg',
                     size: [50, 50],
                     offset: [-25, -25]
                 },
