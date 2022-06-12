@@ -63,3 +63,72 @@
         }
     }
 }
+
+
+@media (max-width: 1000px) {
+
+    .dwn {
+
+        &__in {
+            padding: 40px 0;
+        }
+
+        &__body {
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 50px 30px 115px;
+            background-image: url('../img/dwn/dwn-mobile.png');
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: cover;
+
+            &_descr {
+                width: 100%;
+                padding: 0;
+                margin-bottom: 50px;
+
+                &_title {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &_action {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                &_img {
+                    display: none;
+                }
+
+                &_link {
+                    position: static;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .dwn {
+
+        &__body {
+
+            &_descr {
+
+                &_title {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 125%;
+                }
+
+                &_text {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 155%;
+                }
+            }
+        }
+    }
+}

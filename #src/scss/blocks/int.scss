@@ -226,3 +226,111 @@
         }
     }
 }
+
+
+@media (max-width: 1000px) {
+    .int {
+
+        &__in {
+            padding: 30px 0 70px;
+        }
+
+        &__head {
+            margin-bottom: 20px;
+        }
+
+        &__body {
+
+        }
+
+        &__slider {
+
+            &_sl {
+
+                &_title {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 135%;
+                    margin-bottom: 45px;
+                }
+
+                &_body {
+
+                    &_item {
+                        width: calc((100% / 2) - 20px);
+                        height: 100px;
+                        margin-bottom: 20px;
+
+                        &_action {
+
+                            &_label {
+                                justify-content: space-between;
+                                align-items: center;
+                                &_icon {
+                                    position: static;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__action {
+            flex-wrap: wrap;
+
+            margin-top: 40px;
+            justify-content: space-between;
+            &_btn {
+                order: 1;
+            }
+
+            &_pag {
+                order: 3;
+                width: 100% !important;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 620px) {
+
+    .int {
+
+        &__slider {
+
+            &_sl {
+
+                &_body {
+                    margin-left: 0;
+                    margin-right: 0;
+                    &_item {
+                        width: 100%;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+
+                &_final {
+
+                    &_text {
+                        font-size: 32px;
+line-height: 155%;
+                    }
+                }
+            }
+        }
+
+        &__action {
+
+            &_btn {
+                padding: 14px 30px;
+
+                &_text {
+                }
+            }
+        }
+    }
+}

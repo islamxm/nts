@@ -12,8 +12,8 @@ export const heroSlider = () => {
                 crossFade: true
             },
             navigation: {
-                prevEl: '.hero__slider_nav_prev',
-                nextEl: '.hero__slider_nav_next'
+                prevEl: '.hero__slider_sl_content_action_nav_item-prev',
+                nextEl: '.hero__slider_sl_content_action_nav_item-next'
             }
 
         })

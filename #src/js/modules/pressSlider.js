@@ -6,12 +6,22 @@ export const pressSlider = () => {
     if(els.length > 0) {
         els.forEach(el => {
             const slider = new Swiper(el, {
-                slidesPerView: 3,
+                slidesPerView: 1,
                 modules: [Navigation],
-                spaceBetween: 30,
+                spaceBetween: 20,
                 navigation: {
                     prevEl: '',
                     nextEl: ''
+                },
+                breakpoints: {
+                    1000: {
+                        spaceBetween: 30,
+                        slidesPerView: 3,
+                    },
+                    620: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    } 
                 }
             })
         })

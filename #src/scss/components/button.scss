@@ -61,3 +61,10 @@
         background-color: $text;
     }
 }
+
+@media (max-width: 768px) {
+
+    .button {
+        padding: 17px 50px;
+    }
+}

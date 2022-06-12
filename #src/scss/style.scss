@@ -12,6 +12,10 @@
 @import './components/btn-link.scss';
 @import './components/button.scss';
 @import './components/press-card.scss';
+@import './components/mobmenu.scss';
+@import './components/fltr.scss';
+@import './components/filterSelect.scss';
+@import './components/normalSelect.scss';
 
 //BLOCKS
 @import './blocks/header.scss';
@@ -43,3 +47,4 @@
 
 //MAPS
 @import './maps/mapCluster.scss';
+@import './maps/mapItem.scss';

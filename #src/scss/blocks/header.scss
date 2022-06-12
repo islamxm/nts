@@ -5,6 +5,14 @@
         height: 1px;
     }
 
+    &__mn {
+
+    }
+
+    &__mobile {
+        display: none;
+    }
+
     &__top {
         padding: 8px 0;
         display: flex;
@@ -246,6 +254,118 @@
                     font-size: 14px;
                     line-height: 135%;
                     @include def-anim;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1100px) {
+    .header {
+
+        &__mn {
+            display: none;
+        }
+        &__mobile {
+            display: block;
+
+            &_in {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 15px;
+            }
+
+            &_logo {
+
+            }
+
+            &_action {
+                display: flex;
+                align-items: center;
+                &_main {
+                    display: flex;
+                    align-items: center;
+                    &_item {
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #F9FAFD;
+                        margin: 0px 8px;
+                        /* Text / Light Grey */
+
+                        border: 1px solid #E3E8EC;
+                        border-radius: 100%;
+
+                        svg {
+
+                            path {
+                                fill: #042742;
+                            }
+                        }
+                    }
+                }
+
+                &_burger {
+                    width: 30px;
+                    height: 18px;
+                    display: flex;  
+                    flex-direction: column;
+                    justify-content: space-between;
+                    margin-left: 30px;
+                    span {
+                        display: block;
+                        width: 100%;
+                        height: 3px;
+                        border-radius: 12px;
+                        background-color: $text;
+                        &:nth-child(1) {
+
+                        }
+
+                        &:nth-child(2) {
+                            width: 22px;
+                        }
+
+                        &:nth-child(3) {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header {
+
+        &__mobile {
+
+            &_logo {
+                width: 150px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            &_in {
+                padding: 0;
+            }
+
+            &_action {
+
+                &_main {
+
+                    &_item {
+                        width: 40px;
+                        height: 40px;
+                    }
                 }
             }
         }

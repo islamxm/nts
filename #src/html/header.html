@@ -1,53 +1,90 @@
 <header class="header">
-    <div class="container">
+    <div class="header__mn">
+        <div class="container">
 
-        <div class="header__top">
-            <div class="header__top_city">
-                <div class="header__top_city_select">
-                    <div class="header__top_city_select_head">Сочи</div>
+            <div class="header__top">
+                <div class="header__top_city">
+                    <div class="header__top_city_select normalSelect">
+                        <select class="normalSelect__el">
+                            <option value="Москва">Москва</option>
+                            <option value="Сочи">Сочи</option>
+                        </select>
+                    </div>
+                </div>
+                <ul class="header__top_nav">
+                    <li class="header__top_nav_item"><a href="#">О компании</a></li>
+                    <li class="header__top_nav_item"><a href="#">Карьера</a></li>
+                    <li class="header__top_nav_item"><a href="#">Стать партнером</a></li>
+                    <li class="header__top_nav_item"><a href="#">Новости</a></li>
+                </ul>
+                <div class="header__top_action">
+                    <div class="header__top_action_item header__top_action_like">
+                        <div class="header__top_action_like_icon"></div>
+                        <div class="header__top_action_like_value">0</div>
+                    </div>
+                    <div class="header__top_action_item header__top_action_profile">
+                        <button class="header__top_action_profile_btn">Войти</button>
+                        <div class="header__top_action_profile_icon"></div>
+                    </div>
+                    <div class="header__top_action_item header__top_action_lang">
+                        <a href="#" class="header__top_action_lang_item active">RU</a>
+                        <a href="#" class="header__top_action_lang_item">EN</a>
+                    </div>
                 </div>
             </div>
-            <ul class="header__top_nav">
-                <li class="header__top_nav_item"><a href="#">О компании</a></li>
-                <li class="header__top_nav_item"><a href="#">Карьера</a></li>
-                <li class="header__top_nav_item"><a href="#">Стать партнером</a></li>
-                <li class="header__top_nav_item"><a href="#">Новости</a></li>
-            </ul>
-            <div class="header__top_action">
-                <div class="header__top_action_item header__top_action_like">
-                    <div class="header__top_action_like_icon"></div>
-                    <div class="header__top_action_like_value">0</div>
-                </div>
-                <div class="header__top_action_item header__top_action_profile">
-                    <button class="header__top_action_profile_btn">Войти</button>
-                    <div class="header__top_action_profile_icon"></div>
-                </div>
-                <div class="header__top_action_item header__top_action_lang">
-                    <a href="#" class="header__top_action_lang_item active">RU</a>
-                    <a href="#" class="header__top_action_lang_item">EN</a>
-                </div>
+            
+        </div>
+        <div class="spacer"></div>
+        <div class="container">
+            <div class="header__main">
+                <a href="#" class="header__main_logo">
+                    <img src="./img/icons/logo-main.svg" alt="Logotype">
+                </a>
+                <ul class="header__main_nav">
+                    <li class="header__main_nav_item header__main_nav_item--dropdown"><a href="#">Каталог</a></li>
+                    <li class="header__main_nav_item header__main_nav_item--dropdown"><a href="#">Услуги</a></li>
+                    <li class="header__main_nav_item"><a href="#">Контакты</a></li>
+                </ul>
+                <a href="tel:" class="header__main_info">
+                   <div class="header__main_info_value header__main_info_item">8 (800) 500-50-50</div> 
+                   <div class="header__main_info_btn header__main_info_item">
+                       <div class="header__main_info_btn_icon"></div>
+                       <div class="header__main_info_btn_text">Заказать звонок</div>
+                   </div> 
+                </a>
             </div>
         </div>
-        
     </div>
-    <div class="spacer"></div>
-    <div class="container">
-        <div class="header__main">
-            <a href="#" class="header__main_logo">
-                <img src="./img/icons/logo-main.svg" alt="Logotype">
-            </a>
-            <ul class="header__main_nav">
-                <li class="header__main_nav_item header__main_nav_item--dropdown"><a href="#">Каталог</a></li>
-                <li class="header__main_nav_item header__main_nav_item--dropdown"><a href="#">Услуги</a></li>
-                <li class="header__main_nav_item"><a href="#">Контакты</a></li>
-            </ul>
-            <a href="tel:" class="header__main_info">
-               <div class="header__main_info_value header__main_info_item">8 (800) 500-50-50</div> 
-               <div class="header__main_info_btn header__main_info_item">
-                   <div class="header__main_info_btn_icon"></div>
-                   <div class="header__main_info_btn_text">Заказать звонок</div>
-               </div> 
-            </a>
+    
+
+    <div class="header__mobile">
+        <div class="container">
+            <div class="header__mobile_in">
+                <div class="header__mobile_logo">
+                    <img src="./img/icons/logo-main.svg" alt="">
+                </div>
+                <div class="header__mobile_action">
+                    <div class="header__mobile_action_main">
+                        <a href="#" class="header__mobile_action_main_item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.19416 3.33268H6.93578L8.14179 6.34771L6.20439 7.63931C5.97256 7.79386 5.83331 8.05405 5.83331 8.33268C5.83542 8.41071 5.83331 8.33352 5.83331 8.33352L5.83331 8.33439L5.83331 8.33625L5.83334 8.34046L5.83346 8.35074C5.83359 8.35842 5.8338 8.36775 5.83415 8.37867C5.83485 8.40052 5.83613 8.42876 5.83841 8.46298C5.84297 8.5314 5.85157 8.62388 5.86772 8.73699C5.90002 8.96307 5.96271 9.27277 6.08441 9.63787C6.32877 10.371 6.80892 11.3201 7.74405 12.2553C8.67919 13.1904 9.62836 13.6706 10.3615 13.9149C10.7265 14.0366 11.0363 14.0993 11.2623 14.1316C11.3754 14.1478 11.4679 14.1564 11.5363 14.1609C11.5706 14.1632 11.5988 14.1645 11.6206 14.1652C11.6316 14.1655 11.6409 14.1657 11.6486 14.1659L11.6589 14.166L11.6631 14.166L11.6649 14.166L11.6658 14.166C11.6658 14.166 11.7588 14.1609 11.6666 14.166C11.9823 14.166 12.2708 13.9877 12.412 13.7054L12.9701 12.5892L16.6666 13.2053V16.8052C14.9074 17.0596 10.1561 17.3103 6.42256 13.5768C2.68898 9.84318 2.93974 5.09193 3.19416 3.33268ZM7.56135 8.73775L9.06629 7.73446C9.72207 7.29727 9.98196 6.4605 9.68925 5.72872L8.48324 2.7137C8.23014 2.08093 7.61729 1.66602 6.93578 1.66602H3.15062C2.39353 1.66602 1.68088 2.19198 1.55659 3.01343C1.27384 4.88227 0.888963 10.4002 5.24405 14.7553C9.59914 19.1104 15.1171 18.7255 16.9859 18.4427C17.8073 18.3184 18.3333 17.6058 18.3333 16.8487V13.2053C18.3333 12.3906 17.7443 11.6952 16.9406 11.5613L13.2441 10.9452C12.5224 10.8249 11.8066 11.1894 11.4794 11.8438L11.1906 12.4213C11.0999 12.3991 10.9986 12.3705 10.8885 12.3338C10.3716 12.1615 9.65409 11.8083 8.92256 11.0768C8.19103 10.3452 7.83785 9.62774 7.66554 9.11083C7.61898 8.97115 7.58547 8.84556 7.56135 8.73775Z" fill="#50A627"/>
+                                </svg>
+                                
+                        </a>
+                        <a href="#" class="header__mobile_action_main_item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0003 3.77304C8.03714 2.01408 5.01804 2.07789 3.13146 3.96447C1.17884 5.91709 1.17884 9.08291 3.13146 11.0355L8.82182 16.7259C9.47269 17.3768 10.528 17.3768 11.1788 16.7259L16.8692 11.0355C18.8218 9.08291 18.8218 5.91709 16.8692 3.96447C14.9826 2.07789 11.9635 2.01408 10.0003 3.77304ZM9.02402 5.14298L9.41107 5.53003C9.73651 5.85547 10.2641 5.85547 10.5896 5.53003L10.9766 5.14298C12.2784 3.84123 14.3889 3.84123 15.6907 5.14298C16.9924 6.44473 16.9924 8.55527 15.6907 9.85702L10.0003 15.5474L4.30997 9.85702C3.00822 8.55527 3.00822 6.44473 4.30997 5.14298C5.61172 3.84123 7.72227 3.84123 9.02402 5.14298Z" fill="#042742"/>
+                                </svg>
+                                
+                        </a>
+                    </div>
+                    <button class="header__mobile_action_burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </header>

@@ -10,8 +10,15 @@ export const benefitsSlider = () => {
                 prevEl: '.benefits__body_nav_item--prev',
                 nextEl: '.benefits__body_nav_item--next'
             },
-            slidesPerView: 2,
-            spaceBetween: 30
+            slidesPerView: 1,
+            spaceBetween: 10,
+            breakpoints: {
+
+                620: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                }
+            }
         })
     }
 }

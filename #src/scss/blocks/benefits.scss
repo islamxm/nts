@@ -128,3 +128,82 @@
         }
     }
 }
+
+
+@media (max-width: 1000px) {
+
+    .benefits {
+
+        &__in {
+            padding: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        &__body {
+            margin-bottom: 60px;
+            max-width: unset;
+            width: 100%;
+            margin-right: 0;
+            &_main {
+
+                &_title {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &_nav {
+                display: none;
+            }
+        }
+
+
+        &__content {
+            width: 100%;
+        }
+
+        &__slider {
+
+            &_sl {
+
+                &_img {
+
+
+                    img {
+                        border: 1px solid yellow;
+                        width: 100%;
+                        min-height: 380px;
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .benefits {
+
+        &__body {
+
+            &_main {
+
+                &_title {
+                    font-size: 24px;
+                    line-height: 135%;
+                }
+            }
+        }
+        &__slider {
+
+            &_sl {
+                &_body {
+                    padding: 30px;
+                    &_name {
+                        // 
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,4 @@
-const mapClusterObj = {
+const clusterData = {
     medic: {
         name: 'Медицина',
         style: {
@@ -45,4 +45,32 @@ const mapClusterObj = {
 };
 
 
-export default mapClusterObj;
+const ctData = [
+    {
+        city: 'Город 1',
+        name: 'Дилер 1',
+        coord: [55.755819, 37.617644],
+        ...defItems
+    },
+    {
+        city: 'Город 1',
+        name: 'Дилер 2',
+        coord: [59.939099, 30.315877],
+        ...defItems
+    },
+    {
+        city: 'Город 2',
+        name: 'Дилер 1',
+        coord: [53.755819, 37.617644],
+        ...defItems
+    },
+    {
+        city: 'Город 1',
+        name: 'Дилер 2',
+        coord: [53.939099, 30.315877],
+        ...defItems
+    }
+];
+
+
+export {clusterData, ctData};

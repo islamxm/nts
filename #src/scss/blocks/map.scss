@@ -1,5 +1,5 @@
 .map {
-
+    padding: 100px 0;
     &__head {
         width: 100%;
         max-width: 590px;
@@ -18,12 +18,40 @@
     }
 
     &__filter {
-        margin-bottom: 40px;
+        // margin-bottom: 40px;
+        position: relative;
+        z-index: 2;
         &_top {
             margin-bottom: 40px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            &_shw {
+                width: 100%;
+                box-shadow: 0px 30px 40px rgba(57, 63, 110, 0.15);
+                height: 115px;
+                
+                align-items: center;
+                background-image: url('../img/map/map-bg.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 8px;
+                overflow: hidden;
+                margin-top: 20px;
+                display: none;
+
+                &_text {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 135%;
+                    padding-left: 40px;
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+                }
+            }
 
             &_list {
                 display: flex;
@@ -41,7 +69,7 @@
                 color: $text_gray;
                 cursor: pointer;
                 @include def-anim;
-
+                white-space: nowrap;
                 &:hover {
                     color: $green;
                 }
@@ -99,6 +127,7 @@
         &_main {
             box-shadow: 0px 30px 40px rgba(57, 63, 110, 0.15);
             border-radius: 17px;
+            background: linear-gradient(180deg, rgba(9,9,121,0) 0%, rgba(255,255,255,1) 47%);
             &_in {
                 padding: 12px;
                 display: flex;
@@ -115,6 +144,7 @@
                 padding: 0px 22px;
                 min-height: 60px;
                 margin: 0 4px;
+                justify-content: space-between;
 
                 &:first-child {
                     margin-left: 0;
@@ -155,6 +185,7 @@
                         font-size: 14px;
                         line-height: 135%;
                         margin: 0 5px;
+                        width: 140px;
                     }
 
                     label {
@@ -181,8 +212,91 @@
         }
     }
 
-    &__content {
 
+    &__el {
+        margin-top: -10px;
+
+        &_head {
+            padding: 25px 15px;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            display: none;
+
+            &_main {
+                display: flex;
+                align-items: center;
+
+                &_close {
+                    width: 30px;
+                    height: 30px;
+                    background-image: url('../img/icons/back-green.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+
+                &_title {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 135%;
+                }
+            }
+
+            &_action {
+                display: flex;
+                align-items: center;
+
+                &_item {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    background: #F9FAFD;
+                    border: 1px solid #E3E8EC;
+                    margin: 0 7px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 20px 20px;
+                    cursor: pointer;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                &_fav {
+                    background-image: url('../img/icons/heart.svg');
+                }
+
+                &_fl {
+                    background-image: url('../img/icons/filter-green.svg');
+                }
+            }
+        }
+        
+        #mapCt {
+            width: 100%;
+            height: 600px;
+
+
+            .ymaps-2-1-79-ground-pane {
+                filter: grayscale(1);
+                opacity: .6;
+                
+            }
+        }
+    }
+
+
+    &__content {
+        margin-top: 40px;
         &_list {
             display: flex;
             flex-wrap: wrap;
@@ -220,6 +334,10 @@
                 flex-direction: column;
                 transform: translateX(-100%);
                 transition: all .9s ease;
+
+                &_img {
+                    display: none;
+                }
 
                 &_head {
                     display: flex;
@@ -285,10 +403,13 @@
                             width: 24px;
                             height: 24px;
                             margin-right: 20px;
-                            background-image: url('../img/icons/download.svg');
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-size: contain;
+                            // background-image: url('../img/icons/download.svg');
+                            // background-repeat: no-repeat;
+                            // background-position: center;
+                            // background-size: contain;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
                         }
 
                         &_text {
@@ -350,6 +471,289 @@
 
                 .btn-link__icon {
                     background-image: url('../img/icons/chevron-black.svg');
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1220px) {
+
+    .map {
+        padding: 40px 0;
+        &__head {
+
+        }
+
+        &__filter {
+            
+            &_main {
+
+                display: none;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .map {
+
+        &__head {
+            margin-bottom: 40px;
+        }
+
+        &__filter {
+
+            &_top {
+                flex-wrap: wrap;
+                &_shw {
+                    display: flex;
+                    cursor: pointer;
+                }
+                &_list {
+                    width: 100%;
+                    margin-bottom: 40px;
+                    padding-bottom: 20px;
+                    border-bottom: 1px solid #E7E9F2;
+                    overflow-x: auto;
+                }
+
+                &_search {
+
+                }
+            }
+        }
+
+        &__el.active {
+            transform: translateX(0);
+        }
+
+        &__el {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 100;
+            margin-top: 0;
+            display: flex;
+            flex-direction: column;
+            transform: translateX(100%);
+            @include def-anim;
+
+            #mapCt {
+                
+                // height: calc(100% - 100px);
+                flex: 1 0 auto;
+            }
+            &_head {
+                display: flex;
+            }
+        }
+
+        &__content {
+
+            &_list {
+                margin-left: -10px;
+                margin-right: -10px;
+                
+                
+            }
+            &_item {
+                margin: 0 10px;
+                margin-bottom: 20px;
+                width: calc((100% / 2) - 20px) !important;
+                height: 420px;
+                background-image: unset !important;
+                border: 1px solid #E3E8EC;
+                border-radius: 8px;
+                display: flex;
+                align-items: flex-end;
+
+
+                &_content {
+                    transform: translateX(0);
+                    opacity: 1;
+                    padding: 0;
+                    
+                    overflow: hidden;
+                    background-color: #fff;
+                    color: $text;
+
+                    &_img {
+                        display: block;
+                        width: 100%;
+                        height: 50%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: flex;
+                        }
+                    }
+
+                    &_head {
+                        padding: 20px 20px 0 20px;
+                        margin-bottom: 10px;
+                        &_name {
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 135%;
+                        }
+
+                        &_btn {
+                            position: absolute;
+                            top: 20px;
+                            right: 20px;
+                        }
+                    }
+
+                    &_text {
+                        padding: 0 20px;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 155%;
+                        max-height: 109px;
+                        overflow-y: auto;
+                        margin-bottom: 10px;
+                        width: 100%;
+                        max-width: unset;
+                    }
+
+                    &_action {
+                        margin-top: 0;
+                        padding-top: 0;
+                        justify-content: space-between;
+                        padding: 0 20px 20px;
+                        border: none;
+                        flex-wrap: wrap;
+                        &_item {
+                            padding: 10px 0;
+                        }
+
+                        &_item-more {
+
+                            display: none;
+                        }
+                        &_item-price {
+                            font-size: 16px;
+                            line-height: 135%;
+                        }
+                        &_item-download {
+
+                            &_icon {
+                                background-image: url('../img/icons/');
+                                margin-right: 10px;
+                                svg {
+                                    height: 20px;
+                                    width: 20px;
+                                    path {
+                                        fill: $text;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 620px) {
+
+    .map {
+
+        &__head {
+            max-width: unset;
+            &_title {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 155%;
+            }
+        }
+
+        &__filter {
+
+            &_top {
+
+                &_item {
+                    margin: 0 15px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                }
+
+                &_search {
+                    width: 100%;
+                    justify-content: space-between;
+                    padding: 30px 25px;
+                    background: #F9FAFD;
+                    border-radius: 8px;
+
+                    &:hover {
+
+                        .map__filter_top_search_text {
+                            color: $text;
+                        }
+                    }
+
+                    &_icon {
+                        order: 2;
+                        margin-right: 0;
+
+                        svg {
+                            path {
+                                fill: $green;
+                            }
+                        }
+                    }
+
+                    &_text {
+                        order: 1;
+                        color: $text;
+                        
+                    }
+                }
+
+                
+            }
+        }
+
+       
+
+        &__content {
+
+            &_list {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            &_item {
+                width: 100% !important;
+                margin: 0;
+                margin-bottom: 15px;
+
+            }
+
+            &_action {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-bottom: 0;
+                &_btn {
+                    padding: 10px 0;
+                    &_text {
+                        order: 1;
+                    }
+
+                    &_icon {
+                        order: 2;
+                    }
                 }
             }
         }

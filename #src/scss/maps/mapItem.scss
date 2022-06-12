@@ -1,0 +1,128 @@
+.ymaps-2-1-79-balloon {
+    max-width: 300px;
+    box-shadow: unset !important;
+
+    .ymaps-2-1-79-balloon__layout {
+        
+        .ymaps-2-1-79-balloon__content {
+            padding: 0;
+            margin-right: 0 !important;
+        }
+
+        .ymaps-2-1-79-balloon__content > ymaps {
+            height: auto !important;
+        }
+    }
+}
+
+.mapItem {
+    background: #FFFFFF;
+    /* Карточка объекта / Вертикальная */
+    font-family: 'Manrope', sans-serif !important;
+    box-shadow: 0px 30px 40px rgba(57, 63, 110, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 300px;
+    width: 100%;
+    position: relative;
+    &__fav {
+        width: 30px;
+        height: 30px;
+        background-color: #FFFFFF;
+        border-radius: 6px;
+        background-image: url('../img/icons/heart.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 15px 15px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 10; 
+        cursor: pointer;
+    }
+
+    &__slider {
+
+        &_sl {
+            height: 140px;
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: flex;
+            }
+        }
+
+        &_pag {
+            width: 260px !important;
+            position: absolute;
+            bottom: 10px !important;
+            left: calc(50% - (260px / 2)) !important;
+            display: flex;
+            align-items: center;
+            z-index: 5;
+            &_item {
+                margin: 0 2px;
+                flex: 1 0 auto;
+                height: 2px;
+                border-radius: 2px;
+                background-color: rgba(#fff, .8);
+                @include def-anim;
+            }
+
+            &_item.active {
+                background-color: $green;
+            }
+
+        }
+    }
+
+    &__body {
+        padding: 20px;
+        padding-bottom: 30px;
+        border-radius: 0px 0px 12px 12px;
+
+        &_name {    
+            text-transform: uppercase;
+            color: #509EF3;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        &_text {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 155%;
+            max-height: 110px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+        }
+
+        &_price {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        &_dwn {
+            display: flex;
+            align-items: center;
+            &_icon {
+                margin-right: 15px;
+                width: 29px;
+                height: 29px;
+                border-radius: 6px;
+                background-color: #F6F7FB;
+                background-image: url('../img/icons/download-black.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 15px 15px;
+            }
+
+            &_text {
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 135%;
+            }
+        }
+    }
+}

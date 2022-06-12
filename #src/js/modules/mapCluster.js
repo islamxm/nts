@@ -1,9 +1,3 @@
-import mapClusterObj from "./mapClusterObj.js";
-
-
-
-
-
 export const mapCluster = () => {
 
     ymaps.ready(function () {
@@ -23,7 +17,7 @@ export const mapCluster = () => {
             geoObjectHideIconOnBalloonOpen: false,  
             clusterIcons: [
                 {
-                    href: '../netasset/img/icons/mapIcon.svg',
+                    href: '../img/icons/mapIcon.svg',
                     size: [50, 50],
                     offset: [-25, -25]
                 },
@@ -48,13 +42,13 @@ export const mapCluster = () => {
         const plcMedic = [
             new ymaps.Placemark([55.667276, 37.798068], null, {
                 iconLayout: 'default#imageWithContent',
-                iconImageHref: '../netasset/img/icons/mapIcon-health.svg',
+                iconImageHref: '../img/icons/mapIcon-health.svg',
                 iconImageSize: [30, 30],
                 iconImageOffset: [-15, -15],
             }),
             new ymaps.Placemark([55.711450, 37.788567], null, {
                 iconLayout: 'default#imageWithContent',
-                iconImageHref: '../netasset/img/icons/mapIcon-health.svg',
+                iconImageHref: '../img/icons/mapIcon-health.svg',
                 iconImageSize: [30, 30],
                 iconImageOffset: [-15, -15],
             }),
@@ -63,13 +57,13 @@ export const mapCluster = () => {
         const plcSport = [
             new ymaps.Placemark([55.811585, 37.425337], null, {
                 iconLayout: 'default#imageWithContent',
-                iconImageHref: '../netasset/img/icons/mapIcon-sport.svg',
+                iconImageHref: '../img/icons/mapIcon-sport.svg',
                 iconImageSize: [30, 30],
                 iconImageOffset: [-15, -15],
             }),
             new ymaps.Placemark([55.870638, 37.537157], null, {
                 iconLayout: 'default#imageWithContent',
-                iconImageHref: '../netasset/img/map-img.png',
+                iconImageHref: '../img/map-img.png',
                 iconImageSize: [80, 80],
                 iconImageOffset: [-40, -40],
             }),
