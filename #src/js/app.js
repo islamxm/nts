@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     prodChart();
     tabs('.product__anl', '.product__anl_tabs', '.product__anl_tabs_item', '.product__anl_tabscontent_item');
     rangeSlider();
-    // mapCluster();
+    mapCluster();
     toursSlider();
     mobmenu();
     mapCt();

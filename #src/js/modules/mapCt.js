@@ -1,15 +1,15 @@
 import { mapItemSlider } from "./mapItemSlider.js";
 
-const data = [
-    {
-        coord: [55.711450, 37.788567]
-    },
-    {
-        coord: [55.667276, 37.798068]
-    }
-]
-export const mapCt = () => {
 
+export const mapCt = () => {
+    const data = [
+        {
+            coord: [55.711450, 37.788567]
+        },
+        {
+            coord: [55.667276, 37.798068]
+        }
+    ]
     const mapModal = document.querySelector('.map__el');
     
     ymaps.ready(function () {
