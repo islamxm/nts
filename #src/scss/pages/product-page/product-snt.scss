@@ -1,0 +1,262 @@
+.product {
+
+    &__snt {
+        
+
+        &_in {
+            padding: 80px 0;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+        }
+
+        &_body {
+            max-width: 606px;
+            width: 100%;
+
+            &_head {
+                margin-bottom: 60px;
+                &_title {
+                    margin-bottom: 15px;
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 145%;
+                }
+
+                &_subtitle {
+                    font-weight: 500;
+                }
+            }
+
+            &_list {
+                margin-bottom: 60px;
+
+                &_table {
+                    width: 100%;
+                    border-collapse: collapse;
+
+                    &_row {
+                        padding: 30px 0;
+                        
+                        
+                    }
+
+                    &_item {
+                        border-top: 1px solid #EDEDED;
+                        border-bottom: 1px solid #EDEDED;
+                        padding: 30px 0;
+                    }
+
+                    &_item-img {
+                        padding: 30px 20px;
+                    }
+
+                    &_item-name {
+                        font-weight: 600;
+                    }
+
+                    &_item-info {
+                        color: #99A8B4;
+
+                    }
+
+                    &_item-val {
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            &_ex {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+
+                &_item {
+                    display: flex;
+                    align-items: center;
+                    width: 45%;
+
+                    &_icon {
+                        width: 48px;
+                        height: 48px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #F4F8FB;
+                        border-radius: 100%;
+                        margin-right: 20px;
+                    }
+
+                    &_text {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 155%;
+                    }
+                }
+            }
+        }
+
+        &_action {
+            max-width: 500px; 
+            width: 100%;
+            border: 1px solid #E3E8EC;
+            padding: 60px 50px;
+
+            &_head {
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 125%;
+                margin-bottom: 50px;
+            }
+
+            
+
+            &_slider {
+                margin-bottom: 55px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+
+                &_head {
+                    color: #99A8B4;
+                    margin-bottom: 15px;
+                }
+
+                &_value {
+                    margin-bottom: 25px;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 135%;
+                }
+
+                &_el {
+
+                }
+
+                &_el.noUi-target {
+                    background-color: #ECECEC;
+                    border-radius: 0;
+                    border: none;
+                    box-shadow: none;
+                    
+                    .noUi-base {
+
+                        .noUi-connects {
+                            border-radius: 0;
+
+                            .noUi-connect {
+                                background-color: $green;
+                            }
+                            
+                        }
+
+                        .noUi-origin {
+
+                            .noUi-handle.noUi-handle-lower {
+                                cursor: pointer;
+                                &:after {
+                                    display: none;
+                                }
+
+                                &:before {
+                                    display: none;
+                                }
+                                // right: calc(50% - (10px / 2));
+                                right: -10px;
+                                top: calc(50% - (10px / 2));
+                                width: 13px;
+                                height: 13px;
+                                border-radius: 100%;
+                                box-shadow: none;
+                                border: none;
+                                background-color: $green;
+                            }
+                        }
+                    }
+                }
+
+                &_el.noUi-horizontal {
+                    height: 3px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .product {
+
+        &__snt {
+
+            &_in {
+                flex-wrap: wrap;
+            }
+
+            &_body {
+                max-width: unset;
+                margin-bottom: 50px;
+            }
+
+            &_action {
+                max-width: unset;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 620px) {
+
+    .product {
+
+        &__snt {
+
+            &_in {
+                padding: 40px 0;
+            }
+
+            &_body {
+
+                &_head {
+
+                    &_title {
+                        font-size: 24px;
+                    }
+                }
+                &_list {
+
+                    &_table {
+
+                        &_item-info {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            &_action {
+                padding: 30px;
+                &_head {
+                    font-size: 20px;
+                    margin-bottom: 30px;
+                }
+
+                &_slider {
+                    margin-bottom: 30px;
+                }
+                
+                &_btn {
+
+                    .button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -38,3 +38,70 @@
         align-items: flex-end;
     }
 }
+
+@media (max-width: 1000px) {
+
+    .aks {
+        
+        
+        &__in {
+            position: relative;
+            height: 420px;
+            background-image: url('../img/aks/aks-mob.png');
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: contain;
+            padding: 45px 30px;
+            background-color: #fff;
+            flex-direction: column;
+            justify-content: space-between;
+            
+        }
+
+        &__img {
+            display: none;
+        }
+
+        &__descr {
+            width: 100%;
+            padding: 0;
+
+            &_head {
+                margin-bottom: 20px;
+            }
+
+            &_text {
+                width: 60%;
+            }
+        }
+
+        &__action {
+            padding: 0;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .aks {
+
+        &__in {
+
+        }
+
+        &__img {
+
+        }
+
+        &__descr {
+
+        }
+
+        &__action {
+
+            &_btn {
+                width: 100%;
+            }
+        }
+    }
+}

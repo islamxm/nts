@@ -137,17 +137,33 @@ export const mapCluster = () => {
 
         })
         
-    
-
-
-
-
-
-
-
-    
-        // myMap.setBounds(clusterer.getBounds(), {
-        //     checkZoomRange: true
-        // });
     });
+
+    const mapEl = document.querySelector('.mapCluster__body_content');
+    const trigger = document.querySelector('#mapClusterTrigger');
+    const closeMap = document.querySelector('.mapCluster__body_content_head_back');
+    const moreTrigger = document.querySelector('.mapCluster__body_content_head_btn');
+    const moreEl = document.querySelector('.mapCluster__body_tabs');
+    const moreClose = document.querySelector('.mapCluster__body_tabs_hd_btn');
+    const moreMapTrigger = document.querySelector('.mapCluster__body_tabs_action_btn');
+
+    if(trigger) {
+        trigger.addEventListener('click', () => {
+            mapEl.classList.add('active');
+        })
+        closeMap.addEventListener('click', () => {
+            mapEl.classList.remove('active');
+        })
+        moreTrigger.addEventListener('click', () => {
+            moreEl.classList.add('active');
+        })
+        moreClose.addEventListener('click', () => {
+            moreEl.classList.remove('active');
+        })
+
+        moreMapTrigger.addEventListener('click', () => {
+            moreEl.classList.remove('active');
+            mapEl.classList.add('active');
+        })
+    }
 }

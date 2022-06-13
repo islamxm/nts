@@ -112,14 +112,6 @@
 </header>
         <!-- Header -->
         <main class="main">
-            <div class="bc">
-    <div class="container">
-        <ul class="bc__list">
-            <li class="bc__list_item"><a href="#">Раздел 1</a></li>
-            <li class="bc__list_item bc__list_item_current"><a href="#">Раздел 2</a></li>
-        </ul>
-    </div>
-</div>
             <div class="product">
     <div class="product__in">
         <div class="product__hero">
@@ -227,6 +219,10 @@
                                             <div class="button__text">Границы участка</div>
                                         </button>
                                     </div>
+                                    <div class="product__hero_slider_sl_info_action_mobile">
+                                        <div class="product__hero_slider_sl_info_action_mobile_name">Навигация по разделам</div>
+                                        <div class="product__hero_slider_sl_info_action_mobile_btn"></div>
+                                    </div>
                                 </div>
                             </div>
                             
@@ -313,6 +309,7 @@
                         <div class="product__tm_tabs_item">
                             Участок
                         </div>
+                        
                         <!-- <div class="product__tm_tabs_item">
                             Назначение
                         </div> -->
@@ -390,6 +387,7 @@
                     Расположение
                     и инфраструктура
                 </h2>
+                
                 <div class="mapCluster__info_list">
                     <div class="mapCluster__info_item">
                         <div class="mapCluster__info_item_name">От города</div>
@@ -404,12 +402,24 @@
                         <div class="mapCluster__info_item_value">30 мин на авто</div>
                     </div>
                 </div>
+                <div class="map__filter_top_shw" id="mapClusterTrigger">
+                    <div class="map__filter_top_shw_text">Показать на карте</div>
+                </div>
             </div>
             <div class="mapCluster__body">
                 <div class="mapCluster__body_content">
+                    <div class="mapCluster__body_content_head">
+                        <button class="mapCluster__body_content_head_back"></button>
+                        <div class="mapCluster__body_content_head_name">Выберите категорию</div>
+                        <button class="mapCluster__body_content_head_btn"></button>
+                    </div>
                     <div id="clusterMap"></div>
                 </div>
                 <div class="mapCluster__body_tabs">
+                    <div class="mapCluster__body_tabs_hd">
+                        <div class="mapCluster__body_tabs_hd_name">Выбрать категорию</div>
+                        <button class="mapCluster__body_tabs_hd_btn"></button>
+                    </div>
                     <div class="mapCluster__body_tabs_head">Выберите категорию</div>
                     <div class="mapCluster__body_tabs_list">
                         <div class="mapCluster__body_tabs_item active" data-cluster="plcMedic">
@@ -435,6 +445,12 @@
                             <div class="mapCluster__body_tabs_item_text" data-tab="sport">Спорт</div>
                         </div>
                         
+                    </div>
+                    <div class="mapCluster__body_tabs_action">
+                        <div class="mapCluster__body_tabs_action_btn button button-green">
+                            <div class="button__text">Показать на карте</div>
+                        </div>
+                        <div class="mapCluster__body_tabs_action_btn">Сбросить</div>
                     </div>
                 </div>
             </div>
@@ -692,6 +708,11 @@
                             <div class="product__snt_action_slider_value"></div>
                             <div class="product__snt_action_slider_el product__snt_action_slider_el-date"></div>
                         </div>
+                        <div class="product__snt_action_btn">
+                            <button class="button button-green">
+                                <div class="button__text">Получить предложение</div>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -709,6 +730,7 @@
                     Собственное программное обеспечение полностью автоматизирует  коммуникацию и управление объектом недвижимости. 
                 </div>
             </div>
+            <h2 class="auto__mob_title">Автоматизация деятельности</h2>
             <div class="auto__img">
                 <picture>
                     <source srcset="" type="image/webp">
@@ -1410,6 +1432,86 @@
     </div>
 </footer>
     </div>
+    <div class="mobmenu">
+    <div class="mobmenu__in">
+        <div class="mobmenu__head">
+            <a href="#" class="mobmenu__head_logo">
+                <img src="./img/icons/logo-main.svg" alt="">
+            </a>
+            <div class="mobmenu__head_city">
+                <select class="mobmenu__head_city_select">
+                    <option value="Сочи">Сочи</option>
+                    <option value="Москва">Москва</option>
+                </select>
+            </div>
+            <button class="mobmenu__head_btn">
+                
+            </button>
+        </div>
+        <div class="mobmenu__tel">
+            <a href="tel:" class="mobmenu__tel_value mobmenu__tel_item">8 (800) 500-50-50</a>
+            <a href="tel:" class="mobmenu__tel_text mobmenu__tel_item">
+                <div class="mobmenu__tel_text_icon"></div> Заказать звонок</a>
+        </div>
+        <div class="mobmenu__menu accordion-container">
+            <div class="mobmenu__menu_part ac">
+                <div class="mobmenu__menu_part_head ac-header">
+                    <div class="mobmenu__menu_part_head_text">Каталог</div>
+                    <button class="mobmenu__menu_part_head_btn ac-trigger"></button>
+                </div>
+                <div class="mobmenu__menu_part_content ac-panel">
+                    <div class="mobmenu__menu_part_content_list">
+                        <a href="#" class="mobmenu__menu_part_content_item">Каталог 1</a>
+                        <a href="#" class="mobmenu__menu_part_content_item">Каталог 1</a>
+                        <a href="#" class="mobmenu__menu_part_content_item">Каталог 1</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobmenu__menu_part ac">
+                <div class="mobmenu__menu_part_head ac-header">
+                    <div class="mobmenu__menu_part_head_text">Услуги</div>
+                    <button class="mobmenu__menu_part_head_btn ac-trigger"></button>
+                </div>
+                <div class="mobmenu__menu_part_content ac-panel">
+                    <div class="mobmenu__menu_part_content_list">
+                        <a href="#" class="mobmenu__menu_part_content_item">Услуги 1</a>
+                        <a href="#" class="mobmenu__menu_part_content_item">Услуги 1</a>
+                        <a href="#" class="mobmenu__menu_part_content_item">Услуги 1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobmenu__ex">
+            <a href="#" class="mobmenu__ex_item">О компании</a>
+            <a href="#" class="mobmenu__ex_item">Документы</a>
+            <a href="#" class="mobmenu__ex_item">Карьера</a>
+            <a href="#" class="mobmenu__ex_item">Новости</a>
+            <a href="#" class="mobmenu__ex_item">Стать партнером</a>
+            <a href="#" class="mobmenu__ex_item">Контакты</a>
+        </div>
+        <a href="#" class="mobmenu__fav">
+            <div class="mobmenu__fav_name">Избранное</div>
+            <div class="mobmenu__fav_info">
+                <div class="mobmenu__fav_info_icon"></div>
+                <div class="mobmenu__fav_info_val">0</div>
+            </div>
+        </a>
+        <div class="mobmenu__action">
+            <div class="mobmenu__action_login">
+                <div class="mobmenu__action_login_icon"></div>
+                <div class="mobmenu__action_login_text">Войти</div>
+            </div>
+            <div class="mobmenu__action_lang">
+                <a href="#" class="mobmenu__action_lang_item active">
+                    RU
+                </a>
+                <a href="#" class="mobmenu__action_lang_item">
+                    EN
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
     <script src="js/app.min.js"></script>
 </body>
 </html>

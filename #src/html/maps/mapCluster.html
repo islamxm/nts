@@ -6,6 +6,7 @@
                     Расположение
                     и инфраструктура
                 </h2>
+                
                 <div class="mapCluster__info_list">
                     <div class="mapCluster__info_item">
                         <div class="mapCluster__info_item_name">От города</div>
@@ -20,12 +21,24 @@
                         <div class="mapCluster__info_item_value">30 мин на авто</div>
                     </div>
                 </div>
+                <div class="map__filter_top_shw" id="mapClusterTrigger">
+                    <div class="map__filter_top_shw_text">Показать на карте</div>
+                </div>
             </div>
             <div class="mapCluster__body">
                 <div class="mapCluster__body_content">
+                    <div class="mapCluster__body_content_head">
+                        <button class="mapCluster__body_content_head_back"></button>
+                        <div class="mapCluster__body_content_head_name">Выберите категорию</div>
+                        <button class="mapCluster__body_content_head_btn"></button>
+                    </div>
                     <div id="clusterMap"></div>
                 </div>
                 <div class="mapCluster__body_tabs">
+                    <div class="mapCluster__body_tabs_hd">
+                        <div class="mapCluster__body_tabs_hd_name">Выбрать категорию</div>
+                        <button class="mapCluster__body_tabs_hd_btn"></button>
+                    </div>
                     <div class="mapCluster__body_tabs_head">Выберите категорию</div>
                     <div class="mapCluster__body_tabs_list">
                         <div class="mapCluster__body_tabs_item active" data-cluster="plcMedic">
@@ -51,6 +64,12 @@
                             <div class="mapCluster__body_tabs_item_text" data-tab="sport">Спорт</div>
                         </div>
                         
+                    </div>
+                    <div class="mapCluster__body_tabs_action">
+                        <div class="mapCluster__body_tabs_action_btn button button-green">
+                            <div class="button__text">Показать на карте</div>
+                        </div>
+                        <div class="mapCluster__body_tabs_action_btn">Сбросить</div>
                     </div>
                 </div>
             </div>

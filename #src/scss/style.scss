@@ -45,6 +45,16 @@
 @import './pages/about-page.scss';
 
 
+//Product-page
+@import './pages/product-page/product-hero.scss';
+@import './pages/product-page/product-descr.scss';
+@import './pages/product-page/product-tm.scss';
+@import './pages/product-page/product-pn.scss';
+@import './pages/product-page/product-sq.scss';
+@import './pages/product-page/product-snt.scss';
+@import './pages/product-page/product-anl.scss';
+
+
 //MAPS
 @import './maps/mapCluster.scss';
 @import './maps/mapItem.scss';

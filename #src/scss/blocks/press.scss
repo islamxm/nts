@@ -172,33 +172,7 @@
             &_item {
 
                 &_sl {
-                    &:hover {
-                        color: $text;
 
-                        .press__tabscontent_item_sl_text {
-                            color: $text;
-                        }
-    
-                        .press__tabscontent_item_sl_info {
-    
-                            &_day {
-    
-                            }
-    
-                            &_ex {
-                                &_mnth {
-                                    color: $text;
-                                }
-    
-                                &_yr {
-                                    color: $text;
-                                }
-                            }
-                        }
-                    }
-                    &_img {
-                        display: none;
-                    }
                 }
             }
         }

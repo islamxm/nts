@@ -91,7 +91,7 @@ export const mapCt = () => {
         })
     });
 
-    const trigger = document.querySelector('.map__filter_top_shw');
+    const trigger = document.querySelector('#mapCtTrigger');
     const close = document.querySelector('.map__el_head_main_close');
 
     if(trigger) {
