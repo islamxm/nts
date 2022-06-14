@@ -4992,9 +4992,6 @@ body {
   padding: 60px 0 200px;
 }
 .press-page__head {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 135%;
   margin-bottom: 20px;
 }
 .press-page__body {
@@ -5010,6 +5007,7 @@ body {
   display: flex;
   align-items: center;
   padding: 34px 0;
+  overflow-x: auto;
 }
 .press-page__body_main_tabs_item.active {
   color: #042742;
@@ -5021,6 +5019,7 @@ body {
   line-height: 135%;
   color: #8A94AB;
   cursor: pointer;
+  white-space: nowrap;
   transition: all 0.3s ease;
 }
 .press-page__body_main_tabs_item:hover {
@@ -5072,6 +5071,37 @@ body {
   line-height: 125%;
 }
 
+@media (max-width: 1100px) {
+  .press-page__body {
+    flex-wrap: wrap;
+  }
+  .press-page__body_main {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 620px) {
+  .press-page__body_main_tabs {
+    margin-bottom: 10px;
+  }
+  .press-page__body_main_list {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .press-page__body_main_item {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .press-page__body_main_item .press-card {
+    min-height: 300px;
+    height: 100%;
+  }
+  .press-page__body_main_item .press-card_info_day {
+    font-size: 64px;
+  }
+}
 .article__head {
   position: relative;
   margin-bottom: 60px;
