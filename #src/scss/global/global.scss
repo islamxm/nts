@@ -80,3 +80,13 @@ body {
     font-size: 48px;
     line-height: 135%;
 }
+
+
+@media (max-width: 620px) {
+
+    .page__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 135%;
+    }
+}
