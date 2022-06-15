@@ -199,3 +199,128 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+
+    .article {
+
+        &__in {
+
+        }
+
+        &__head {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #E3E8EC;
+            margin-bottom: 40px;
+            &_line {
+                display: none;
+            }
+        }
+
+
+        &__body {
+
+            &_head {
+                flex-wrap: wrap;
+                margin-bottom: 40px;
+                &_info {
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+
+                    &_x {
+                        margin-left: 20px;
+                    }
+                }
+                &_title {
+                    width: 100%;
+                    max-width: unset;
+                }
+            }
+
+            &_part {
+
+                &_p {
+                    max-width: unset;
+                    padding: 0;
+                }
+
+                &_title {
+                    max-width: unset;
+                    padding: 0;
+                }
+
+                &_img {
+                    max-width: unset;
+                }
+            }
+
+            &_ms {
+                flex-wrap: wrap;
+
+                &_at {
+
+                }
+
+                &_text {
+                    max-width: unset;
+                    order: -1;
+                    margin-bottom: 60px;
+
+                    &:after {
+                        top: unset;
+                        bottom: -35px;
+                        left: 0;
+                        transform: scale(-1, 1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .article {
+
+        
+
+        &__body {
+            &_head {
+
+                &_title {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 135%;
+                }
+            }
+
+            &_ms {
+                margin-bottom: 20px;
+
+                &_text {
+                    margin-bottom: 30px;
+                    padding: 25px;
+                }
+
+                &_at {
+
+                    &_img {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+            }
+            &_part {
+                margin-bottom: 20px;
+                &_title {
+                    margin-bottom: 20px;
+                }
+
+                &_p {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
