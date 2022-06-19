@@ -2443,8 +2443,17 @@ body {
   .map {
     padding: 40px 0;
   }
-  .map__filter_main {
-    display: none;
+  .map__filter_main_in {
+    flex-wrap: wrap;
+  }
+  .map__filter_main_panel {
+    width: 100%;
+  }
+  .map__filter_main_checkbox {
+    width: 100%;
+  }
+  .map__filter_main_checkbox label {
+    justify-content: space-between;
   }
 }
 @media (max-width: 1000px) {
@@ -2465,6 +2474,9 @@ body {
     border-bottom: 1px solid #E7E9F2;
     overflow-x: auto;
   }
+  .map__filter_main {
+    display: none;
+  }
   .map__el.active {
     transform: translateX(0);
   }
@@ -2477,7 +2489,7 @@ body {
     background-color: #fff;
     z-index: 100;
     margin-top: 0;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     transform: translateX(100%);
     transition: all 0.3s ease;
@@ -4570,121 +4582,6 @@ body {
     padding: 50px 10px;
   }
 }
-.contacts-page__in {
-  padding: 20px 0 86px;
-}
-.contacts-page__head {
-  margin-bottom: 20px;
-}
-.contacts-page__body {
-  margin-bottom: 170px;
-  display: flex;
-  justify-content: space-between;
-}
-.contacts-page__body_main {
-  width: calc(100% - 430px);
-  padding-top: 30px;
-  border-top: 1px solid #E3E8EC;
-}
-.contacts-page__body_main_tabs {
-  display: flex;
-  align-items: center;
-  margin-bottom: 70px;
-}
-.contacts-page__body_main_tabs_item {
-  margin-right: 40px;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 135%;
-  /* identical to box height, or 22px */
-  transition: all 0.3s ease;
-  cursor: pointer;
-  color: #8A94AB;
-}
-.contacts-page__body_main_tabs_item:hover {
-  color: #042742;
-}
-.contacts-page__body_main_tabs_item:last-child {
-  margin-right: 0;
-}
-.contacts-page__body_main_tabs_item.active {
-  color: #042742;
-}
-.contacts-page__body_main_tabscontent_item {
-  height: 240px;
-  background: #F2F4F9;
-  border-radius: 8px;
-  display: none;
-  padding: 40px;
-  justify-content: space-between;
-}
-.contacts-page__body_main_tabscontent_item_part {
-  width: 49%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.contacts-page__body_main_tabscontent_item_part_item {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.contacts-page__body_main_tabscontent_item_part_item_head {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 135%;
-  /* identical to box height, or 22px */
-  margin-bottom: 10px;
-  /* Text / Grey */
-  color: #99A8B4;
-}
-.contacts-page__body_main_tabscontent_item_part_item_value {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 155%;
-}
-.contacts-page__body_main_tabscontent_item.active {
-  display: flex;
-  animation: fade 0.3s linear;
-}
-.contacts-page__body_ex {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid #E3E8EC;
-  padding: 40px;
-  width: 400px;
-}
-.contacts-page__body_ex_head {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 125%;
-}
-.contacts-page__body_ex_info_tel {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 125%;
-  margin-bottom: 10px;
-  color: #50A627;
-  display: block;
-}
-.contacts-page__body_ex_info_mail {
-  font-weight: 500;
-  display: block;
-}
-.contacts-page__body_ex_action_btn {
-  padding: 21px 39px;
-  background: #50A627;
-  border-radius: 100px;
-  color: #fff;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-.contacts-page__body_ex_action_btn:hover {
-  background-color: #042742;
-}
-
 .team-page__head {
   margin-bottom: 33px;
 }
@@ -5512,6 +5409,73 @@ body {
   font-size: 20px;
   line-height: 125%;
   margin-bottom: 30px;
+}
+@media (max-width: 1000px) {
+  .about-page__hero_list {
+    flex-wrap: wrap;
+  }
+  .about-page__hero_item {
+    width: 50%;
+    height: 180px;
+  }
+  .about-page__hero_item:nth-child(odd) {
+    margin-top: 0;
+  }
+  .about-page__mission_body_ex {
+    display: none;
+  }
+  .about-page__mission_body_content {
+    max-width: unset;
+  }
+  .about-page__vls_body_item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .about-page__hero_main {
+    background-image: url("../img/about-page/about-hero-bg-mob.png");
+  }
+  .about-page__hero_main_title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .about-page__hero_main_in {
+    padding: 50px 0 350px;
+    max-width: unset;
+  }
+  .about-page__hero_item {
+    padding: 30px;
+  }
+  .about-page__hero_item_value {
+    font-size: 32px;
+  }
+  .about-page__hero_item_text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .about-page__mission_in {
+    padding: 40px 0;
+  }
+  .about-page__mission_head {
+    margin-bottom: 40px;
+  }
+  .about-page__mission_body_content_text {
+    margin-bottom: 30px;
+  }
+  .about-page__vls_head {
+    font-size: 24px;
+  }
+  .about-page__vls_body_item {
+    padding-left: 0;
+    margin-bottom: 60px;
+  }
+  .about-page__vls_body_item_name {
+    margin-bottom: 20px;
+  }
+  .about-page__vls_body_item:after {
+    display: none;
+  }
 }
 .product__hero {
   position: relative;
@@ -6838,6 +6802,9 @@ body {
   font-size: 16px;
   line-height: 135%;
 }
+.mapCluster__body_tabs_action {
+  display: none;
+}
 
 @media (max-width: 1000px) {
   .mapCluster__info {
@@ -6847,6 +6814,9 @@ body {
     width: 100%;
     max-width: unset;
     margin-bottom: 40px;
+  }
+  .mapCluster__body_tabs_action {
+    display: block;
   }
 }
 @media (max-width: 1000px) {

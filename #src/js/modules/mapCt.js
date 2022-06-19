@@ -93,6 +93,20 @@ export const mapCt = () => {
 
     const trigger = document.querySelector('#mapCtTrigger');
     const close = document.querySelector('.map__el_head_main_close');
+    const checkbox = document.querySelector('#ch1');
+
+    if(checkbox) {
+        checkbox.addEventListener('input', (e) => {
+            if(e.target.checked) {
+                console.log('checked')
+                mapModal.style.display = 'block'
+            }
+            if(!e.target.checked) {
+                console.log('not checked')
+                mapModal.style.display = 'none';
+            }
+        })
+    }
 
     if(trigger) {
         trigger.addEventListener('click', () => {

@@ -173,6 +173,10 @@
                 }
 
             }
+
+            &_action {
+                display: none;
+            }
         }
     }
 }
@@ -206,6 +210,12 @@
 
         &__body {
 
+            &_tabs {
+
+                &_action {
+                    display: block;
+                }
+            }
         }
     }
 }

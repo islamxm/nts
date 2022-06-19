@@ -490,7 +490,23 @@
             
             &_main {
 
-                display: none;
+                // display: none;
+
+                &_in {
+                    flex-wrap: wrap;
+                }
+
+                &_panel {
+                    width: 100%;
+                }
+
+                &_checkbox {
+                    width: 100%;
+
+                    label {
+                        justify-content: space-between;
+                    }
+                }
             }
         }
     }
@@ -525,6 +541,10 @@
 
                 }
             }
+
+            &_main {
+                display: none;
+            }
         }
 
         &__el.active {
@@ -540,7 +560,7 @@
             background-color: #fff;
             z-index: 100;
             margin-top: 0;
-            display: flex;
+            display: flex !important;
             flex-direction: column;
             transform: translateX(100%);
             @include def-anim;

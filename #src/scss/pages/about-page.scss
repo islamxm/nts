@@ -178,3 +178,139 @@
         }
     }
 }
+
+
+@media (max-width: 1000px) {
+
+    .about-page {
+
+        &__in {
+
+        }
+
+        &__hero {
+
+            &_main {
+
+            }
+
+            &_list {    
+                flex-wrap: wrap;
+
+            }
+
+            &_item {
+                width: 50%;
+                height: 180px;
+                &:nth-child(odd) {
+                    margin-top:0;
+                }
+            }
+        }
+
+        &__mission {
+
+            &_body {
+
+                &_ex {
+                    display: none;
+                }
+
+                &_content {
+                    max-width: unset;
+                }
+            }
+        }
+
+        &__vls {
+
+            &_body {
+
+                &_item {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .about-page {
+
+        &__hero {
+
+            &_main {
+                background-image: url('../img/about-page/about-hero-bg-mob.png');
+                &_title {
+                    font-size: 32px;
+                    margin-bottom: 30px;
+                }
+                &_in {
+                    padding: 50px 0 350px;
+                    max-width: unset;
+                    
+                }
+            }
+
+            &_item {
+                padding: 30px;
+
+                &_value {
+                    font-size: 32px;
+                }
+
+                &_text {
+                    font-size: 12px;
+                    line-height: 17px;
+                }
+            }
+        }
+
+        &__mission {
+
+
+            &_in {
+                padding: 40px 0;
+            }
+
+            &_head {
+                margin-bottom: 40px;
+            }
+
+            &_body {
+                &_content {
+
+                    &_text {
+                        margin-bottom: 30px;
+                    }
+                }
+            }
+        }
+
+        &__vls {
+
+            &_head {
+                font-size: 24px;
+            }
+
+            &_body {
+
+                &_item {
+                    padding-left: 0;
+                    margin-bottom: 60px;
+
+                    &_name {
+                        margin-bottom: 20px;
+                    }
+
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
