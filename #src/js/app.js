@@ -46,4 +46,5 @@ document.addEventListener('DOMContentLoaded', () => {
     fltr();
     normalSelect();
     careerAcc();
+    tabs('.docs-page__body_ex', '.docs-page__body_ex_tabs', '.docs-page__body_ex_tabs_item', '.docs-page__body_ex_tabscontent_list')
 })

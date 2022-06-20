@@ -6165,6 +6165,185 @@ body {
     width: 100%;
   }
 }
+.docs-page__in {
+  padding-bottom: 100px;
+}
+.docs-page__body_title {
+  margin-bottom: 90px;
+}
+.docs-page__body_main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.docs-page__body_main_item {
+  width: 49%;
+  height: 140px;
+  border: 1px solid #E3E8EC;
+  border-radius: 6px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.docs-page__body_main_item_name {
+  font-size: 16px;
+  line-height: 155%;
+  color: #99A8B4;
+}
+.docs-page__body_main_item_action {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.docs-page__body_main_item_action_text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125%;
+}
+.docs-page__body_main_item_action_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-left: 46px;
+}
+.docs-page__body_main_item_action_link:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.docs-page__body_main_item_action_link.docs-page__body_main_item_action_link-pdf:after {
+  content: url("../img/icons/pdf.svg");
+}
+.docs-page__body_ex_tabs {
+  padding: 20px 0;
+  border-top: 1px solid #E3E8EC;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+.docs-page__body_ex_tabs_item {
+  margin-right: 60px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 135%;
+  color: #99A8B4;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+.docs-page__body_ex_tabs_item.active {
+  color: #042742;
+}
+.docs-page__body_ex_tabscontent_list.active {
+  display: flex;
+}
+.docs-page__body_ex_tabscontent_list {
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  display: none;
+}
+.docs-page__body_ex_tabscontent_item {
+  width: calc(33.3333333333% - 30px);
+  margin: 0 15px;
+  margin-bottom: 30px;
+  height: 140px;
+  border: 1px solid #E3E8EC;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.docs-page__body_ex_tabscontent_item_name {
+  color: #99A8B4;
+}
+.docs-page__body_ex_tabscontent_item_action {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.docs-page__body_ex_tabscontent_item_action_text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 125%;
+}
+.docs-page__body_ex_tabscontent_item_action_link {
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.docs-page__body_ex_tabscontent_item_action_link-pdf {
+  background-image: url("../img/icons/pdf.svg");
+}
+
+@media (max-width: 1000px) {
+  .docs-page__body_main_item_action_link {
+    width: 26px;
+    height: 26px;
+    padding: 0;
+  }
+  .docs-page__body_main_item_action_link_text {
+    display: none;
+  }
+  .docs-page__body_ex_tabscontent_list {
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: space-between;
+  }
+  .docs-page__body_ex_tabscontent_item {
+    margin-left: 0;
+    margin-right: 0;
+    width: 49%;
+  }
+}
+@media (max-width: 768px) {
+  .docs-page__body_title {
+    margin-bottom: 60px;
+  }
+  .docs-page__body_main_item {
+    width: 100%;
+    height: unset;
+    min-height: 110px;
+    margin-bottom: 20px;
+  }
+  .docs-page__body_ex_tabscontent_item {
+    width: 100%;
+    margin-bottom: 20px;
+    height: unset;
+    min-height: 110px;
+  }
+}
+@media (max-width: 400px) {
+  .docs-page__body_main_item_name {
+    margin-bottom: 10px;
+  }
+  .docs-page__body_main_item_action {
+    flex-wrap: wrap;
+  }
+  .docs-page__body_main_item_action_text {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .docs-page__body_ex_tabscontent_item_name {
+    margin-bottom: 10px;
+  }
+  .docs-page__body_ex_tabscontent_item_action {
+    flex-wrap: wrap;
+  }
+  .docs-page__body_ex_tabscontent_item_action_text {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+}
 .product__hero {
   position: relative;
 }
