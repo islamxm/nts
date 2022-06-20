@@ -1,4 +1,5 @@
 import { benefitsSlider } from './modules/benefitsSlider.js';
+import { careerAcc } from './modules/careerAcc.js';
 import { filterSelect } from './modules/filterSelect.js';
 import { fltr } from './modules/fltr.js';
 import * as flsFuncs from './modules/functions.js';
@@ -44,4 +45,5 @@ document.addEventListener('DOMContentLoaded', () => {
     filterSelect();
     fltr();
     normalSelect();
+    careerAcc();
 })

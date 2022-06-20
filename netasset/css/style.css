@@ -1204,6 +1204,27 @@ body {
   background-color: #042742;
 }
 
+.button.button-tr {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 15px 34px;
+}
+.button.button-tr .button__text {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 135%;
+}
+.button.button-tr:hover {
+  background-color: #50A627;
+  border-color: #50A627;
+}
+
+.button.button-tr.active {
+  background-color: #50A627;
+  border-color: #50A627;
+}
+
 @media (max-width: 768px) {
   .button {
     padding: 17px 50px;
@@ -1978,6 +1999,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.hero__slider_sl_content_action_main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hero__slider_sl_content_action_main_btn {
+  margin-right: 20px;
 }
 .hero__slider_sl_content_action_nav {
   display: flex;
@@ -4582,6 +4610,16 @@ body {
     padding: 50px 10px;
   }
 }
+.contacts-page {
+  position: relative;
+}
+.contacts-page__bc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
 .team-page__head {
   margin-bottom: 33px;
 }
@@ -5475,6 +5513,656 @@ body {
   }
   .about-page__vls_body_item:after {
     display: none;
+  }
+}
+.career-page {
+  position: relative;
+}
+.career-page__bc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.career-page__vls_in {
+  padding: 50px 0;
+}
+.career-page__vls_head {
+  margin-bottom: 90px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 145%;
+}
+.career-page__vls_head span {
+  color: #50A627;
+}
+.career-page__vls_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.career-page__vls_item {
+  width: 48%;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+.career-page__vls_item_icon {
+  margin-right: 30px;
+  width: 76px;
+  height: 76px;
+  border-radius: 100%;
+  background-color: #F4F8FB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+.career-page__vls_item_body_name {
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+}
+.career-page__td {
+  background: linear-gradient(180deg, #F1F3F9 0%, rgba(241, 243, 249, 0) 21.31%);
+}
+.career-page__td .about-page__hero_main {
+  background: none;
+}
+.career-page__td_in {
+  padding: 100px 0;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.career-page__td_title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 135%;
+  margin-bottom: 30px;
+}
+.career-page__td_text {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.career-page__td_action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.career-page__vac_in {
+  padding: 50px 0;
+}
+.career-page__vac_title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 135%;
+  margin-bottom: 65px;
+}
+.career-page__vac_body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.career-page__vac_body_table {
+  max-width: 818px;
+  width: 100%;
+}
+.career-page__vac_body_table_row {
+  padding: 45px 0;
+  border-top: 1px solid #E3E8EC;
+}
+.career-page__vac_body_table_row_head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.career-page__vac_body_table_row_body {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.career-page__vac_body_table_row_body_in {
+  padding: 50px 0;
+  padding-bottom: 0;
+}
+.career-page__vac_body_table_row_body_item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.career-page__vac_body_table_row_body_item:last-child {
+  margin-bottom: 0;
+}
+.career-page__vac_body_table_row_body_item_name {
+  width: 50%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 145%;
+  /* or 20px */
+  /* Text / Grey */
+  color: #99A8B4;
+}
+.career-page__vac_body_table_row_body_item_list {
+  width: 50%;
+}
+.career-page__vac_body_table_row_body_item_li {
+  list-style: disc;
+}
+.career-page__vac_body_table_item-name {
+  max-width: 320px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 145%;
+  padding-right: 30px;
+  border-right: 1px solid #E3E8EC;
+}
+.career-page__vac_body_table_item-price {
+  padding: 0 30px;
+  flex: 1 0 auto;
+}
+.career-page__vac_body_table_item-price_name {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 135%;
+  color: #99A8B4;
+}
+.career-page__vac_body_table_item-price_value {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 135%;
+  color: #50A627;
+}
+.career-page__vac_body_table_item-send {
+  max-width: 200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.career-page__vac_body_table_item-send_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 30px;
+  border: 1px solid #E3E8EC;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 135%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.career-page__vac_body_table_item-send_btn:hover {
+  background-color: #042742;
+  border-color: #042742;
+  color: #fff;
+}
+.career-page__vac_body_table_item-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+.career-page__vac_body_table_item-add_btn {
+  background-color: #042742;
+  width: 50px;
+  height: 50px;
+  background-color: #042742;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 30px;
+  line-height: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.career-page__vac_body_table_item-add_btn:hover {
+  background-color: #50A627;
+}
+.career-page__vac_body_contacts {
+  padding: 40px;
+  border: 1px solid #E3E8EC;
+  max-width: 350px;
+  width: 100%;
+}
+.career-page__vac_body_contacts_head {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+}
+.career-page__vac_body_contacts_tel {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 125%;
+  color: #50A627;
+  margin-bottom: 10px;
+  display: block;
+}
+.career-page__vac_body_contacts_mail {
+  font-weight: 500;
+  margin-bottom: 40px;
+  display: block;
+}
+.career-page__vac_body_contacts_action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.career-page__feed {
+  background: #F9FAFD;
+}
+.career-page__feed_in {
+  padding: 60px 0 140px;
+}
+.career-page__feed_form {
+  padding: 60px 100px;
+  background: #FFFFFF;
+  /* Карточка объекта / Вертикальная */
+  box-shadow: 0px 30px 40px rgba(57, 63, 110, 0.15);
+  border-radius: 6px;
+  max-width: 1030px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.career-page__feed_form_title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 145%;
+  margin-bottom: 24px;
+}
+.career-page__feed_form_text {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.career-page__feed_form_fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.career-page__feed_form_input {
+  max-width: 266px;
+  width: 100%;
+}
+.career-page__feed_form_input input {
+  padding: 15px 0;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #99A8B4;
+  transition: all 0.3s ease;
+}
+.career-page__feed_form_input input::placeholder {
+  color: #99A8B4;
+}
+.career-page__feed_form_input input:focus {
+  border-color: #50A627;
+}
+.career-page__feed_form_upload {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+.career-page__feed_form_upload_input {
+  margin-right: 20px;
+}
+.career-page__feed_form_upload_input input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.career-page__feed_form_upload_input_label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.career-page__feed_form_upload_input_label_icon {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icons/clip.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 10px;
+}
+.career-page__feed_form_upload_input_label_text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 135%;
+}
+.career-page__feed_form_upload_val {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 155%;
+  margin-right: 30px;
+}
+.career-page__feed_form_upload_ind {
+  display: flex;
+  align-items: center;
+}
+.career-page__feed_form_upload_ind_icon {
+  margin-right: 14px;
+  width: 22px;
+  height: 22px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.career-page__feed_form_upload_ind_text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 155%;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.career-page__feed_form_upload_ind.career-page__feed_form_upload_ind-loading .career-page__feed_form_upload_ind_icon {
+  background-image: url("../img/icons/loading.svg");
+  animation: loading 0.7s linear infinite;
+}
+.career-page__feed_form_upload_ind.career-page__feed_form_upload_ind-loading .career-page__feed_form_upload_ind_text {
+  color: #99A8B4;
+}
+.career-page__feed_form_upload_ind.career-page__feed_form_upload_ind-success .career-page__feed_form_upload_ind_icon {
+  background-image: url("../img/icons/success.svg");
+}
+.career-page__feed_form_upload_ind.career-page__feed_form_upload_ind-success .career-page__feed_form_upload_ind_text {
+  color: #27AE60;
+}
+.career-page__feed_form_upload_ind.career-page__feed_form_upload_ind-warning .career-page__feed_form_upload_ind_icon {
+  background-image: url("../img/icons/warning.svg");
+}
+.career-page__feed_form_upload_ind.career-page__feed_form_upload_ind-warning .career-page__feed_form_upload_ind_text {
+  color: #F2C94C;
+}
+.career-page__feed_form_upload_ind.career-page__feed_form_upload_ind-error .career-page__feed_form_upload_ind_icon {
+  background-image: url("../img/icons/error.svg");
+}
+.career-page__feed_form_upload_ind.career-page__feed_form_upload_ind-error .career-page__feed_form_upload_ind_text {
+  color: #EB5757;
+}
+.career-page__feed_form_ex {
+  color: #99A8B4;
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 155%;
+  width: 100%;
+  text-align: left;
+}
+.career-page__hw_in {
+  padding: 40px 0;
+}
+.career-page__hw_title {
+  margin-bottom: 60px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 145%;
+  text-align: center;
+}
+.career-page__hw_body {
+  display: flex;
+  align-items: flex-start;
+}
+.career-page__hw_body_item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.career-page__hw_body_item:first-child .career-page__hw_body_item_num::before {
+  display: none;
+}
+.career-page__hw_body_item:last-child .career-page__hw_body_item_num::after {
+  display: none;
+}
+.career-page__hw_body_item_num {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.career-page__hw_body_item_num:after {
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  width: calc(50% - 60px);
+  height: 2px;
+  background-color: #50A627;
+  content: "";
+}
+.career-page__hw_body_item_num:before {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  width: calc(50% - 60px);
+  height: 2px;
+  background-color: #50A627;
+  content: "";
+}
+.career-page__hw_body_item_num_el {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 2px solid #50A627;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #50A627;
+  font-size: 28px;
+  line-height: 155%;
+}
+.career-page__hw_body_item_descr {
+  padding: 0 30px;
+}
+.career-page__hw_body_item_descr_text {
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .career-page__vls_item {
+    width: 100%;
+  }
+  .career-page__vac_body {
+    flex-wrap: wrap;
+  }
+  .career-page__vac_body_table {
+    max-width: unset;
+  }
+  .career-page__vac_body_contacts {
+    max-width: unset;
+  }
+  .career-page__hw_body {
+    flex-wrap: wrap;
+  }
+  .career-page__hw_body_item {
+    width: 100%;
+    flex-direction: row;
+    margin-bottom: 35px;
+  }
+  .career-page__hw_body_item:last-child {
+    margin-bottom: 0;
+  }
+  .career-page__hw_body_item_num {
+    width: auto;
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .career-page__hw_body_item_num:after {
+    display: none;
+  }
+  .career-page__hw_body_item_num:before {
+    display: none;
+  }
+  .career-page__hw_body_item_descr {
+    padding: 0;
+  }
+  .career-page__hw_body_item_descr_text {
+    text-align: left;
+  }
+  .career-page__feed_in {
+    padding: 60px 30px;
+  }
+  .career-page__feed_form {
+    padding: 0;
+    background-color: unset;
+    box-shadow: none;
+  }
+  .career-page__feed_form_fields {
+    flex-wrap: wrap;
+  }
+  .career-page__feed_form_input {
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: unset;
+  }
+  .career-page__feed_form_action {
+    width: 100%;
+  }
+  .career-page__feed_form_upload_val {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .career-page__vls {
+    background-color: #fff;
+  }
+  .career-page__vls_head {
+    margin-bottom: 60px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 145%;
+  }
+  .career-page__vls_item {
+    flex-wrap: wrap;
+  }
+  .career-page__vls_item_icon {
+    margin-bottom: 30px;
+  }
+  .career-page__vls_item_body {
+    width: 100%;
+  }
+  .career-page__vls_item_body_name {
+    margin-bottom: 20px;
+  }
+  .career-page__td_in {
+    padding: 80px 0;
+    max-width: unset;
+  }
+  .career-page__td_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 135%;
+    text-align: left;
+  }
+  .career-page__td_text {
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .career-page__td_action {
+    justify-content: flex-start;
+  }
+  .career-page__vac_body_table_row_head {
+    flex-wrap: wrap;
+  }
+  .career-page__vac_body_table_item {
+    width: 67%;
+    max-width: unset !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .career-page__vac_body_table_item-name {
+    border-right: none;
+    padding: 0;
+    padding-right: 30px;
+  }
+  .career-page__vac_body_table_item-price {
+    padding: 0;
+    width: 30%;
+  }
+  .career-page__vac_body_table_item-send {
+    justify-content: flex-start;
+  }
+  .career-page__vac_body_table_item-add {
+    justify-content: flex-end;
+    width: 30%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .career-page__vac_body_table_item-price {
+    flex: unset;
+  }
+  .career-page__hw_title {
+    text-align: left;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 145%;
+    margin-bottom: 40px;
+  }
+  .career-page__feed_form_action_btn {
+    width: 100%;
+  }
+  .career-page__feed_form_ex {
+    text-align: center;
+  }
+}
+@media (max-width: 520px) {
+  .career-page__vac_body_table_row {
+    padding: 15px 0;
+  }
+  .career-page__vac_body_table_row_body_item {
+    flex-wrap: wrap;
+  }
+  .career-page__vac_body_table_row_body_item_name {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .career-page__vac_body_table_row_body_item_list {
+    width: 100%;
+  }
+  .career-page__vac_body_table_item {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .career-page__vac_body_contacts_tel {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 125%;
+  }
+  .career-page__feed_in {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .career-page__feed_form_upload {
+    flex-wrap: wrap;
+  }
+  .career-page__feed_form_upload_input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .career-page__feed_form_upload_ind {
+    width: 100%;
   }
 }
 .product__hero {
