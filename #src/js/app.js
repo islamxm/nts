@@ -50,4 +50,5 @@ document.addEventListener('DOMContentLoaded', () => {
     tabs('.docs-page__body_ex', '.docs-page__body_ex_tabs', '.docs-page__body_ex_tabs_item', '.docs-page__body_ex_tabscontent_list');
     galleryScript();
     tabs('.partners__in', '.partners__tabs', '.partners__tabs_item', '.partners__body_list');
+    tabs('.fav-page__body_in', '.fav-page__body_tabs', '.fav-page__body_tabs_item', '.fav-page__body_content_list');
 })
