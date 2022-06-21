@@ -3,6 +3,7 @@ import { careerAcc } from './modules/careerAcc.js';
 import { filterSelect } from './modules/filterSelect.js';
 import { fltr } from './modules/fltr.js';
 import * as flsFuncs from './modules/functions.js';
+import { galleryScript } from './modules/galleryScript.js';
 import { heroSlider } from './modules/heroSlider.js';
 import { intSlider } from './modules/intSlider.js';
 import { mapCluster } from './modules/mapCluster.js';
@@ -46,5 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fltr();
     normalSelect();
     careerAcc();
-    tabs('.docs-page__body_ex', '.docs-page__body_ex_tabs', '.docs-page__body_ex_tabs_item', '.docs-page__body_ex_tabscontent_list')
+    tabs('.docs-page__body_ex', '.docs-page__body_ex_tabs', '.docs-page__body_ex_tabs_item', '.docs-page__body_ex_tabscontent_list');
+    galleryScript();
+    tabs('.partners__in', '.partners__tabs', '.partners__tabs_item', '.partners__body_list');
 })

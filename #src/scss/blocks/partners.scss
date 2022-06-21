@@ -1,0 +1,111 @@
+.partners {
+
+    &__in {
+        padding: 40px 0;
+
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 145%;
+    }
+
+    &__tabs {
+        display: flex;
+        align-items: center;
+        padding: 34px 0 10px 0;
+        margin-bottom: 50px;
+
+        border-top: 1px solid #E3E8EC;
+        overflow-x: auto;
+        
+
+        &_item {
+            margin-right: 60px;
+            white-space: nowrap;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 135%;
+            color: #8A94AB;
+            @include def-anim;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &_item.active {
+            color: $text;
+        }
+    }
+
+    &__body {
+
+        &_list.active {
+            display: flex;
+        }
+        &_list {
+            display: none;
+            flex-wrap: wrap;
+            margin-left: -70px;
+            margin-right: -70px;
+        }
+
+        &_item {
+            width: calc((100% / 4) - 140px);
+            height: 120px;
+            margin: 0 70px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .partners {
+
+        &__body {
+
+            &_list {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
+            &_item {
+                width: calc((100% / 4) - 30px);
+                margin: 0 15px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .partners {
+
+        &__title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        &__tabs {
+            margin-bottom: 30px;
+        }
+        &__body {
+
+            &_item {
+                width: calc((100% / 2) - 30px);
+            }
+        }
+    }
+}
