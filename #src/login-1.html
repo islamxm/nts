@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('./html/head.html')
+<body>
+    <div class="wrapper">
+        @@include('./html/header.html')
+        <!-- Header -->
+        <main class="main">
+            <!-- @@include('./html/components/bc.html') -->
+            <div class="login">
+                <div class="container">
+                    <div class="login__in">
+                        <div class="login__form">
+                            <div class="login__form_el">
+                                <div class="login__form_el_head">
+                                    <h2 class="login__form_el_title">Войти </h2>
+                                    <div class="login__form_el_text">
+                                        Для входа введите номер телефона, который вы указывали при регистрации.
+                                    </div>
+                                </div>
+                                <div class="login__form_el_flds">
+                                    <div class="login__form_el_flds_input login__form_el_flds_item">
+                                        <input type="text" class="login__form_el_flds_input_el" placeholder="Ваш телефон">
+                                        <div class="login__form_el_flds_input_message">
+                                            Неверный номер
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="login__form_el_flds_btn login__form_el_flds_item button button-green">
+                                        <div class="button__text">Отправить код</div>
+                                    </div>
+                                </div>
+                                <div class="login__form_el_action">
+                                    <div class="login__form_el_action_name">Нет аккаунта?</div>
+                                    <a href="#" class="login__form_el_action_btn">
+                                        <div class="login__form_el_action_btn_text">Зарегистрироваться</div>
+                                    </a>
+                                    <div class="login__form_el_action_ex">
+                                        Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login__content">
+                            <div class="login__content_img">
+                                <picture>
+                                    <source srcset="" type="image/webp">
+                                    <img src="./img/login.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="login__content_big">Скачайте</div>
+                            <div class="login__content_small">Наше мобильное приложение</div>
+                            <div class="login__content_links">
+                                <a href="#" class="login__content_links_item">
+                                    <div class="login__content_links_item_icon">
+                                        <svg width="27" height="26" viewBox="0 0 27 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.3887 11.3848L21.6246 21.9371" stroke="#99A8B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M11.0625 4.0625L13.5 8.18594" stroke="#99A8B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.33984 20.3125L5.375 21.9375" stroke="#99A8B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.9379 4.0625L8.25977 17.0625" stroke="#99A8B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M18.7402 17.0625H24.0621" stroke="#99A8B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M2.9375 17.0625H14.9727" stroke="#99A8B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </div>
+                                    <div class="login__content_links_item_text">AppStore</div>
+                                </a>
+                                <a href="#" class="login__content_links_item">
+                                    <div class="login__content_links_item_icon">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4.04199 22.7603C4.04323 22.9034 4.0822 23.0435 4.15497 23.1667C4.22773 23.2898 4.33172 23.3915 4.4564 23.4616C4.58109 23.5317 4.72207 23.5676 4.86508 23.5657C5.0081 23.5639 5.14809 23.5243 5.2709 23.451L22.3131 13.6908C22.4384 13.6242 22.5433 13.5247 22.6165 13.4031C22.6896 13.2814 22.7282 13.1421 22.7282 13.0002C22.7282 12.8582 22.6896 12.719 22.6165 12.5973C22.5433 12.4756 22.4384 12.3762 22.3131 12.3096L5.2709 2.54941C5.14809 2.4761 5.0081 2.43651 4.86508 2.43464C4.72207 2.43277 4.58109 2.46869 4.4564 2.53876C4.33172 2.60883 4.22773 2.71058 4.15497 2.83371C4.0822 2.95685 4.04323 3.09701 4.04199 3.24003V22.7603Z" stroke="#99A8B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.28516 2.66113L17.8641 16.24" stroke="#99A8B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M4.28516 23.3396L17.8641 9.76074" stroke="#99A8B4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </div>
+                                    <div class="login__content_links_item_text">Google Play</div>
+                                </a>
+                                <a href="#" class="login__content_links_item">
+                                    <div class="login__content_links_item_icon">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 5.57143C1 3.03551 3.02848 1 5.50588 1H20.4941C22.9715 1 25 3.03551 25 5.57143V20.4286C25 22.9645 22.9715 25 20.4941 25H5.50588C3.02848 25 1 22.9645 1 20.4286V5.57143Z" stroke="#99A8B4" stroke-width="2" stroke-linecap="round"/>
+                                            <path d="M16.8 6C16.8 7.91459 15.0539 9.46667 12.9 9.46667C10.7461 9.46667 9 7.91459 9 6" stroke="#99A8B4" stroke-width="2" stroke-linecap="round"/>
+                                            </svg>                                
+                                    </div>
+                                    <div class="login__content_links_item_text">AppGallery</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-- Footer -->
+        @@include('./html/footer.html')
+    </div>
+    @@include('./modules/mobmenu.html')
+    <script src="js/app.min.js"></script>
+</body>
+</html>
