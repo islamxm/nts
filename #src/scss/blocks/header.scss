@@ -194,22 +194,14 @@
             display: flex;
             align-items: center;
 
-            &:hover {
-
-                .header__main_info_value {
-                    color: $green;
-                }
-
-                .header__main_info_btn {
-
-                    &_text {
-                        color: $green;
-                    }
-                }
-            }
+            
             &_item {
                 padding: 0 40px;
                 position: relative;
+
+                &:hover {
+                    color: $green;
+                }
 
                 &::after {
                     position: absolute;
@@ -238,6 +230,7 @@
             &_btn {
                 display: flex;
                 align-items: center;
+                cursor: pointer;
                 
                 &_icon {    
                     width: 20px;

@@ -24,7 +24,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header" data-micromodal-trigger="modalTransfer">
+        <header class="header">
     <div class="header__mn">
         <div class="container">
 
@@ -71,13 +71,13 @@
                     <li class="header__main_nav_item header__main_nav_item--dropdown"><a href="#">Услуги</a></li>
                     <li class="header__main_nav_item"><a href="#">Контакты</a></li>
                 </ul>
-                <a href="tel:" class="header__main_info">
-                   <div class="header__main_info_value header__main_info_item">8 (800) 500-50-50</div> 
-                   <div class="header__main_info_btn header__main_info_item">
+                <div class="header__main_info">
+                   <a href="tel:"  class="header__main_info_value header__main_info_item">8 (800) 500-50-50</a> 
+                   <div class="header__main_info_btn header__main_info_item" data-micromodal-trigger="modalCall">
                        <div class="header__main_info_btn_icon"></div>
                        <div class="header__main_info_btn_text">Заказать звонок</div>
                    </div> 
-                </a>
+                </div>
             </div>
         </div>
     </div>
@@ -158,7 +158,7 @@
                                                     анализ Net Asset
                                                 </div>
                                             </div>
-                                            <button class="product__hero_slider_sl_main_content_action_btn product__hero_slider_sl_main_content_action_item button button-light">
+                                            <button data-micromodal-trigger="modalExtract" class="product__hero_slider_sl_main_content_action_btn product__hero_slider_sl_main_content_action_item button button-light">
                                                 <div class="button__text">Заказать выписку</div>
                                             </button>
                                         </div>
@@ -489,9 +489,9 @@
                             презентацию 
                         </div>
                         <div class="product__sq_action_link">
-                            <a href="#" download="#" class="product__sq_action_link_item">
+                            <button data-micromodal-trigger="modalPres" class="product__sq_action_link_item">
 
-                            </a>
+                            </button>
                         </div>
                         <div class="product__sq_action_ex">
                             Подробное описание объекта 
@@ -567,9 +567,9 @@
                                             На основе данных аналитики объекта
                                         </div>
                                     </div>
-                                    <a href="#" class="product__anl_tabscontent_item_action_btm_btn button button-green">
+                                    <button data-micromodal-trigger="modalAnl" class="product__anl_tabscontent_item_action_btm_btn button button-green">
                                         <div class="button__text">Подробный анализ</div>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -618,9 +618,9 @@
                                             На основе данных аналитики объекта
                                         </div>
                                     </div>
-                                    <a href="#" class="product__anl_tabscontent_item_action_btm_btn button button-green">
+                                    <button data-micromodal-trigger="modalAnl" class="product__anl_tabscontent_item_action_btm_btn button button-green">
                                         <div class="button__text">Подробный анализ</div>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -646,7 +646,7 @@
                 </picture>
             </div>
             <div class="aks__action">
-                <button class="aks__action_btn button button-dark">
+                <button data-micromodal-trigger="modalTransfer" class="aks__action_btn button button-dark">
                     <div class="button__text">Запись на просмотр</div>
                 </button>
             </div>
@@ -1073,7 +1073,7 @@
         <div class="container">
             <div class="premium__body_content">
                 <div class="container">
-                    <a href="#" class="premium__body_content_link"></a>
+                    <button data-micromodal-trigger="modalTransfer" class="premium__body_content_link"></button>
                     <div class="premium__body_content_text">
                         Для Вашего удобства мы организовали персональный трансфер по нашим объектам на Mercedes Maybach с личным водителем
                     </div>
@@ -1336,7 +1336,7 @@
                             Скачайте полный каталог недвижимости
                         </div>
                         <div class="footer__main_right_action_btn">
-                            <a href="#" download="#" class="footer__main_right_action_btn_link"></a>
+                            <div data-micromodal-trigger="modalCatalog" class="footer__main_right_action_btn_link"></div>
                         </div>
                         
                         <div class="footer__main_right_action_ex">
@@ -1454,8 +1454,8 @@
         </div>
         <div class="mobmenu__tel">
             <a href="tel:" class="mobmenu__tel_value mobmenu__tel_item">8 (800) 500-50-50</a>
-            <a href="tel:" class="mobmenu__tel_text mobmenu__tel_item">
-                <div class="mobmenu__tel_text_icon"></div> Заказать звонок</a>
+            <div class="mobmenu__tel_text mobmenu__tel_item" data-micromodal-trigger="modalCall">
+                <div class="mobmenu__tel_text_icon"></div> Заказать звонок</div>
         </div>
         <div class="mobmenu__menu accordion-container">
             <div class="mobmenu__menu_part ac">
@@ -1515,6 +1515,446 @@
             </div>
         </div>
     </div>
+</div>
+    <div class="modal" id="modalFeedback">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__content modal-feedback">
+            <div class="modal__content_in">
+                <div class="modal-feedback__head">
+                    <div class="modal-feedback__head_title modal__title">Написать нам</div>
+                    <div class="modal-feedback__head_subtitle modal__subtitle">
+                        Заполните заявку и мы свяжемся с Вами в ближайшее время.
+                    </div>
+                    <button class="modal__close" data-micromodal-close></button>
+                </div>
+                <form class="modal__form">
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваш телефон">
+                    </div>
+                    <div class="modal__form_textarea">
+                        <textarea rows="2" placeholder="Написать сообщение"></textarea>
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправить  сообщение</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__ex">
+                    Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.
+                </div>
+            </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalCall">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__content modal-call">
+            <div class="modal__content_in">
+                <div class="modal-call__head">
+                    <div class="modal-call__head_title modal__title">Обратный звонок</div>
+                    <div class="modal-call__head_subtitle modal__subtitle">
+                        Оставьте Ваши контактные данные и мы свяжемся с Вами в ближайшее время.
+                    </div>
+                    <button class="modal__close" data-micromodal-close></button>
+                </div>
+                <form class="modal__form">
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваш телефон">
+                    </div>
+                    <div class="modal__form_textarea">
+                        <textarea rows="2" placeholder="Написать сообщение"></textarea>
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправить  сообщение</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__ex">
+                    Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.
+                </div>
+            </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalTransfer">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__content modal-transfer">
+            <div class="modal__content_in">
+                <div class="modal-transfer__head">
+                    <div class="modal-transfer__head_title modal__title">Забронировать просмотр</div>
+                    <div class="modal-transfer__head_subtitle modal__subtitle">
+                        Заполните заявку на просмотр и мы свяжемся 
+                        с Вами в ближайшее время.
+                    </div>
+                    <button class="modal__close" data-micromodal-close></button>
+                </div>
+                <form class="modal__form">
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваш телефон">
+                    </div>
+                    <div class="modal__form_textarea">
+                        <textarea rows="2" placeholder="Написать сообщение"></textarea>
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправить  сообщение</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__ex">
+                    Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.
+                </div>
+            </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalState">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__content modal-transfer">
+            <div class="modal__content_in">
+                <div class="modal-state__head">
+                    <div class="modal-state__head_title modal__title">Оставить заявку</div>
+                    <div class="modal-state__head_subtitle modal__subtitle">
+                        Заполните заявку на консультацию и мы свяжемся с Вами в ближайшее время.
+                    </div>
+                    <button class="modal__close" data-micromodal-close></button>
+                </div>
+                <form class="modal__form">
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваш телефон">
+                    </div>
+                    <div class="modal__form_textarea">
+                        <textarea rows="2" placeholder="Написать сообщение"></textarea>
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправить  сообщение</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__ex">
+                    Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.
+                </div>
+            </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalResume">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__content modal-resume">
+            <div class="modal__content_in">
+                <div class="modal-resume__head">
+                    <div class="modal-resume__head_title modal__title">Отправить резюме</div>
+                    <div class="modal-resume__head_subtitle modal__subtitle">
+                        Заполните заявку и мы свяжемся с Вами в ближайшее время.
+                    </div>
+                    <button class="modal__close" data-micromodal-close></button>
+                </div>
+                <form class="modal__form">
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваш телефон">
+                    </div>
+                    <div class="modal__form_textarea">
+                        <textarea rows="2" placeholder="Написать сообщение"></textarea>
+                    </div>
+                    <div class="modal__form_file">
+                        <div class="modal__form_file_el">
+                            <input type="file" id="resumeFile">
+                            <label for="resumeFile" class="modal__form_file_el_label">
+                                <div class="modal__form_file_el_label_icon"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5003 6.49211L5.99253 13.1093C5.77708 13.3471 5.66132 13.6586 5.66922 13.9794C5.67711 14.3001 5.80806 14.6056 6.03495 14.8325C6.26184 15.0594 6.5673 15.1903 6.88807 15.1982C7.20884 15.2061 7.52037 15.0904 7.75815 14.8749L15.516 7.00773C15.9469 6.53217 16.1784 5.90912 16.1626 5.26757C16.1468 4.62602 15.8849 4.01512 15.4311 3.56134C14.9773 3.10756 14.3664 2.84566 13.7249 2.82986C13.0833 2.81406 12.4603 3.04558 11.9847 3.47648L4.2269 11.3437C3.52449 12.0461 3.12988 12.9987 3.12988 13.9921C3.12988 14.9855 3.52449 15.9381 4.2269 16.6405C4.92931 17.343 5.88198 17.7376 6.87534 17.7376C7.8687 17.7376 8.82137 17.343 9.52378 16.6405L15.9378 10.2421" stroke="#042742" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    </div>
+                                <div class="modal__form_file_el_label_text">Прикрепить резюме</div>
+                            </label>
+                        </div>
+                        <div class="career-page__feed_form_upload_ind career-page__feed_form_upload_ind-loading">
+                            <div class="career-page__feed_form_upload_ind_icon"></div>
+                            <div class="career-page__feed_form_upload_ind_text">Загрузка документа...</div>
+                        </div>
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправить  сообщение</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__ex">
+                    Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.
+                </div>
+            </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalCatalog">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__bth modal-catalog">
+            
+        <div class="modal__bth_in">
+            <div class="modal__bth_img">
+                <picture>
+                    <source srcset="" type="image/webp">
+                    <img src="./img/modal-catalog.png" alt="">
+                </picture>
+            </div>
+            <div class="modal__bth_content">
+                <div class="modal__bth_content_head">
+                    <div class="modal__bth_content_head_close" data-micromodal-close></div>
+                    <h2 class="modal__bth_content_head_title modal__title">Скачать каталог</h2>
+                    <div class="modal__bth_content_head_subtitle modal__subtitle">Отправим Вам на почту более 200 актуальных предложений  </div>
+                </div>
+                <form class="modal__bth_content_form modal__form">
+                    <div class="modal__form_input">
+                        <input type="email" placeholder="Ваш email"> 
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправьте мне каталог</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__bth_content_ex modal__ex">Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalPres">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__bth modal-catalog">
+            
+        <div class="modal__bth_in">
+            <div class="modal__bth_img">
+                <picture>
+                    <source srcset="" type="image/webp">
+                    <img src="./img/modal-catalog.png" alt="">
+                </picture>
+            </div>
+            <div class="modal__bth_content">
+                <div class="modal__bth_content_head">
+                    <div class="modal__bth_content_head_close" data-micromodal-close></div>
+                    <h2 class="modal__bth_content_head_title modal__title">Скачать презентацию по объекту</h2>
+                </div>
+                <form class="modal__bth_content_form modal__form">
+                    <div class="modal__form_input">
+                        <input type="email" placeholder="Ваш email"> 
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправьте мне презентацию</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__bth_content_ex modal__ex">Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalMort">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__bth modal-catalog">
+            
+        <div class="modal__bth_in">
+            <div class="modal__bth_mort">
+                <div class="product__snt_action_head">
+                    Рассчитать условия ипотеки
+                </div>
+                <div class="product__snt_action_slider">
+                    <div class="product__snt_action_slider_head">Вас интересует сумма</div>
+                    <div class="product__snt_action_slider_value"></div>
+                    <div class="product__snt_action_slider_el product__snt_action_slider_el-price"></div>
+                </div>
+                <div class="product__snt_action_slider">
+                    <div class="product__snt_action_slider_head">Срок выплаты</div>
+                    <div class="product__snt_action_slider_value"></div>
+                    <div class="product__snt_action_slider_el product__snt_action_slider_el-date"></div>
+                </div>
+            </div>
+            <div class="modal__bth_content">
+                <div class="modal__bth_content_head">
+                    <div class="modal__bth_content_head_close" data-micromodal-close></div>
+                    <div class="modal__bth_content_head_subtitle modal__subtitle">Оставьте контактные данные и мы свяжемся с Вами в ближайшее время</div>
+                </div>
+                <form class="modal__bth_content_form modal__form">
+                    <div class="modal__form_input">
+                        <input type="email" placeholder="Ваш email"> 
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="email" placeholder="Ваш телефон"> 
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Получить предложения</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__bth_content_ex modal__ex">Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalExtract">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__bth modal-catalog">
+            
+        <div class="modal__bth_in">
+            <div class="modal__bth_img">
+                <picture>
+                    <source srcset="" type="image/webp">
+                    <img src="./img/modal-extract.png" alt="">
+                </picture>
+            </div>
+            <div class="modal__bth_content">
+                <div class="modal__bth_content_head">
+                    <div class="modal__bth_content_head_close" data-micromodal-close></div>
+                    <h2 class="modal__bth_content_head_title modal__title">Заказать выписку по объекту</h2>
+                </div>
+                <form class="modal__bth_content_form modal__form">
+                    <div class="modal__form_input">
+                        <input type="email" placeholder="Ваш email"> 
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправьте мне выписку</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__bth_content_ex modal__ex">Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalAnl">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__bth modal-catalog">
+            
+        <div class="modal__bth_in">
+            <div class="modal__bth_img">
+                <picture>
+                    <source srcset="" type="image/webp">
+                    <img src="./img/modal-extract.png" alt="">
+                </picture>
+            </div>
+            <div class="modal__bth_content">
+                <div class="modal__bth_content_head">
+                    <div class="modal__bth_content_head_close" data-micromodal-close></div>
+                    <h2 class="modal__bth_content_head_title modal__title">Подробный анализ доходности</h2>
+                </div>
+                <form class="modal__bth_content_form modal__form">
+                    <div class="modal__form_input">
+                        <input type="email" placeholder="Ваш email"> 
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправьте мне анализ</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__bth_content_ex modal__ex">Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalPromo">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__bth modal-catalog">
+            
+        <div class="modal__bth_in">
+            <div class="modal__bth_img">
+                <picture>
+                    <source srcset="" type="image/webp">
+                    <img src="./img/modal-promo.png" alt="">
+                </picture>
+            </div>
+            <div class="modal__bth_content">
+                <div class="modal__bth_content_head">
+                    <div class="modal__bth_content_head_close" data-micromodal-close></div>
+                    <h2 class="modal__bth_content_head_title modal__title">Акция</h2>
+                    <h2 class="modal__bth_content_head_subtitle modal__subtitle">Здесь пишем текст про специальное предложение или акцию </h2>
+                </div>
+                <form class="modal__bth_content_form modal__form">
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваше имя"> 
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="tel" placeholder="Ваш телефон"> 
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправить заявку</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__bth_content_ex modal__ex">Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
 </div>
     <script src="js/app.min.js"></script>
 </body>

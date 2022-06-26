@@ -69,6 +69,7 @@
                 top: calc(50% - (130px / 2));
                 left: calc(50% - (130px / 2));
                 @include def-anim;
+                cursor: pointer;
 
                 &:hover {
                     background-color: $green;
