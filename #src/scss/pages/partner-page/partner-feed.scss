@@ -1,0 +1,146 @@
+.partner__feed {
+    background: #F9FAFD;
+    &_in {
+        padding: 60px 0 140px;
+    }
+
+    &_form {
+        max-width: 1030px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 60px 10px;
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0px 30px 40px rgba(57, 63, 110, 0.15);
+        border-radius: 6px;
+
+        &_in {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        &_head {
+            text-align: center;
+            
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 145%;
+            max-width: 594px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 25px;
+        }
+
+        &_subhead {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 155%;
+            
+            max-width: 594px;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        &_row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        &_input {
+            max-width: 288px;
+            width: 100%;
+
+            input {
+                display: block;
+                width: 100%;
+                padding: 15px 0;
+                border-bottom: 1px solid #99A8B4;
+                @include def-anim;
+
+                &:focus {
+                    border-color: $green;
+                }
+            }
+        }
+
+        &_ex {
+            font-size: 12px;
+            line-height: 155%;
+            color: #99A8B4;
+            opacity: 0.6;
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .partner__feed {
+
+        &_in {
+            padding: 0;
+        }
+
+        &_form {
+            padding: 50px 35px;
+            padding-bottom: 0;
+            background-color: unset;
+            box-shadow: none;
+
+            &_in {
+
+            }
+
+            &_row {
+                flex-wrap: wrap;
+            }
+
+            &_input {
+                max-width: unset;
+                width: 48%;
+            }
+
+            &_btn {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .partner__feed {
+
+        &_form {
+
+            &_row {
+
+            }
+
+            &_input {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            &_btn {
+                width: 100%;
+            }
+
+            &_ex {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+
+    .partner__feed {
+
+        &_form {
+            padding: 50px 0 0;
+        }
+    }
+}
