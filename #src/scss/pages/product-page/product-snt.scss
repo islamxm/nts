@@ -77,6 +77,7 @@
                     display: flex;
                     align-items: center;
                     width: 45%;
+                    margin-bottom: 15px;
 
                     &_icon {
                         width: 48px;
@@ -235,6 +236,13 @@
                         &_item-info {
                             display: none;
                         }
+                    }
+                }
+
+                &_ex {
+
+                    &_item {
+                        width: 100%;
                     }
                 }
             }
