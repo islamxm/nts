@@ -20,6 +20,8 @@ import { tours } from './modules/tours.js';
 import { toursSlider } from './modules/toursSlider.js';
 import { up } from './modules/up.js';
 import Micromodal from 'micromodal';
+import { sqSlider } from './modules/sqSlider.js';
+import { routeMap } from './modules/routeMap.js';
 
 flsFuncs.isWebp();
 
@@ -52,6 +54,10 @@ document.addEventListener('DOMContentLoaded', () => {
     galleryScript();
     tabs('.partners__in', '.partners__tabs', '.partners__tabs_item', '.partners__body_list');
     tabs('.fav-page__body_in', '.fav-page__body_tabs', '.fav-page__body_tabs_item', '.fav-page__body_content_list');
+    sqSlider();
+    routeMap();
+    
+    
     Micromodal.init();
 
 })

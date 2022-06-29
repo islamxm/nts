@@ -92,6 +92,24 @@
             }
         }
     }
+
+    &__map {
+        height: 550px;
+        width: 96%;
+        margin: 0 0 0 auto;
+        margin-top: -30px;
+
+        #routeMap {
+            height: 100%;
+            width: 100%;
+
+            .ymaps-2-1-79-ground-pane {
+                filter: grayscale(1);
+                opacity: .6;
+                
+            }
+        }
+    }
 }
 
 
@@ -115,6 +133,11 @@
             &_img {
                 width: 100%;
             }
+        }
+
+        &__map {
+            width: 100%;
+            margin-top: 0;
         }
     }
 }

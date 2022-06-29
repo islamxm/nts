@@ -38,6 +38,71 @@
                         display: flex;
                     }
                 }
+
+                &_table {
+                    width: 100%;
+                    border-collapse: collapse;
+
+                    &_row {
+                        border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+                        &:last-child {
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+                        }
+                    }
+
+                    &_item {
+                        padding: 21px 0;
+                        
+
+                        &_name {
+                            display: flex;
+                            flex-direction: column;
+
+                            &_main {
+                                font-weight: 600;
+                                color: #fff;
+                            }
+
+                            &_sq {
+                                display: none;
+                            }
+                        }
+
+                        &_sq {
+                            color: #fff;
+                        }
+
+                        &_rm {
+                            color: #fff;
+                            font-weight: 500;
+                        }
+
+                        &_action {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+
+                            &_btn {
+                                padding: 10px 30px;
+                                background: rgba(255, 255, 255, 0.2);
+                                border-radius: 24px;
+                                @include def-anim;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 135%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                &:hover {
+                                    background-color: #fff;
+                                    color: $text;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     
@@ -141,6 +206,46 @@
 
                     &_title {
                         font-size: 24px;
+                    }
+                }
+
+                &_content {
+
+                    &_table {
+
+                        &_row {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+
+
+                        &_item {
+                            width: 100%;
+
+                            &:nth-child(2) {
+                                display: none;
+                            }
+                            &_name {
+
+                                &_name {
+                                    font-size: 16px;
+                                    line-height: 135%;
+                                }
+
+                                &_sq {
+                                    display: block;
+                                }
+                            }
+
+                            &_rm {
+                                font-size: 16px;
+                                line-height: 135%;
+                            }
+
+                            &_action {
+                                justify-content: flex-start;
+                            }
+                        }
                     }
                 }
             }
