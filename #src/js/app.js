@@ -23,6 +23,7 @@ import Micromodal from 'micromodal';
 import { sqSlider } from './modules/sqSlider.js';
 import { routeMap } from './modules/routeMap.js';
 import { revSlider } from './modules/revsSlider.js';
+import { dropdown } from './modules/dropdown.js';
 
 flsFuncs.isWebp();
 
@@ -59,7 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
     sqSlider();
     routeMap();
     revSlider();
-    
     
     Micromodal.init();
 

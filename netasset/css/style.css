@@ -2096,14 +2096,61 @@ body {
 .header__main_nav_item {
   margin: 0 20px;
 }
-.header__main_nav_item a {
+.header__main_nav_item > a {
   font-weight: 600;
   font-size: 14px;
   line-height: 135%;
   transition: all 0.3s ease;
 }
-.header__main_nav_item a:hover {
+.header__main_nav_item > a:hover {
   color: #50A627;
+}
+.header__main_nav_item--dropdown {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 135%;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-right: 25px;
+}
+.header__main_nav_item--dropdown:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("../img/icons/dropdown-chevron.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  content: "";
+  width: 16px;
+  height: 16px;
+  transition: all 0.3s ease;
+}
+.header__main_nav_item--dropdown:hover:after {
+  transform: rotate(180deg);
+}
+.header__main_nav_item--dropdown:hover .header__main_nav_item--dropdown_menu {
+  display: block;
+}
+.header__main_nav_item--dropdown_menu {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  max-width: 250px;
+  background-color: #fff;
+  transform: translateY(100%);
+  border-radius: 5px;
+}
+.header__main_nav_item--dropdown_menu_item {
+  display: block;
+  white-space: nowrap;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+.header__main_nav_item--dropdown_menu_item:hover {
+  background-color: #E3E8EC;
 }
 .header__main_info {
   display: flex;
@@ -8776,6 +8823,7 @@ body {
   width: 25%;
   margin: 0 15px;
   position: relative;
+  cursor: pointer;
 }
 .partner__rep_content_tabs_item_in {
   padding: 30px;
