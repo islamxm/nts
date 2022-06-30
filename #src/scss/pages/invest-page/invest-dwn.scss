@@ -1,0 +1,24 @@
+.invest__dwn {
+    margin-bottom: -100px;
+    position: relative;
+    z-index: 2;
+    .dwn {
+        
+        &__in {
+            padding-bottom: 0;
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    .invest__dwn {
+        margin-bottom: 0;
+
+        .dwn {
+
+            &__in {
+                padding-bottom: 40px;
+            }
+        }
+    }
+}

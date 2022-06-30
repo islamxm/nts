@@ -22,6 +22,7 @@
 //BLOCKS
 @import './blocks/header.scss';
 @import './blocks/hero.scss';
+@import './blocks/hero-m.scss';
 @import './blocks/map.scss';
 @import './blocks/dwn.scss';
 @import './blocks/tours.scss';
@@ -74,6 +75,13 @@
 @import './pages/partner-page/partner-pt.scss';
 @import './pages/partner-page/partner-revs.scss';
 
+//invest page
+@import './pages/invest-page/invest-hero.scss';
+@import './pages/invest-page/invest-ind.scss';
+@import './pages/invest-page/invest-res.scss';
+@import './pages/invest-page/invest-dwn.scss';
+@import './pages/invest-page/invest-mng.scss';
+@import './pages/invest-page/invest-pac.scss';
 
 //MAPS
 @import './maps/mapCluster.scss';

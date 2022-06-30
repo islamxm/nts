@@ -1,0 +1,156 @@
+.invest__pac {
+    background-color: #fff;
+
+    &_in {
+        padding: 50px 0;
+    }
+
+    &_head {
+        margin-bottom: 50px;
+
+        &_title {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 145%;
+            margin-bottom: 10px;
+        }
+
+        &_subtitle {
+            
+        }
+    }
+
+    &_body > .career-page__vac_body_table {
+        max-width: unset;
+        width: 100%;
+
+        .career-page__vac_body_table_item {
+
+            &_label {
+                margin-bottom: 5px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 135%;
+                /* identical to box height, or 19px */
+
+
+                /* Text / Grey */
+
+                color: #99A8B4;
+            }
+        }
+
+        .career-page__vac_body_table_row_body {
+            .invest__pac_table_body {
+                padding-top: 40px;
+
+                &_head {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 145%;
+                    /* or 20px */
+
+
+                    /* Text / Grey */
+
+                    color: #99A8B4;
+                    margin-bottom: 30px;
+                }
+
+                &_list {
+                    display: flex; 
+                    flex-wrap: wrap;
+                    margin-left: -25px;
+                    margin-right: -25px;
+                }
+
+                &_item {
+                    margin: 0 25px;
+                    width: calc((100% / 4) - 50px);
+                    margin-bottom: 25px;
+                    padding-left: 36px;
+                    position: relative;
+
+                    &:after {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        content: url('../img/icons/plus-green.svg');
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .invest__pac {
+
+        &_body > .career-page__vac_body_table {
+
+            .career-page__vac_body_table_row {
+                padding: 10px 0;
+            }
+
+            .career-page__vac_body_table_row_head {
+                flex-wrap: wrap;
+                
+            }
+
+            .career-page__vac_body_table_item {
+                width: 100% !important;
+                max-width: unset;
+                padding: 15px 0;
+            }
+
+            .career-page__vac_body_table_item-send {
+                justify-content: flex-start;
+            }
+            .career-page__vac_body_table_item-add {
+                justify-content: flex-end;
+            }
+
+            .career-page__vac_body_table_row_body {
+
+                .invest__pac_table_body {
+                    padding-top: 10px;
+                    &_list {
+
+                    }
+
+                    &_item {
+                        width: calc((100% / 2) - 50px); 
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .invest__pac {
+
+        &_head {
+
+        }
+        &_body > .career-page__vac_body_table {
+
+            .career-page__vac_body_table_row_body {
+                .invest__pac_table_body {
+
+                    &_list {
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                    &_item {
+                        width: 100%;
+                        margin-left: 0;
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

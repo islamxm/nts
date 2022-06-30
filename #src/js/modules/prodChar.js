@@ -1,7 +1,7 @@
 import ApexCharts from 'apexcharts'
 
 export const prodChart = () => {
-    const els = document.querySelectorAll('.product__anl_tabscontent_item_body_chart');
+    const els = document.querySelectorAll('.chart');
 
     if(els.length > 0) {
         els.forEach(el => {
