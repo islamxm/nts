@@ -260,7 +260,12 @@
 @media (max-width: 620px) {
 
     .invest__ind {
+        &_head {
 
+            &_title {
+                font-size: 28px;
+            }
+        }
         &_content {
 
             &_head {

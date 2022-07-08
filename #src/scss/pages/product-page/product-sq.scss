@@ -29,7 +29,9 @@
             }
     
             &_content {
-    
+                &_action {
+                    margin-top: 60px;
+                }
                 &_plan {
                     img {
                         max-width: 100%;
@@ -169,7 +171,14 @@
                     display: flex;
                     // align-items: flex-start;
                     justify-content: center;
+                    flex-wrap: wrap;
 
+                    &_action {
+                        width: 100%;
+                        justify-content: flex-start;
+                        display: flex;
+                        align-items: center;    
+                    }
                     &_plan {
                         img {
                             object-fit: contain;
@@ -211,6 +220,7 @@
 
                 &_content {
 
+                    
                     &_table {
 
                         &_row {
@@ -277,6 +287,27 @@
                     width: calc(100% - 90px);
                     font-size: 12px;
                     line-height: 155%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .product {
+
+        &__sq {
+
+            &_body {
+
+                &_content {
+
+                    &_action {
+
+                        .button {
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }
