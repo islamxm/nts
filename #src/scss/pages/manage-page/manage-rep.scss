@@ -1,0 +1,90 @@
+.manage__rep {
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 50%;
+
+    &_in {
+        display: flex;
+        padding: 60px 0;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &_content {
+        width: 50%;
+
+        &_title {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 125%;
+            margin-bottom: 30px;
+        }
+
+        &_text {
+            margin-bottom: 60px;
+        }
+
+        &_list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 80px;
+        }
+
+        &_item {
+            width: 48%;
+            margin-bottom: 20px;
+            padding-left: 35px;
+            position: relative;
+            font-size: 14px;
+            line-height: 135%;
+            &::after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: url('../img/icons/plus-green.svg');
+            }
+        }
+
+        &_action {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+
+            &_btn {
+
+            }
+        }
+
+
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .manage__rep {
+        background-image: none !important;
+        &_content {
+            width: 100%;
+            &_item {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .manage__rep {
+
+        &_content {
+
+            &_action {
+
+                &_btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

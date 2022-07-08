@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     routeMap();
     revSlider();
     indSliders();
+    tabs('.manage__ind', '.manage__ind_tabs', '.manage__ind_tabs_item', '.manage__ind_item');
     
     Micromodal.init();
 

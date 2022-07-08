@@ -1,0 +1,51 @@
+.manage__ind {
+
+
+    .invest__ind_head {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 35px;
+        &_title {
+            
+            text-align: left;
+        }
+    }
+
+    &_item {
+        display: none;
+    }
+
+    &_item.active {
+        display: block;
+    }
+    
+    &_tabs {
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+        &_item {
+            white-space: nowrap;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 135%;
+            /* identical to box height, or 22px */
+
+            margin-right: 50px;
+            color: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            @include def-anim;
+
+            &:hover {
+                color: #fff;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &_item.active {
+            color: #FFFFFF;
+        }
+    }
+}

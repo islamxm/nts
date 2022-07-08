@@ -2508,7 +2508,7 @@ body {
 @media (max-width: 700px) {
   .hero-n__in {
     justify-content: space-between;
-    padding: 130px 0 65px;
+    padding: 65px 0 65px;
   }
   .hero-n__content {
     margin-bottom: 0;
@@ -10305,6 +10305,111 @@ body {
   max-width: unset;
 }
 
+.manage__ind .invest__ind_head {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 35px;
+}
+.manage__ind .invest__ind_head_title {
+  text-align: left;
+}
+.manage__ind_item {
+  display: none;
+}
+.manage__ind_item.active {
+  display: block;
+}
+.manage__ind_tabs {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+.manage__ind_tabs_item {
+  white-space: nowrap;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 135%;
+  /* identical to box height, or 22px */
+  margin-right: 50px;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.manage__ind_tabs_item:hover {
+  color: #fff;
+}
+.manage__ind_tabs_item:last-child {
+  margin-right: 0;
+}
+.manage__ind_tabs_item.active {
+  color: #FFFFFF;
+}
+
+.manage__rep {
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 50%;
+}
+.manage__rep_in {
+  display: flex;
+  padding: 60px 0;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.manage__rep_content {
+  width: 50%;
+}
+.manage__rep_content_title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 125%;
+  margin-bottom: 30px;
+}
+.manage__rep_content_text {
+  margin-bottom: 60px;
+}
+.manage__rep_content_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.manage__rep_content_item {
+  width: 48%;
+  margin-bottom: 20px;
+  padding-left: 35px;
+  position: relative;
+  font-size: 14px;
+  line-height: 135%;
+}
+.manage__rep_content_item::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: url("../img/icons/plus-green.svg");
+}
+.manage__rep_content_action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (max-width: 768px) {
+  .manage__rep {
+    background-image: none !important;
+  }
+  .manage__rep_content {
+    width: 100%;
+  }
+  .manage__rep_content_item {
+    width: 100%;
+  }
+}
+@media (max-width: 520px) {
+  .manage__rep_content_action_btn {
+    width: 100%;
+  }
+}
 .mapCluster__in {
   padding: 50px 0;
 }
