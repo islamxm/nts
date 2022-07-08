@@ -6,6 +6,20 @@
 
         }
 
+        &_sl.black {
+
+            .hero__slider_sl_content {
+
+                &_title {
+                    color: $text;
+                }
+
+                &_text {
+                    color: $text;
+                }
+            }
+        }
+
         &_sl {
             position: relative;
 

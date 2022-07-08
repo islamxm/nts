@@ -94,12 +94,12 @@
                         }
 
                         input:checked ~ label {
-
+                            background-color: $green;
                             .int__slider_sl_body_item_action_label_icon {
-                                background-color: $green;
+                                background-color: #fff;
                                 svg {
                                     path {
-                                        fill: #fff;
+                                        fill: $green;
                                     }
                                 }
                             }
@@ -112,7 +112,8 @@
                             height: 100%;
                             padding: 30px;
                             cursor: pointer;
-
+                            @include def-anim;
+                            
                             &_name {
                                 font-weight: 500;
                                 font-size: 20px;

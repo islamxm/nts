@@ -90,6 +90,22 @@
                 }
             }
 
+            &:hover {
+
+                .benefits__slider_sl_body {
+                    background: rgba(0, 0, 0, .6);
+                    &_text {
+                        opacity: 1;
+                    }
+
+                    &_btn {
+                        opacity: 0;
+                        pointer-events: none;
+                        
+                    }
+                }
+            }
+
             &_body {
                 position: absolute;
                 top: 0;
@@ -97,8 +113,19 @@
                 width: 100%;
                 height: 100%;
                 display: flex;
-                align-items: flex-end;
+                align-items: flex-start;
                 padding: 50px 39px;
+                flex-direction: column;
+                transition: all .7s ease;
+                &_text {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 135%;
+                    color: #fff;
+                    flex: 1 0 auto;
+                    opacity: 0;
+                    @include def-anim;
+                }
 
                 &_btn {
                     width: 86px;
@@ -113,9 +140,7 @@
                     position: absolute;
                     top: calc(50% - (86px / 2));
                     left: calc(50% - (86px / 2));
-                    &:hover {
-                        background-color: $text;
-                    }
+                    
                 }
 
                 &_name {
@@ -165,6 +190,9 @@
 
             &_sl {
 
+                &_body {
+                    padding: 10px;
+                }
                 &_img {
 
 

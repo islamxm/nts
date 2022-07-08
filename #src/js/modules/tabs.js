@@ -19,7 +19,9 @@ export const tabs = (tabsWrapper, tabsContainerQuery, tabsQuery, tabsContentsQue
     
         const showTabs = (index = 0) => {
             tabsContents[index].classList.add('active');
-            tabs[index].classList.add('active');
+            if(tabs.length > 0) {
+                tabs[index].classList.add('active');
+            }
         }
 
         hideTabs();
@@ -28,21 +30,23 @@ export const tabs = (tabsWrapper, tabsContainerQuery, tabsQuery, tabsContentsQue
         
 
 
-        tabsContainer.addEventListener('click', (e) => {
-            let target = e.target;
-            
-
-            if(target && target.classList.contains(tabsQuery.slice(1))) {
-                console.log('asda')
-                tabs.forEach((item, index) => {
-                    if(target == item) {
-                        hideTabs();
-                        showTabs(index);
-                    }
-                })
-
-            }
-        })
+        if(tabsContainer) {
+            tabsContainer.addEventListener('click', (e) => {
+                let target = e.target;
+                
+    
+                if(target && target.classList.contains(tabsQuery.slice(1))) {
+                    console.log('asda')
+                    tabs.forEach((item, index) => {
+                        if(target == item) {
+                            hideTabs();
+                            showTabs(index);
+                        }
+                    })
+    
+                }
+            })
+        }
 
     }
     
