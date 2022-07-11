@@ -5612,7 +5612,7 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 7000px) {
+@media (max-width: 700px) {
   .contacts-page__main {
     padding: 40px 0;
   }
