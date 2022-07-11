@@ -62,7 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
     revSlider();
     indSliders();
     tabs('.manage__ind', '.manage__ind_tabs', '.manage__ind_tabs_item', '.manage__ind_item');
-    
+    tabs('.contacts-page', '.contacts-page__tabs', '.contacts-page__tab', '.contacts-page__main_item');
+    tabs('.contacts-page', '.contacts-page__mobile_tabs', '.contacts-page__mobile_tab', '.contacts-page__main_item');
     Micromodal.init();
 
 })
