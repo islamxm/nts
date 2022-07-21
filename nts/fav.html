@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.0/dist/accordion.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=e999c44f-dd84-4768-bc35-1d7089eee3dc&lang=ru_RU"
+    type="text/javascript"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__mn">
+        <div class="container">
+
+            <div class="header__top">
+                <div class="header__top_city">
+                    <div class="header__top_city_select normalSelect">
+                        <select class="normalSelect__el">
+                            <option value="Москва">Москва</option>
+                            <option value="Сочи">Сочи</option>
+                        </select>
+                    </div>
+                </div>
+                <ul class="header__top_nav">
+                    <li class="header__top_nav_item"><a href="#">О компании</a></li>
+                    <li class="header__top_nav_item"><a href="#">Карьера</a></li>
+                    <li class="header__top_nav_item"><a href="#">Стать партнером</a></li>
+                    <li class="header__top_nav_item"><a href="#">Новости</a></li>
+                </ul>
+                <div class="header__top_action">
+                    <div class="header__top_action_item header__top_action_like">
+                        <div class="header__top_action_like_icon"></div>
+                        <div class="header__top_action_like_value">0</div>
+                    </div>
+                    <div class="header__top_action_item header__top_action_profile">
+                        <button class="header__top_action_profile_btn">Войти</button>
+                        <div class="header__top_action_profile_icon"></div>
+                    </div>
+                    <div class="header__top_action_item header__top_action_lang">
+                        <a href="#" class="header__top_action_lang_item active">RU</a>
+                        <a href="#" class="header__top_action_lang_item">EN</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="spacer"></div>
+        <div class="container">
+            <div class="header__main">
+                <a href="#" class="header__main_logo">
+                    <img src="./img/icons/logo-main.svg" alt="Logotype">
+                </a>
+                <ul class="header__main_nav">
+                    <li class="header__main_nav_item header__main_nav_item--dropdown">
+                        <a href="#">Каталог</a>
+                        <div class="header__main_nav_item--dropdown_menu">
+                            <a href="#" class="header__main_nav_item--dropdown_menu_item">Каталог 1</a>
+                            <a href="#" class="header__main_nav_item--dropdown_menu_item">Каталог 2</a>
+                        </div>
+                    </li>
+                    <li class="header__main_nav_item header__main_nav_item--dropdown">
+                        <a href="#">Услуги</a>
+                        <div class="header__main_nav_item--dropdown_menu">
+                            <a href="#" class="header__main_nav_item--dropdown_menu_item">Услуги 1</a>
+                            <a href="#" class="header__main_nav_item--dropdown_menu_item">Услуги 2</a>
+                        </div>
+                    </li>
+                    <li class="header__main_nav_item"><a href="#">Контакты</a></li>
+                </ul>
+                <div class="header__main_info">
+                   <a href="tel:"  class="header__main_info_value header__main_info_item">8 (800) 500-50-50</a> 
+                   <div class="header__main_info_btn header__main_info_item" data-micromodal-trigger="modalCall">
+                       <div class="header__main_info_btn_icon"></div>
+                       <div class="header__main_info_btn_text">Заказать звонок</div>
+                   </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="header__mobile">
+        <div class="container">
+            <div class="header__mobile_in">
+                <div class="header__mobile_logo">
+                    <img src="./img/icons/logo-main.svg" alt="">
+                </div>
+                <div class="header__mobile_action">
+                    <div class="header__mobile_action_main">
+                        <a href="#" class="header__mobile_action_main_item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.19416 3.33268H6.93578L8.14179 6.34771L6.20439 7.63931C5.97256 7.79386 5.83331 8.05405 5.83331 8.33268C5.83542 8.41071 5.83331 8.33352 5.83331 8.33352L5.83331 8.33439L5.83331 8.33625L5.83334 8.34046L5.83346 8.35074C5.83359 8.35842 5.8338 8.36775 5.83415 8.37867C5.83485 8.40052 5.83613 8.42876 5.83841 8.46298C5.84297 8.5314 5.85157 8.62388 5.86772 8.73699C5.90002 8.96307 5.96271 9.27277 6.08441 9.63787C6.32877 10.371 6.80892 11.3201 7.74405 12.2553C8.67919 13.1904 9.62836 13.6706 10.3615 13.9149C10.7265 14.0366 11.0363 14.0993 11.2623 14.1316C11.3754 14.1478 11.4679 14.1564 11.5363 14.1609C11.5706 14.1632 11.5988 14.1645 11.6206 14.1652C11.6316 14.1655 11.6409 14.1657 11.6486 14.1659L11.6589 14.166L11.6631 14.166L11.6649 14.166L11.6658 14.166C11.6658 14.166 11.7588 14.1609 11.6666 14.166C11.9823 14.166 12.2708 13.9877 12.412 13.7054L12.9701 12.5892L16.6666 13.2053V16.8052C14.9074 17.0596 10.1561 17.3103 6.42256 13.5768C2.68898 9.84318 2.93974 5.09193 3.19416 3.33268ZM7.56135 8.73775L9.06629 7.73446C9.72207 7.29727 9.98196 6.4605 9.68925 5.72872L8.48324 2.7137C8.23014 2.08093 7.61729 1.66602 6.93578 1.66602H3.15062C2.39353 1.66602 1.68088 2.19198 1.55659 3.01343C1.27384 4.88227 0.888963 10.4002 5.24405 14.7553C9.59914 19.1104 15.1171 18.7255 16.9859 18.4427C17.8073 18.3184 18.3333 17.6058 18.3333 16.8487V13.2053C18.3333 12.3906 17.7443 11.6952 16.9406 11.5613L13.2441 10.9452C12.5224 10.8249 11.8066 11.1894 11.4794 11.8438L11.1906 12.4213C11.0999 12.3991 10.9986 12.3705 10.8885 12.3338C10.3716 12.1615 9.65409 11.8083 8.92256 11.0768C8.19103 10.3452 7.83785 9.62774 7.66554 9.11083C7.61898 8.97115 7.58547 8.84556 7.56135 8.73775Z" fill="#50A627"/>
+                                </svg>
+                                
+                        </a>
+                        <a href="#" class="header__mobile_action_main_item">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.0003 3.77304C8.03714 2.01408 5.01804 2.07789 3.13146 3.96447C1.17884 5.91709 1.17884 9.08291 3.13146 11.0355L8.82182 16.7259C9.47269 17.3768 10.528 17.3768 11.1788 16.7259L16.8692 11.0355C18.8218 9.08291 18.8218 5.91709 16.8692 3.96447C14.9826 2.07789 11.9635 2.01408 10.0003 3.77304ZM9.02402 5.14298L9.41107 5.53003C9.73651 5.85547 10.2641 5.85547 10.5896 5.53003L10.9766 5.14298C12.2784 3.84123 14.3889 3.84123 15.6907 5.14298C16.9924 6.44473 16.9924 8.55527 15.6907 9.85702L10.0003 15.5474L4.30997 9.85702C3.00822 8.55527 3.00822 6.44473 4.30997 5.14298C5.61172 3.84123 7.72227 3.84123 9.02402 5.14298Z" fill="#042742"/>
+                                </svg>
+                                
+                        </a>
+                    </div>
+                    <button class="header__mobile_action_burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <!-- Header -->
+        <main class="main">
+            
+            <div class="fav-page">
+    <div class="fav-page__in">
+        <div class="fav-page__bc">
+            <div class="bc">
+    <div class="container">
+        <ul class="bc__list">
+            <li class="bc__list_item"><a href="#">Раздел 1</a></li>
+            <li class="bc__list_item bc__list_item_current"><a href="#">Раздел 2</a></li>
+        </ul>
+    </div>
+</div>
+        </div>
+        <div class="fav-page__body">
+            <div class="container">
+                <div class="fav-page__body_in">
+                    <h2 class="fav-page__body_title page__title">Избранное</h2>
+                    <div class="fav-page__body_tabs">
+                        <div class="fav-page__body_tabs_item">Жилые комплексы</div>
+                        <div class="fav-page__body_tabs_item">Апартаменты</div>
+                        <div class="fav-page__body_tabs_item">Квартиры</div>
+                        <div class="fav-page__body_tabs_item">Виллы и коттеджи</div>
+                        <div class="fav-page__body_tabs_item">Земля</div>
+                    </div>
+                    <div class="fav-page__body_content">
+                        <div class="fav-page__body_content_list">
+                            <div class="fav-page__body_content_item">
+                                <div class="fav-page__body_content_item_img">
+                                    <picture>
+                                        <source srcset="" type="image/webp">
+                                        <img src="./img/fav.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="fav-page__body_content_item_descr">
+                                    <div class="fav-page__body_content_item_descr_head">
+                                        <div class="fav-page__body_content_item_descr_head_name">ЖК FORST</div>
+                                        <button class="fav-page__body_content_item_descr_head_btn">
+                                            
+                                        </button>
+                                    </div>
+                                    <div class="fav-page__body_content_item_descr_subhead">Сочи, название улицы, дом</div>
+                                    <div class="fav-page__body_content_item_descr_text">
+                                        Проект расположен на Симоновской набережной в непосредственной близости к воде. Такое место гарантирует атмосферу уединенного острова, сохраняя возможность быстрого доступа к эпицентру активной жизни.
+                                    </div> 
+                                    <div class="fav-page__body_content_item_descr_action">
+                                        <div class="fav-page__body_content_item_descr_action_price">от 31 млн ₽</div>
+                                        <button data-micromodal-trigger="modalPres" class="fav-page__body_content_item_descr_action_link">
+                                            <div class="fav-page__body_content_item_descr_action_link_icon"></div>
+                                            <div  class="fav-page__body_content_item_descr_action_link_text">Скачать презентацию</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fav-page__body_content_item">
+                                <div class="fav-page__body_content_item_img">
+                                    <picture>
+                                        <source srcset="" type="image/webp">
+                                        <img src="./img/fav.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="fav-page__body_content_item_descr">
+                                    <div class="fav-page__body_content_item_descr_head">
+                                        <div class="fav-page__body_content_item_descr_head_name">ЖК FORST</div>
+                                        <button class="fav-page__body_content_item_descr_head_btn">
+                                            
+                                        </button>
+                                    </div>
+                                    <div class="fav-page__body_content_item_descr_subhead">Сочи, название улицы, дом</div>
+                                    <div class="fav-page__body_content_item_descr_text">
+                                        Проект расположен на Симоновской набережной в непосредственной близости к воде. Такое место гарантирует атмосферу уединенного острова, сохраняя возможность быстрого доступа к эпицентру активной жизни.
+                                    </div> 
+                                    <div class="fav-page__body_content_item_descr_action">
+                                        <div class="fav-page__body_content_item_descr_action_price">от 31 млн ₽</div>
+                                        <button class="fav-page__body_content_item_descr_action_link">
+                                            <div class="fav-page__body_content_item_descr_action_link_icon"></div>
+                                            <div class="fav-page__body_content_item_descr_action_link_text">Скачать презентацию</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fav-page__body_content_action">
+                                <a href="#" class="fav-page__body_content_action_link">
+                                    <div class="fav-page__body_content_action_link_icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.99998 3.33331C10.4602 3.33331 10.8333 3.70641 10.8333 4.16665V9.16665H15.8333C16.2936 9.16665 16.6666 9.53975 16.6666 9.99998C16.6666 10.4602 16.2936 10.8333 15.8333 10.8333H10.8333V15.8333C10.8333 16.2936 10.4602 16.6666 9.99998 16.6666C9.53974 16.6666 9.16665 16.2936 9.16665 15.8333V10.8333H4.16665C3.70641 10.8333 3.33331 10.4602 3.33331 9.99998C3.33331 9.53975 3.70641 9.16665 4.16665 9.16665H9.16665V4.16665C9.16665 3.70641 9.53974 3.33331 9.99998 3.33331Z" fill="#042742"/>
+                                            </svg>
+                                            
+                                    </div>
+                                    <div class="fav-page__body_content_action_link_text">Показать ещё</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="fav-page__body_content_list">
+                            <div class="fav-page__body_content_item">
+                                <div class="fav-page__body_content_item_img">
+                                    <picture>
+                                        <source srcset="" type="image/webp">
+                                        <img src="./img/fav.png" alt="">
+                                    </picture>
+                                </div>
+                                <div class="fav-page__body_content_item_descr">
+                                    <div class="fav-page__body_content_item_descr_head">
+                                        <div class="fav-page__body_content_item_descr_head_name">ЖК FORST</div>
+                                        <button class="fav-page__body_content_item_descr_head_btn">
+                                            
+                                        </button>
+                                    </div>
+                                    <div class="fav-page__body_content_item_descr_subhead">Сочи, название улицы, дом</div>
+                                    <div class="fav-page__body_content_item_descr_text">
+                                        Проект расположен на Симоновской набережной в непосредственной близости к воде. Такое место гарантирует атмосферу уединенного острова, сохраняя возможность быстрого доступа к эпицентру активной жизни.
+                                    </div> 
+                                    <div class="fav-page__body_content_item_descr_action">
+                                        <div class="fav-page__body_content_item_descr_action_price">от 31 млн ₽</div>
+                                        <button data-micromodal-trigger="modalPres" class="fav-page__body_content_item_descr_action_link">
+                                            <div class="fav-page__body_content_item_descr_action_link_icon"></div>
+                                            <div class="fav-page__body_content_item_descr_action_link_text">Скачать презентацию</div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fav-page__body_content_action">
+                                <a href="#" class="fav-page__body_content_action_link">
+                                    <div class="fav-page__body_content_action_link_icon">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9.99998 3.33331C10.4602 3.33331 10.8333 3.70641 10.8333 4.16665V9.16665H15.8333C16.2936 9.16665 16.6666 9.53975 16.6666 9.99998C16.6666 10.4602 16.2936 10.8333 15.8333 10.8333H10.8333V15.8333C10.8333 16.2936 10.4602 16.6666 9.99998 16.6666C9.53974 16.6666 9.16665 16.2936 9.16665 15.8333V10.8333H4.16665C3.70641 10.8333 3.33331 10.4602 3.33331 9.99998C3.33331 9.53975 3.70641 9.16665 4.16665 9.16665H9.16665V4.16665C9.16665 3.70641 9.53974 3.33331 9.99998 3.33331Z" fill="#042742"/>
+                                            </svg>
+                                            
+                                    </div>
+                                    <div class="fav-page__body_content_action_link_text">Показать ещё</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="fav-page__body_content_list"></div>
+                        <div class="fav-page__body_content_list"></div>
+                        <div class="fav-page__body_content_list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+    <div class="footer__main">
+        <div class="footer__main_top">
+            <div class="footer__main_top_left">
+                <div class="footer__main_top_left_head">
+                    <a href="#" class="footer__main_top_left_head_logo"></a>
+                    <button class="footer__main_top_left_head_auth">
+                        <div class="footer__main_top_left_head_auth_text"></div>
+                        <div class="footer__main_top_left_head_auth_icon"></div>
+                    </button>
+                </div>
+                <a href="tel:88005005050" class="footer__main_top_left_tel">8 (800) 500-50-50</a>
+                <a href="malto:arenda@homeasset.ru" class="footer__main_top_left_mail">arenda@homeasset.ru</a>
+                <ul class="footer__main_top_left_list">
+                    <li class="footer__main_top_left_item">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__main_top_right"></div>
+        </div>
+        <div class="footer__main_bottom">
+            
+        </div>
+    </div>
+</footer>
+    </div>
+    <div class="mobmenu">
+    <div class="mobmenu__in">
+        <div class="mobmenu__head">
+            <a href="#" class="mobmenu__head_logo">
+                <img src="./img/icons/logo-main.svg" alt="">
+            </a>
+            <div class="mobmenu__head_city">
+                <select class="mobmenu__head_city_select">
+                    <option value="Сочи">Сочи</option>
+                    <option value="Москва">Москва</option>
+                </select>
+            </div>
+            <button class="mobmenu__head_btn">
+                
+            </button>
+        </div>
+        <div class="mobmenu__tel">
+            <a href="tel:" class="mobmenu__tel_value mobmenu__tel_item">8 (800) 500-50-50</a>
+            <div class="mobmenu__tel_text mobmenu__tel_item" data-micromodal-trigger="modalCall">
+                <div class="mobmenu__tel_text_icon"></div> Заказать звонок</div>
+        </div>
+        <div class="mobmenu__menu accordion-container">
+            <div class="mobmenu__menu_part ac">
+                <div class="mobmenu__menu_part_head ac-header">
+                    <div class="mobmenu__menu_part_head_text">Каталог</div>
+                    <button class="mobmenu__menu_part_head_btn ac-trigger"></button>
+                </div>
+                <div class="mobmenu__menu_part_content ac-panel">
+                    <div class="mobmenu__menu_part_content_list">
+                        <a href="#" class="mobmenu__menu_part_content_item">Каталог 1</a>
+                        <a href="#" class="mobmenu__menu_part_content_item">Каталог 1</a>
+                        <a href="#" class="mobmenu__menu_part_content_item">Каталог 1</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mobmenu__menu_part ac">
+                <div class="mobmenu__menu_part_head ac-header">
+                    <div class="mobmenu__menu_part_head_text">Услуги</div>
+                    <button class="mobmenu__menu_part_head_btn ac-trigger"></button>
+                </div>
+                <div class="mobmenu__menu_part_content ac-panel">
+                    <div class="mobmenu__menu_part_content_list">
+                        <a href="#" class="mobmenu__menu_part_content_item">Услуги 1</a>
+                        <a href="#" class="mobmenu__menu_part_content_item">Услуги 1</a>
+                        <a href="#" class="mobmenu__menu_part_content_item">Услуги 1</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobmenu__ex">
+            <a href="#" class="mobmenu__ex_item">О компании</a>
+            <a href="#" class="mobmenu__ex_item">Документы</a>
+            <a href="#" class="mobmenu__ex_item">Карьера</a>
+            <a href="#" class="mobmenu__ex_item">Новости</a>
+            <a href="#" class="mobmenu__ex_item">Стать партнером</a>
+            <a href="#" class="mobmenu__ex_item">Контакты</a>
+        </div>
+        <a href="#" class="mobmenu__fav">
+            <div class="mobmenu__fav_name">Избранное</div>
+            <div class="mobmenu__fav_info">
+                <div class="mobmenu__fav_info_icon"></div>
+                <div class="mobmenu__fav_info_val">0</div>
+            </div>
+        </a>
+        <div class="mobmenu__action">
+            <div class="mobmenu__action_login">
+                <div class="mobmenu__action_login_icon"></div>
+                <div class="mobmenu__action_login_text">Войти</div>
+            </div>
+            <div class="mobmenu__action_lang">
+                <a href="#" class="mobmenu__action_lang_item active">
+                    RU
+                </a>
+                <a href="#" class="mobmenu__action_lang_item">
+                    EN
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="modal" id="modalFeedback">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__content modal-feedback">
+            <div class="modal__content_in">
+                <div class="modal-feedback__head">
+                    <div class="modal-feedback__head_title modal__title">Написать нам</div>
+                    <div class="modal-feedback__head_subtitle modal__subtitle">
+                        Заполните заявку и мы свяжемся с Вами в ближайшее время.
+                    </div>
+                    <button class="modal__close" data-micromodal-close></button>
+                </div>
+                <form class="modal__form">
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваш телефон">
+                    </div>
+                    <div class="modal__form_textarea">
+                        <textarea rows="2" placeholder="Написать сообщение"></textarea>
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправить  сообщение</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__ex">
+                    Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.
+                </div>
+            </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalCall">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__content modal-call">
+            <div class="modal__content_in">
+                <div class="modal-call__head">
+                    <div class="modal-call__head_title modal__title">Обратный звонок</div>
+                    <div class="modal-call__head_subtitle modal__subtitle">
+                        Оставьте Ваши контактные данные и мы свяжемся с Вами в ближайшее время.
+                    </div>
+                    <button class="modal__close" data-micromodal-close></button>
+                </div>
+                <form class="modal__form">
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваш телефон">
+                    </div>
+                    <div class="modal__form_textarea">
+                        <textarea rows="2" placeholder="Написать сообщение"></textarea>
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправить  сообщение</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__ex">
+                    Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.
+                </div>
+            </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalTransfer">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__content modal-transfer">
+            <div class="modal__content_in">
+                <div class="modal-transfer__head">
+                    <div class="modal-transfer__head_title modal__title">Забронировать просмотр</div>
+                    <div class="modal-transfer__head_subtitle modal__subtitle">
+                        Заполните заявку на просмотр и мы свяжемся 
+                        с Вами в ближайшее время.
+                    </div>
+                    <button class="modal__close" data-micromodal-close></button>
+                </div>
+                <form class="modal__form">
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваш телефон">
+                    </div>
+                    <div class="modal__form_textarea">
+                        <textarea rows="2" placeholder="Написать сообщение"></textarea>
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправить  сообщение</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__ex">
+                    Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.
+                </div>
+            </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalState">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__content modal-transfer">
+            <div class="modal__content_in">
+                <div class="modal-state__head">
+                    <div class="modal-state__head_title modal__title">Оставить заявку</div>
+                    <div class="modal-state__head_subtitle modal__subtitle">
+                        Заполните заявку на консультацию и мы свяжемся с Вами в ближайшее время.
+                    </div>
+                    <button class="modal__close" data-micromodal-close></button>
+                </div>
+                <form class="modal__form">
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваш телефон">
+                    </div>
+                    <div class="modal__form_textarea">
+                        <textarea rows="2" placeholder="Написать сообщение"></textarea>
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправить  сообщение</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__ex">
+                    Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.
+                </div>
+            </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalResume">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__content modal-resume">
+            <div class="modal__content_in">
+                <div class="modal-resume__head">
+                    <div class="modal-resume__head_title modal__title">Отправить резюме</div>
+                    <div class="modal-resume__head_subtitle modal__subtitle">
+                        Заполните заявку и мы свяжемся с Вами в ближайшее время.
+                    </div>
+                    <button class="modal__close" data-micromodal-close></button>
+                </div>
+                <form class="modal__form">
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваш телефон">
+                    </div>
+                    <div class="modal__form_textarea">
+                        <textarea rows="2" placeholder="Написать сообщение"></textarea>
+                    </div>
+                    <div class="modal__form_file">
+                        <div class="modal__form_file_el">
+                            <input type="file" id="resumeFile">
+                            <label for="resumeFile" class="modal__form_file_el_label">
+                                <div class="modal__form_file_el_label_icon"><svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.5003 6.49211L5.99253 13.1093C5.77708 13.3471 5.66132 13.6586 5.66922 13.9794C5.67711 14.3001 5.80806 14.6056 6.03495 14.8325C6.26184 15.0594 6.5673 15.1903 6.88807 15.1982C7.20884 15.2061 7.52037 15.0904 7.75815 14.8749L15.516 7.00773C15.9469 6.53217 16.1784 5.90912 16.1626 5.26757C16.1468 4.62602 15.8849 4.01512 15.4311 3.56134C14.9773 3.10756 14.3664 2.84566 13.7249 2.82986C13.0833 2.81406 12.4603 3.04558 11.9847 3.47648L4.2269 11.3437C3.52449 12.0461 3.12988 12.9987 3.12988 13.9921C3.12988 14.9855 3.52449 15.9381 4.2269 16.6405C4.92931 17.343 5.88198 17.7376 6.87534 17.7376C7.8687 17.7376 8.82137 17.343 9.52378 16.6405L15.9378 10.2421" stroke="#042742" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    </div>
+                                <div class="modal__form_file_el_label_text">Прикрепить резюме</div>
+                            </label>
+                        </div>
+                        <div class="career-page__feed_form_upload_ind career-page__feed_form_upload_ind-loading">
+                            <div class="career-page__feed_form_upload_ind_icon"></div>
+                            <div class="career-page__feed_form_upload_ind_text">Загрузка документа...</div>
+                        </div>
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправить  сообщение</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__ex">
+                    Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.
+                </div>
+            </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalCatalog">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__bth modal-catalog">
+            
+        <div class="modal__bth_in">
+            <div class="modal__bth_img">
+                <picture>
+                    <source srcset="" type="image/webp">
+                    <img src="./img/modal-catalog.png" alt="">
+                </picture>
+            </div>
+            <div class="modal__bth_content">
+                <div class="modal__bth_content_head">
+                    <div class="modal__bth_content_head_close" data-micromodal-close></div>
+                    <h2 class="modal__bth_content_head_title modal__title">Скачать каталог</h2>
+                    <div class="modal__bth_content_head_subtitle modal__subtitle">Отправим Вам на почту более 200 актуальных предложений  </div>
+                </div>
+                <form class="modal__bth_content_form modal__form">
+                    <div class="modal__form_input">
+                        <input type="email" placeholder="Ваш email"> 
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправьте мне каталог</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__bth_content_ex modal__ex">Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalPres">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__bth modal-catalog">
+            
+        <div class="modal__bth_in">
+            <div class="modal__bth_img">
+                <picture>
+                    <source srcset="" type="image/webp">
+                    <img src="./img/modal-catalog.png" alt="">
+                </picture>
+            </div>
+            <div class="modal__bth_content">
+                <div class="modal__bth_content_head">
+                    <div class="modal__bth_content_head_close" data-micromodal-close></div>
+                    <h2 class="modal__bth_content_head_title modal__title">Скачать презентацию по объекту</h2>
+                </div>
+                <form class="modal__bth_content_form modal__form">
+                    <div class="modal__form_input">
+                        <input type="email" placeholder="Ваш email"> 
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправьте мне презентацию</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__bth_content_ex modal__ex">Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalMort">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__bth modal-catalog">
+            
+        <div class="modal__bth_in">
+            <div class="modal__bth_mort">
+                <div class="product__snt_action_head">
+                    Рассчитать условия ипотеки
+                </div>
+                <div class="product__snt_action_slider">
+                    <div class="product__snt_action_slider_head">Вас интересует сумма</div>
+                    <div class="product__snt_action_slider_value"></div>
+                    <div class="product__snt_action_slider_el product__snt_action_slider_el-price"></div>
+                </div>
+                <div class="product__snt_action_slider">
+                    <div class="product__snt_action_slider_head">Срок выплаты</div>
+                    <div class="product__snt_action_slider_value"></div>
+                    <div class="product__snt_action_slider_el product__snt_action_slider_el-date"></div>
+                </div>
+            </div>
+            <div class="modal__bth_content">
+                <div class="modal__bth_content_head">
+                    <div class="modal__bth_content_head_close" data-micromodal-close></div>
+                    <div class="modal__bth_content_head_subtitle modal__subtitle">Оставьте контактные данные и мы свяжемся с Вами в ближайшее время</div>
+                </div>
+                <form class="modal__bth_content_form modal__form">
+                    <div class="modal__form_input">
+                        <input type="email" placeholder="Ваш email"> 
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="email" placeholder="Ваш телефон"> 
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Получить предложения</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__bth_content_ex modal__ex">Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalExtract">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__bth modal-catalog">
+            
+        <div class="modal__bth_in">
+            <div class="modal__bth_img">
+                <picture>
+                    <source srcset="" type="image/webp">
+                    <img src="./img/modal-extract.png" alt="">
+                </picture>
+            </div>
+            <div class="modal__bth_content">
+                <div class="modal__bth_content_head">
+                    <div class="modal__bth_content_head_close" data-micromodal-close></div>
+                    <h2 class="modal__bth_content_head_title modal__title">Заказать выписку по объекту</h2>
+                </div>
+                <form class="modal__bth_content_form modal__form">
+                    <div class="modal__form_input">
+                        <input type="email" placeholder="Ваш email"> 
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправьте мне выписку</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__bth_content_ex modal__ex">Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalAnl">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__bth modal-catalog">
+            
+        <div class="modal__bth_in">
+            <div class="modal__bth_img">
+                <picture>
+                    <source srcset="" type="image/webp">
+                    <img src="./img/modal-extract.png" alt="">
+                </picture>
+            </div>
+            <div class="modal__bth_content">
+                <div class="modal__bth_content_head">
+                    <div class="modal__bth_content_head_close" data-micromodal-close></div>
+                    <h2 class="modal__bth_content_head_title modal__title">Подробный анализ доходности</h2>
+                </div>
+                <form class="modal__bth_content_form modal__form">
+                    <div class="modal__form_input">
+                        <input type="email" placeholder="Ваш email"> 
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправьте мне анализ</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__bth_content_ex modal__ex">Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+<div class="modal" id="modalPromo">
+
+    <div class="modal__layer" data-micromodal-close>
+  
+      <div class="modal__bth modal-catalog">
+            
+        <div class="modal__bth_in">
+            <div class="modal__bth_img">
+                <picture>
+                    <source srcset="" type="image/webp">
+                    <img src="./img/modal-promo.png" alt="">
+                </picture>
+            </div>
+            <div class="modal__bth_content">
+                <div class="modal__bth_content_head">
+                    <div class="modal__bth_content_head_close" data-micromodal-close></div>
+                    <h2 class="modal__bth_content_head_title modal__title">Акция</h2>
+                    <h2 class="modal__bth_content_head_subtitle modal__subtitle">Здесь пишем текст про специальное предложение или акцию </h2>
+                </div>
+                <form class="modal__bth_content_form modal__form">
+                    <div class="modal__form_input">
+                        <input type="text" placeholder="Ваше имя"> 
+                    </div>
+                    <div class="modal__form_input">
+                        <input type="tel" placeholder="Ваш телефон"> 
+                    </div>
+                    <div class="modal__form_action">
+                        <button class="modal__form_action_btn button button-dark">
+                            <div class="button__text">Отправить заявку</div>
+                        </button>
+                    </div>
+                </form>
+                <div class="modal__bth_content_ex modal__ex">Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности.</div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+    <script src="js/app.min.js"></script>
+</body>
+</html>

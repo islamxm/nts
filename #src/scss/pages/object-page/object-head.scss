@@ -1,0 +1,110 @@
+.object__head {
+    background-color: #fff;
+    padding: 100px 0 30px 0;
+    box-shadow: 0px 30px 40px rgba(57, 63, 110, 0.15);
+
+    &_name {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 135%;
+        margin-bottom: 30px;
+    }
+
+    &_info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+
+        &_item {
+            margin-right: 30px;
+        }
+
+        &_item-revs {
+            display: flex;
+            align-items: center;
+
+            &_icon {
+                width: 20px;
+                height: 20px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                background-image: url('../img/icons/star.svg');
+                margin-right: 10px;
+                flex: 0 0 auto;
+            }
+
+            &_value {
+                font-weight: 600;
+                margin-right: 10px;
+            }
+
+            &_count {
+                color: #99A8B4;
+                font-weight: 500;
+            }
+        }
+
+        &_item-adress {
+            font-weight: 500;
+        }
+
+        &_item-map {
+            display: flex;
+            align-items: center;
+
+            &_icon {
+                width: 20px;
+                height: 20px;
+                background-image: url('../img/icons/nav.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                margin-right: 10px;
+                flex: 0 0 auto;
+            }
+
+            &_text {
+                font-weight: 500;
+                margin-right: 10px;
+            }
+
+            &_link {
+                color: $green;
+                font-weight: 600;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+    }
+
+    &_tabs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &_item {
+            color: #99A8B4;
+            font-weight: 600;
+            margin-right: 60px;
+            margin-bottom: 20px;
+            @include def-anim;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover {
+                color: $text;
+            }
+        }
+
+        &_item.active {
+            color: $text;
+        }
+    }
+}

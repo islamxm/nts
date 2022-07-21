@@ -1,0 +1,199 @@
+.object__cond {
+
+    padding: 20px 0;
+    background-color: #fff;
+    
+    &_in {
+        padding: 50px;
+        background: #F9FAFD;
+        border-radius: 8px;
+    }
+
+    &_head {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 125%;
+        margin-bottom: 60px;
+    }
+
+    &_action {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &_part {
+            width: 48%;
+
+            &_name {
+                color: #fff;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 155%;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 5px 30px;
+                margin-bottom: 30px;
+                border-radius: 100px;
+            }
+
+            &_range {
+                height: 4px;
+                border: none;
+                background-color: #E3E8EC;
+                margin-bottom: 75px;
+                .noUi-base {
+
+                    .noUi-connects {
+
+                        .noUi-connect {
+                            background-color: $green;
+                        }
+                    }
+
+                    .noUi-origin {
+
+                        .noUi-handle {
+                            width: 13px;
+                            height: 13px;
+                            background-color: $green;
+                            box-shadow: none;
+                            border-radius: 100%;
+                            border: none;
+                            top: -4px;
+                            right: -4px;
+                            cursor: pointer;
+                            &:after {
+                                display: none;
+                            }
+
+                            &::before {
+                                display: none;
+                            }
+                        }
+
+                        .noUi-tooltip {
+                            background-color: transparent;
+                            border: none;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 155%;
+                            bottom: -300%; 
+                        }
+                    }
+                }
+            }
+
+            
+        }
+
+        &_part-left {
+
+            .object__cond_action_part_name {
+                background-color: $green;
+                
+            }
+        }
+
+        &_part-right {
+            .object__cond_action_part_name {
+                background-color: $text;
+            }   
+
+            .object__cond_action_part_range {
+                
+                .noUi-base  {
+                    .noUi-connects {
+
+                        .noUi-connect {
+                            background-color: $text;
+                        }
+                    }
+
+                    .noUi-origin {
+
+                        .noUi-handle {
+                            background-color: $text;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    &_info {
+
+        position: relative;
+        padding-left: 100px;
+        max-width: 434px;
+        width: 100%;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 155%;
+        margin-bottom: 50px;
+
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            content: url('../img/icons/object-cond-info.svg');
+        }
+    }
+
+    &_list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -7.5px;
+        margin-right: -7.5px;
+
+        &_item {
+            margin: 0 7.5px;
+            margin-bottom: 10px;
+            height: 130px;
+            background: #FFFFFF;
+            border-radius: 8px;
+            padding: 20px;
+            width: calc((100% / 6) - 15px);
+
+            &_icon {
+                width: 32px;
+                height: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: flex;
+                }
+            }
+
+            &_ex {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 135%;
+                /* or 16px */
+
+
+                /* Text / Grey */
+
+                color: #99A8B4;
+                margin-bottom: 10px;
+            }
+
+            &_name {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 135%;
+            }
+        }
+    }
+}

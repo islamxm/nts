@@ -24,6 +24,10 @@ import { sqSlider } from './modules/sqSlider.js';
 import { routeMap } from './modules/routeMap.js';
 import { revSlider } from './modules/revsSlider.js';
 import { indSliders } from './modules/indSliders.js';
+import { objectSliders } from './modules/objectSliders.js';
+import { objectRange } from './modules/objectRange.js';
+import { objectRevs } from './modules/objectRevs.js';
+import { objectMap } from './modules/objectMap.js';
 
 flsFuncs.isWebp();
 
@@ -64,6 +68,15 @@ document.addEventListener('DOMContentLoaded', () => {
     tabs('.manage__ind', '.manage__ind_tabs', '.manage__ind_tabs_item', '.manage__ind_item');
     tabs('.contacts-page', '.contacts-page__tabs', '.contacts-page__tab', '.contacts-page__main_item');
     tabs('.contacts-page', '.contacts-page__mobile_tabs', '.contacts-page__mobile_tab', '.contacts-page__main_item');
+    
+    
+    
+    objectSliders();
+    objectRange();
+    objectRevs();
+    objectMap();
+    
+    
     Micromodal.init();
 
 })

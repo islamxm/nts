@@ -55,6 +55,7 @@
 @import './pages/login.scss';
 
 
+
 //Product-page
 @import './pages/product-page/product-hero.scss';
 @import './pages/product-page/product-descr.scss';
@@ -97,6 +98,19 @@
 //manage page
 @import './pages/manage-page/manage-ind.scss';
 @import './pages/manage-page/manage-rep.scss';
+
+
+
+//object page
+@import './pages/object-page/object-head.scss';
+@import './pages/object-page/object-info.scss';
+@import './pages/object-page/object-map.scss';
+@import './pages/object-page/object-video.scss';
+@import './pages/object-page/object-adv.scss';
+@import './pages/object-page/object-cond.scss';
+@import './pages/object-page/object-notes.scss';
+@import './pages/object-page/object-revs.scss';
+@import './pages/object-page/object-faq.scss';
 
 
 //MAPS

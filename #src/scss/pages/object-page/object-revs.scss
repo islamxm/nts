@@ -1,0 +1,145 @@
+.object__revs {
+
+    &_in {
+        padding: 50px 0;
+    }
+
+    &_head {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &_title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 125%;
+        }
+
+        &_nav {
+            display: flex;
+            align-items: center;
+
+            &_item {
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                @include def-anim;
+                background-image: url('../img/icons/chevron-black.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 24px;
+                border: 1px solid #E3E8EC;
+                cursor: pointer;
+                margin: 0 5px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    background-color: #E3E8EC;
+                }
+            }
+
+            &_item-prev {
+                transform: rotate(180deg);
+            }
+
+            &_item-next {
+
+            }
+        }
+    }
+
+    &_body {
+
+        &_slider {
+
+            &_sl {
+                padding: 30px;
+                background: #F9FAFD;
+                border-radius: 8px;
+                
+                &_head {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 30px;
+
+                    &_avatar {
+                        width: 60px;
+                        height: 60px;
+                        border-radius: 100%;
+                        background: #99A8B4;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 20px;
+                        flex: 0 0 auto;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            display: flex;
+                        }
+                    }
+
+                    &_body {
+                        &_name {
+                            font-weight: 600;
+                            margin-bottom: 5px;
+                        }
+
+                        &_value {
+                            padding-left: 26px;
+                            position: relative;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 135%;
+                            &:after {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                content: url('../img/icons/star.svg');
+                            }
+                        }
+                    }
+                }
+
+                &_text {
+                    font-size: 14px;
+                    margin-bottom: 30px;
+                    line-height: 155%;
+                }
+
+                &_action {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+
+                    &_btn {
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding: 15px 34px;
+                        border: 1px solid #E3E8EC;
+                        border-radius: 25px;
+                        @include def-anim;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 135%;
+                        &:hover {
+                            background-color: $text;
+                            color: #fff;
+                            border-color: $text;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
