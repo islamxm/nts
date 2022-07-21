@@ -197,3 +197,62 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+
+    .object__cond {
+
+        &_list {
+            flex-wrap: wrap;
+            margin-left: -15px;
+            margin-right: -15px;
+
+            &_item {
+                margin: 0 15px;
+                width: calc((100% / 3) - 30px);
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .object__cond {
+
+
+        &_action {
+            flex-wrap: wrap;
+
+            &_part {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+        &_list {
+
+
+            &_item {
+                width: calc((100% / 2) - 30px);
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .object__cond {
+
+        &_in {
+            padding: 30px 15px;
+        }
+
+        &_info {
+            padding-left: 60px;
+        }
+        &_list {
+
+            &_item {
+                width: 100%;
+            }
+        }
+    }
+}

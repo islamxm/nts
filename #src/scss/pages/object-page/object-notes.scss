@@ -21,3 +21,13 @@
         line-height: 155%;
     }
 }
+
+@media (max-width: 620px) {
+
+    .object__notes {
+
+        &_in {
+            padding: 30px 15px;
+        }
+    }
+}

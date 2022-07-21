@@ -5,8 +5,18 @@ export const objectRevs = () => {
 
     if(el) {
         const slider = new Swiper(el, {
-            spaceBetween: 30,
-            slidesPerView: 3
+            slidesPerView: 1,
+            spaceBetween: 15,
+            breakpoints: {
+                1000: {
+                    spaceBetween: 30,
+                    slidesPerView: 3,
+                },
+                620: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            }
         })
     }
 }

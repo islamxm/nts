@@ -75,3 +75,38 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+    .object__adv {
+
+        &_body {
+            margin-left: -15px;
+            margin-right: -15px;
+            flex-wrap: wrap;
+            &_col {
+                width: calc((100% / 2) - 30px);
+                margin: 0 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .object__adv {
+
+        &_body {
+            margin-left: 0;
+            margin-right: 0;
+
+            &_col {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            &_part {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

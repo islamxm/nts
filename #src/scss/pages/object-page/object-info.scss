@@ -144,6 +144,10 @@
                 background: #FFFFFF;
                 border-radius: 8px;
                 margin-bottom: 30px;
+
+                .choices__list--dropdown {
+                    width: 100% !important;
+                }
             }
 
             &_list {
@@ -248,6 +252,112 @@
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 135%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .object__info {
+
+        &_in {
+
+        }
+
+        &_main {
+            flex-wrap: wrap;
+
+            &_gallery {
+                width: 100%;
+                margin-bottom: 20px;
+                &_slider {
+
+                    &_sl {
+                        
+                    }
+                }
+
+                &_thumbs {
+                    display: none;
+                }
+            }
+
+            &_panel {
+                max-width: unset;
+
+            }
+        }
+
+        &_text {
+            width: 100%;
+        }
+        
+        &_list {
+            margin-left: -15px;
+            margin-right: -15px;
+            &_item {
+                width: calc((100% / 3) - 30px);
+                margin: 0 15px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 620px) {
+    .object__info {
+
+        &_main {
+
+            &_gallery {
+
+                &_slider {
+
+                    &_sl {
+                        height: 300px;
+                    }
+
+                    &_nav-prev {
+                        left: 10px;
+                    }
+
+                    &_nav-next {
+                        right: 10px;
+                    }
+                }
+            }
+            &_panel {
+                padding: 30px 15px;
+
+                &_date {
+                    flex-wrap: wrap;
+
+                    &_item {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+
+        &_list {
+            margin-left: 0;
+            margin-right: 0;
+
+            &_item {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 15px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                &_text {
+                    text-align: center;
+                }
             }
         }
     }

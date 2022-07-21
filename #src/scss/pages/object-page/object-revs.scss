@@ -143,3 +143,32 @@
         }
     }
 }
+
+@media (max-width: 720px) {
+
+    .object__revs {
+
+        &_head {
+
+            &_nav {
+                display: none;
+            }
+        }
+        
+        &_body {
+
+            &_slider {
+
+                &_sl {
+
+                    &_action {
+
+                        &_btn {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -95,3 +95,56 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+
+    .object__faq {
+
+        &_body {
+            flex-wrap: wrap;
+
+            &_main {
+                width: 100%;
+
+            }
+            &_ex {
+                max-width: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .object__faq {
+
+        &_body {
+
+            &_main {
+
+                &_item {
+                    &_qs {
+                        padding: 20px;
+                    }
+                    &_as {
+                        padding: 20px;
+                    }
+                }
+            }
+
+            &_ex {
+                padding: 0;
+                background-color: transparent;
+                border: none;
+
+                &_head {
+                    display: none;
+                }
+
+                &_text {
+                    display: none;
+                }
+            }
+        }
+    }
+}

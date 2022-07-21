@@ -29,3 +29,13 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+
+    .object__video {
+
+        &_el {
+            height: 300px;
+        }
+    }
+}
