@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper, {Navigation} from 'swiper';
 
 export const objectRevs = () => {
     const el = document.querySelector('.object__revs_body_slider');
@@ -7,6 +7,11 @@ export const objectRevs = () => {
         const slider = new Swiper(el, {
             slidesPerView: 1,
             spaceBetween: 15,
+            modules: [Navigation],
+            navigation: {
+                prevEl: '.object__revs_head_nav_item-prev',
+                nextEl: '.object__revs_head_nav_item-next'
+            },
             breakpoints: {
                 1000: {
                     spaceBetween: 30,
