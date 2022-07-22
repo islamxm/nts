@@ -28,6 +28,7 @@ import { objectSliders } from './modules/objectSliders.js';
 import { objectRange } from './modules/objectRange.js';
 import { objectRevs } from './modules/objectRevs.js';
 import { objectMap } from './modules/objectMap.js';
+import { careerSlider } from './modules/careerSlider.js';
 
 flsFuncs.isWebp();
 
@@ -75,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
     objectRange();
     objectRevs();
     objectMap();
+    careerSlider();
     
     
     Micromodal.init();
