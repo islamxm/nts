@@ -1973,6 +1973,18 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.header__top_city_select {
+  padding-left: 20px;
+  position: relative;
+}
+.header__top_city_select:after {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 0;
+  content: url("../img/icons/location.svg");
+  width: 20px;
+  height: 20px;
+}
 .header__top_city_select_head {
   font-weight: 600;
   font-size: 14px;

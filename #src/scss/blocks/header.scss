@@ -15,7 +15,17 @@
         &_city {
 
             &_select {
+                padding-left: 20px;
+                position: relative;
 
+                &:after {
+                    position: absolute;
+                    top: calc(50% - 10px);
+                    left: 0;
+                    content: url('../img/icons/location.svg');
+                    width: 20px;
+                    height: 20px;
+                }
                 &_head {
                     font-weight: 600;
                     font-size: 14px;
