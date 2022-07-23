@@ -12307,6 +12307,199 @@ body {
   display: flex;
 }
 
+.faq__in {
+  padding: 80px 0;
+}
+.faq__main_head {
+  margin-bottom: 30px;
+}
+.faq__main_body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.faq__main_body_content {
+  width: calc(100% - 390px);
+}
+.faq__main_body_content_tabs {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.faq__main_body_content_tabs_item {
+  margin-right: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 135%;
+  cursor: pointer;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  /* identical to box height, or 22px */
+  /* Text / Grey */
+  color: #99A8B4;
+}
+.faq__main_body_content_tabs_item:last-child {
+  margin-right: 0;
+}
+.faq__main_body_content_tabs_item:hover {
+  color: #50A627;
+}
+.faq__main_body_content_tabs_item.active {
+  color: #042742;
+}
+.faq__main_body_content_item {
+  display: none;
+}
+.faq__main_body_content_item.active {
+  display: block;
+}
+.faq__main_body_content_item.active .career-page__vac_body_table .career-page__vac_body_table_row {
+  padding: 20px 0;
+}
+.faq__main_body_content_item.active .career-page__vac_body_table .career-page__vac_body_table_row .career-page__vac_body_table_row_head {
+  flex-wrap: nowrap !important;
+}
+.faq__main_body_content_item.active .career-page__vac_body_table .career-page__vac_body_table_row .career-page__vac_body_table_item-name {
+  max-width: unset;
+  border: none;
+}
+.faq__main_body_content_item.active .career-page__vac_body_table .career-page__vac_body_table_row .career-page__vac_body_table_item-add {
+  padding: 0;
+}
+.faq__main_body_side {
+  max-width: 360px;
+}
+.faq__feed {
+  padding: 60px 0;
+  background: #F9FAFD;
+}
+.faq__feed_in {
+  max-width: 1030px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 60px 90px;
+  background: #FFFFFF;
+  /* Карточка объекта / Вертикальная */
+  box-shadow: 0px 30px 40px rgba(57, 63, 110, 0.15);
+  border-radius: 6px;
+}
+.faq__feed_title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 145%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.faq__feed_subtitle {
+  max-width: 590px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.faq__feed_form_row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.faq__feed_form_item-input {
+  width: 32.2580645161%;
+}
+.faq__feed_form_item-input input {
+  padding: 15px 0;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #99A8B4;
+  transition: all 0.3s ease;
+}
+.faq__feed_form_item-input input:focus {
+  border-color: #50A627;
+}
+.faq__feed_form_item-text {
+  width: 100%;
+}
+.faq__feed_form_item-text textarea {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  max-height: 200px;
+  border-bottom: 1px solid #99A8B4;
+  transition: border 0.3s ease;
+  min-height: 56px;
+  min-width: 100%;
+  max-width: 100%;
+}
+.faq__feed_form_item-text textarea:focus {
+  border-color: #50A627;
+}
+.faq__feed_form_action {
+  display: flex;
+  align-items: center;
+}
+.faq__feed_form_action_btn {
+  margin-right: 30px;
+}
+.faq__feed_form_action_ex {
+  font-size: 12px;
+  line-height: 155%;
+  color: #99A8B4;
+  opacity: 0.6;
+}
+
+@media (max-width: 1000px) {
+  .faq__main_body {
+    flex-wrap: wrap;
+  }
+  .faq__main_body_content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .faq__in {
+    padding: 30px 0;
+  }
+  .faq__main_body_content_tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .faq__main_body_side {
+    max-width: unset;
+    width: 100%;
+  }
+  .faq__main_body_side .press-page__body_contacts {
+    width: 100% !important;
+  }
+  .faq__feed_in {
+    padding: 30px 15px;
+  }
+  .faq__feed_form_row {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .faq__feed_form_item-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .faq__feed_form_item-input:last-child {
+    margin-bottom: 0;
+  }
+  .faq__feed_form_action {
+    flex-wrap: wrap;
+  }
+  .faq__feed_form_action_btn {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  .faq__feed_form_action_ex {
+    text-align: center;
+  }
+}
 .mapCluster__in {
   padding: 50px 0;
 }
