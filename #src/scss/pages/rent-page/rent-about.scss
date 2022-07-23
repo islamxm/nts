@@ -1,0 +1,68 @@
+.rent__about {
+
+    &_in {
+        padding: 50px 0;
+
+    }
+
+    &_title {
+        text-align: center;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 125%;
+        margin-bottom: 30px;
+    }
+
+    &_subtitle {
+        text-align: center;
+        font-weight: 500;
+        font-size: 18px;
+        max-width: 790px;
+        width: 100%;
+        margin: 0 auto;
+        line-height: 165%;
+        margin-bottom: 80px;
+    }
+
+    &_body {
+        display: flex;
+        justify-content: space-between;
+
+        &_item {
+            background: #F9FAFD;
+            border-radius: 16px;
+            padding: 50px 40px;
+            width: 48%;
+
+            &_head {
+                margin-bottom: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &_name {
+
+                }
+
+                &_icon {
+                    flex: 0 0 auto;
+                    width: 76px;
+                    height: 76px;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100%;
+                    background-color: #fff;
+
+                    img {
+                        width: 32px;
+                        height: 32px;
+                        object-fit: contain;
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}

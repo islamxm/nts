@@ -26,7 +26,7 @@
 
     &__main {
         padding: 100px 0;
-
+        background: #F9FAFD;
         &_item.active {
             display: block;
         }
@@ -38,6 +38,26 @@
                 font-size: 28px;
                 line-height: 145%;
                 margin-bottom: 20px;
+
+                span {
+                    color: $green;
+                    position: relative;
+                    padding-left: 26px;
+                    text-decoration: underline;
+                    text-decoration-style: dashed;
+
+                    &:after {
+                        position: absolute;
+                        top: calc(50% - 8px);
+                        left: 0;
+                        width: 16px;
+                        height: 16px;
+                        background-image: url('../img/icons/nav-arrow.svg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                    }
+                }
             }
 
             &_in {
@@ -131,7 +151,8 @@
 
             &_form {
                 padding: 60px 50px;
-                background: #F9FAFD;
+                background: #fff;
+                border-radius: 16px;
                 max-width: 530px;
                 width: 100%;
 
@@ -217,6 +238,17 @@
                     width: 100%;
                     height: 100%;
                     filter: grayscale(1);
+                }
+
+                #routeMap {
+                    height: 100%;
+                    width: 100%;
+
+                    .ymaps-2-1-79-ground-pane {
+                        filter: grayscale(1);
+                        opacity: .6;
+                        
+                    }
                 }
 
             }

@@ -30,6 +30,7 @@ import { objectRevs } from './modules/objectRevs.js';
 import { objectMap } from './modules/objectMap.js';
 import { careerSlider } from './modules/careerSlider.js';
 import { careerGallery } from './modules/careerGallery.js';
+import { rentSlider } from './modules/rentSlider.js';
 
 flsFuncs.isWebp();
 
@@ -79,6 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
     objectMap();
     careerSlider();
     careerGallery();
+    rentSlider();
     
     
     Micromodal.init();

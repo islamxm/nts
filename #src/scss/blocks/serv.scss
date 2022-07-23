@@ -110,7 +110,8 @@
                     width: 100px;
                     height: 100px;
                     border-radius: 100%;
-                    background-color: $green;
+                    background-color: rgba(255, 255, 255, 0.6);
+                    backdrop-filter: blur(10px);
                     @include def-anim;
                     position: absolute;
                     top: calc(50% - (100px / 2));
@@ -123,7 +124,7 @@
                     background-size: 24px 24px;
 
                     &:hover {
-                        background-color: $text;
+                        background-color: rgba(255, 255, 255, 1);
                     }
                 }
             }

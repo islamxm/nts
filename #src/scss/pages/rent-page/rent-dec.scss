@@ -1,0 +1,77 @@
+.rent__dec {
+    padding: 80px 0;
+
+    &_title {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 145%;
+        margin-bottom: 60px;
+        text-align: center;
+    }
+
+    &_slider {
+        width: 100%;
+        margin-bottom: 80px;
+
+        &_el {
+            width: 80%;
+            overflow: visible;
+
+            &_sl {
+                padding: 30px;
+                background: #FFFFFF;
+                /* Карточка объекта / Вертикальная */
+
+                box-shadow: 0px 30px 40px rgba(57, 63, 110, 0.15);
+                border-radius: 16px;
+                &_name {
+                    margin-bottom: 30px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 125%;
+
+                }
+
+                &_price {
+                    &_head {
+                        margin-bottom: 8px;
+                        font-size: 14px;
+                        line-height: 155%;
+                        color: #99A8B4;
+                    }
+
+                    &_value {
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 125%;
+                    }
+                }
+            }
+        }
+    }
+
+    &_inds {
+        display: flex;
+        align-items: flex-start;
+
+        &_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(100% / 3.1);
+            &_value {
+                text-align: center;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 125%;
+                color: $green;
+                margin-bottom: 15px;
+            }
+
+            &_name {
+                text-align: center;
+            }
+        }
+
+    }
+}

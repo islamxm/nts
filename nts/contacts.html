@@ -91,51 +91,26 @@
     </div>
     <div class="contacts-page__in">
         <div class="contacts-page__hero">
-            <div class="hero">
-                <div class="hero__slider swiper">
-                    <div class="hero__slider_wr swiper-wrapper">
-                        <div class="hero__slider_sl swiper-slide">
-                            <div class="hero__slider_sl_img">
-                                <picture>
-                                    <!-- <source srcset="./img/hero/hero-1.webp" type="image/webp"> -->
-                                    <img src="./img/hero/hero-1.png" alt="">
-                                </picture>
-                            </div>
-                            <div class="hero__slider_sl_content">
-                                <div class="container">
-                                    <div class="hero__slider_sl_content_in">
-                                        <h2 class="hero__slider_sl_content_title">
-                                            Контакты
-                                        </h2>
-                                        <div class="hero__slider_sl_content_text">
-                                            Мы ценим ваше время и приглашаем Вас в наш уютный офис Net Asset 
-                                        </div>
-            
-                                        <div class="hero__slider_sl_content_action contacts-page__tabs">
-                                            <div class="hero__slider_sl_content_action_main">
-                                                <button class="hero__slider_sl_content_action_main_btn contacts-page__tab button button-tr">
-                                                    г. Сочи
-                                                </button>
-                                                <button class="hero__slider_sl_content_action_main_btn contacts-page__tab button button-tr">
-                                                    г. Москва
-                                                </button>
-                                                
-                                            </div>
-                                            <div class="hero__slider_sl_content_action_nav">
-                                                <div class="hero__slider_sl_content_action_nav_item hero__slider_sl_content_action_nav_item-prev"></div>
-                                                <div class="hero__slider_sl_content_action_nav_item hero__slider_sl_content_action_nav_item-next"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                </div>
+            <div class="hero-n" style="background-image: url('../img/hero/hero-contacts.png');">
+                <div class="container">
+                    <div class="hero-n__in">
+                        <div class="hero-n__content">
+                            <h1 class="hero-n__content_title">
+                                Контакты
+                            </h1>
+                            <div class="hero-n__content_text">
+                                Мы ценим ваше время и приглашаем Вас в наш уютный офис Net Asset 
                             </div>
                         </div>
+                        <div class="hero-n__action">
+                            <button class="hero-n__action_btn button button-green">
+                                <div class="button__text">
+                                    Записаться на встречу
+                                </div>
+                            </button>
+                        </div>
                     </div>
-                    
                 </div>
-                
             </div>
         </div>
         <div class="contacts-page__main">
@@ -145,7 +120,7 @@
                     <div class="contacts-page__mobile_tab">г. Москва</div>
                 </div>
                 <div class="contacts-page__main_item">
-                    <h2 class="contacts-page__main_item_head">Наш офис в г. Сочи</h2>
+                    <h2 class="contacts-page__main_item_head">Наш офис в <span>г. Сочи</span></h2>
                     <div class="contacts-page__main_item_in">
                         <div class="contacts-page__main_item_content">
                             <div class="contacts-page__main_item_content_adr">
@@ -211,7 +186,7 @@
                         </form>
                     </div>
                     <div class="contacts-page__main_item_map">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A280a416017a706c3f4bf6e353377d794ff2484348548b379c7592ad5c53fb3e0&amp;source=constructor" width="763" height="419" frameborder="0"></iframe>
+                        <div id="routeMap"></div>
                     </div>
                     <div class="contacts-page__main_item_info">
                         <h2 class="contacts-page__main_item_info_head">Информационная служба</h2>

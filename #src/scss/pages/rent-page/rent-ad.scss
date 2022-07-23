@@ -1,0 +1,108 @@
+.rent__ad {
+
+    background-color: #fff;
+    padding: 40px 0;
+
+    &_in {
+        padding: 35px 80px;
+        background: #F9FAFD;
+        border-radius: 16px;
+        background-image: url('../img/rent-ad.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+
+    }
+
+    
+
+    &_left {
+        &_title {
+            max-width: 300px;
+            width: 100%;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 125%;
+            margin-bottom: 20px;
+        }
+        &_link {
+            padding: 5px 15px;
+            border: 1px solid #50A627;
+            border-radius: 100px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 165%;
+            margin-bottom: 40px;
+        }
+
+        &_list {
+            position: relative;
+
+            &:after {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                content: '';
+                background: rgb(255,255,255);
+                background: linear-gradient(0deg, rgba(255,255,255,0.7402311266303396) 0%, rgba(255,255,255,0) 63%);
+                box-shadow: 0px 40px 20px rgba(#fff, 1);
+            }
+
+            &_item {
+                padding-left: 40px;
+                position: relative;
+                margin-bottom: 12px;
+                font-size: 14px;
+                line-height: 125%;
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+                &:after {
+                    position: absolute;
+                    top: calc(50% - 10px);
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('../img/icons/check-green.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    content: '';
+                }
+            }
+        }
+    }
+
+    &_right {
+
+        max-width: 230px;
+        width: 100%;
+
+        &_link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 15px;
+            border: 1px solid #99A8B4;
+            border-radius: 100px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 165%;
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 125%;
+        }
+    }
+}

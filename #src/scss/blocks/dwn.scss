@@ -9,6 +9,8 @@
         background: #FFFFFF;
         border-radius: 6px;
         display: flex;
+        width: 100%;
+        justify-content: space-between;
 
         &_descr {
             display: flex;
