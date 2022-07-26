@@ -1,196 +1,235 @@
 .hero {
+    background-color: #fff;
 
-    &__slider {
+    &__in {
+        position: relative;
+        padding: 20px 0;
+    }
 
-        &_wr {
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
 
-        }
-
-        &_sl.black {
-
-            .hero__slider_sl_content {
-
-                &_title {
-                    color: $text;
-                }
-
-                &_text {
-                    color: $text;
-                }
-            }
-        }
-
-        &_sl {
+        &_content {
+            flex: 0 1 600px;    
             position: relative;
+            z-index: 2;
+            &_title {
+                margin-bottom: 45px;
+                font-weight: 600;
+                font-size: 44px;
+                line-height: 125%;
 
+                span {
+                    position: relative;
+                    color: $green;
+                    text-decoration: underline;
+                    text-decoration-style: dashed;
+                    padding-left: 35px;
 
-            &_img {
-                height: 550px;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    display: flex;
+                    &:after {
+                        position: absolute;
+                        top: calc(50% - 12px);
+                        left: 0;
+                        content: '';
+                        width: 24px;
+                        height: 24px;
+                        background-image: url('../img/icons/nav-arrow.svg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+
+                    }
                 }
+            }   
+
+            &_text {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 165%;
+                margin-bottom: 65px;
             }
 
-            &_content {
-                position: absolute;
-                bottom: 0;
-                left: 0;
+            &_list {
+                display: flex;
+                align-items: center;
                 width: 100%;
+                margin-left: -15px;
+                margin-right: -15px;
+            }
 
-                &_in {
-                    color: #fff;
-                    width: 100%;
-                    padding-bottom: 64px;
-                    padding-top: 30px;
-                }
+            &_item {
+                height: 80px;
+                flex: 1 0 260px;
+                background: rgba(255, 255, 255, 0.9);
+                box-shadow: 0px 30px 40px rgba(57, 63, 110, 0.15);
+                border-radius: 8px;
+                width: calc((100% / 3) - 30px);
+                margin: 0 15px;
+                display: flex;
+                align-items: center;
+                padding: 20px 15px;
+                margin-bottom: 20px;
 
-                &_title {
+                &_name {
                     font-weight: 600;
-                    font-size: 36px;
-                    line-height: 115%;
-                    margin-bottom: 28px;
+                    font-size: 14px;
+                    line-height: 19px;
                 }
-
-                &_text {
-                    font-weight: 600;
-                }
-
-                &_action {
-                    margin-top: 50px;
+                
+                &_icon {
+                    width: 50px;
+                    height: 50px;
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
+                    justify-content: center;
+                    margin-right: 20px;
 
-                    &_main {
-                        display: flex;
-                        flex-wrap: wrap;
-                        
-                        &_btn {
-                            margin-right: 20px;
-                        }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
                     }
+                }
 
-                    &_nav {
+                &_descr {
+
+                    &_top {
                         display: flex;
                         align-items: center;
 
-                        &_item {
-                            background-color: #F3F5FA;
-                            width: 50px;
-                            height: 50px;
-                            border-radius: 100%;
-                            background-image: url('../img/icons/chevron-black.svg');
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            background-size: 24px 24px;
-                            cursor: pointer;
-                            margin: 0 5px;
+                        &_value {
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 165%;
+                            margin-right: 15px;
                         }
 
-                        &_item-prev {
-                            transform: rotate(180deg);
+                        &_stars {
+                            display: flex;
+                            align-items: center;
                         }
+                        &_star-half {
+                            width: 18px !important;
+                            height: 18px !important;
+                        }
+                        &_star {
+                            width: 14px;
+                            height: 14px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
 
-                        &_item-next {
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                            }
+                        }
+                    }
 
+                    &_bottom {
+                        display: flex;
+                        align-items: center;
+
+                        &_name {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 165%;
+                            margin-right: 15px;
+                        }
+                        &_revs {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 19px;
+
+                            color: #99A8B4;
                         }
                     }
                 }
+
             }
         }
 
-        &_nav {
-            width: 30px;
-            height: 30px;
-            position: absolute;
-            top: calc(50% - (30px / 2));
-            background-image: url('../img/icons/chevron.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            z-index: 3;
-            cursor: pointer;
-            @include def-anim;
-
-            &:hover {
-                transform: scale(1.5);
-            }
-
-            &_prev {
-                left: 20px;                
-            }
-
-            &_next {
-                right: 20px;
-                transform: rotate(180deg);
-
-                &:hover {
-                    transform: scale(1.5) rotate(180deg);
-                }
-            }
+        &_img {
+            width: 100%;
         }
     }
-    &__action {
-        display: flex;
-        justify-content: flex-end;
-        margin-top: -65px;
-        position: relative;
-        z-index: 2;
-        &_link {
-            width: 130px;
-            height: 130px;
-            border-radius: 100%;
-            background-color: #263044;
-            @include def-anim;
-            background-image: url('../img/icons/external.svg');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 24px 24px;
-            display: block;
-    
-            &:hover {
-                background-color: $green;
-            }
-        }
-    }
-    
 }
 
-
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
     .hero {
 
-        &__slider {
+        &__in {
+            padding: 30px 0;
+        }
 
-            &_sl {
+        &__body {
 
-                &_content {
+            &_content {
+                width: 50%;
 
-                    &_title {
-                        font-weight: 600;
-                        font-size: 32px;
-                        line-height: 115%;
-                    }
+                &_title {
+                    font-size: 30px;
+                }
 
-                    &_text {
-                        font-weight: 500;
-                        font-size: 20px;
-                        line-height: 145%;
-                    }
+                &_text {
+                    font-size: 16px;
+                }
 
-                    &_action {
-                        flex-wrap: wrap;
+                &_list {
+                    flex-wrap: wrap;
+                }
 
-                        &_nav {
-                            padding: 20px 0;
-                        }
-                    }
+                &_item {
+                    width: 100%;
+                }
+            }
+
+            &_img {
+                display: flex;
+                align-items: center;
+                justify-content: center;    
+                width: 50%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    display: flex;
                 }
             }
         }
     }
-    
+}
+
+@media (max-width: 800px) {
+    .hero {
+
+        &__body {
+
+            flex-wrap: wrap;
+
+            &_content {
+                width: 100%;
+                flex: auto;
+
+                &_list {
+                    margin-right: 0;
+                    margin-left: 0;
+                }
+
+                &_item {
+                    width: 100%;
+                    flex: auto;
+                }
+            }
+
+            &_img {
+                width: 100%;
+            }
+        }
+    }
 }

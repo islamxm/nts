@@ -1,5 +1,5 @@
 export const fltr = () => {
-    const trigger = document.querySelector('.map__filter_top_search');
+    const trigger = document.querySelector('.map__head_top_action_btn-pp');
     const el = document.querySelector('.fltr');
     const close = document.querySelector('.fltr__head_close');
 

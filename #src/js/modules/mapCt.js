@@ -1,126 +1,106 @@
-import { mapItemSlider } from "./mapItemSlider.js";
-
+import Swiper from 'swiper';
 
 export const mapCt = () => {
-    const data = [
-        {
-            coord: [55.711450, 37.788567]
-        },
-        {
-            coord: [55.667276, 37.798068]
-        }
-    ]
-    const mapModal = document.querySelector('.map__el');
-    const el = document.querySelector('#mapCt');
-    if(el) {
-        ymaps.ready(function () {
+    let data = {
+        "type": "FeatureCollection",
+        "features": [
+            {"type": "Feature", "id": 0, "geometry": {"type": "Point"}, "properties": {"address": "Москва, Часовая, 26",}},
+            {"type": "Feature", "id": 1, "geometry": {"type": "Point"}, "properties": {"address": "Москва, Бойцовая, 19",}},
+            {"type": "Feature", "id": 2, "geometry": {"type": "Point"}, "properties": {"address": "Москва, Чистова, 21",}},
+            {"type": "Feature", "id": 3, "geometry": {"type": "Point"}, "properties": {"address": "Москва, Клочкова, 6",}}
+        ]
+    }
 
-            var myMap = new ymaps.Map(el, {
-                center: [55.755773, 37.617761],
+    const mapEl = document.getElementById('mapCt');
+    const objList = document.querySelectorAll('.map__body_content_item');
+    const sliders = document.querySelectorAll('.map__card_main_slider');
+
+    if(sliders.length > 0) {
+        sliders.forEach(el => {
+            const slider = new Swiper(el, {
+
+            })
+        })
+    }
+
+    if(mapEl && objList.length > 0) {
+        ymaps.ready(mapInit);
+
+        function mapInit() {
+            let map = new ymaps.Map(mapEl, {
+                center: [55.751574, 37.573856],
                 zoom: 9,
                 controls: []
             }, {
                 searchControlProvider: 'yandex#search'
             });
-    
-            data.forEach(i => {
-                
-                myMap.geoObjects.add(new ymaps.Placemark(i.coord, {
-                    hintContent: 'hintContent',
-                    balloonContentBody: [
-                        
-                        `
-                        <div class="mapItem">
-                        <button class="mapItem__fav">
-    
-                        </button>
-                        <div class="mapItem__slider swiper">
-                            <div class="mapItem__slider_wr swiper-wrapper">
-                                <div class="mapItem__slider_sl swiper-slide">
-                                    <img src="./img/map/map-mobile.png" alt="">
-                                </div>
-                                <div class="mapItem__slider_sl swiper-slide">
-                                    <img src="./img/map/map-mobile.png" alt="">
-                                </div>
-                            </div>
-                            <div class="mapItem__slider_pag"></div>
-                        </div>
-                        <div class="mapItem__body">
-                            <div class="mapItem__body_name">ЖК FORST</div>
-                            <div class="mapItem__body_text">
-                                Проект расположен на Симоновской набережной в непосредственной близости к воде. Такое место гарантирует атмосферу уединенного острова, сохраняя возможность быстрого доступа к эпицентру активной жизни.
-                            </div>
-                            <div class="mapItem__body_price">
-                                от 50 млн руб
-                            </div>
-                            <a href="#" download="#" class="mapItem__body_dwn">
-                                <div class="mapItem__body_dwn_icon"></div>
-                                <div class="mapItem__body_dwn_text">Скачать презентацию</div>
-                            </a>
-                        </div>
-                    </div>
-                        `
-                    ]
-                }, {
-                    iconLayout: 'default#imageWithContent',
-                    iconImageHref: './img/icons/map-point.svg',
-                    iconImageSize: [40, 40],
-                    iconImageOffset: [-20, -20],
-    
-                }))
+
+            let objectManager = new ymaps.ObjectManager({
+                clusterize: false,
+                preset: 'islands#greenIcon'
             })
-    
-            myMap.geoObjects.events.add('click', function(e){
-    
-                // myMap.setCenter(e.get('target').geometry.getBounds()[0]);
-                setTimeout(() => {
-                    mapItemSlider();  
-                }, 1000);
-                 
-                
-                // myMap.geoObjects.each(function(item){
-                //     item.options.set('iconImageHref', './img/icons/map-point.svg');
-                //     item.options.set('iconImageSize', [40, 40]);
-                //     item.options.set('iconImageOffset', [-20, -20]);
-                // })
-                // myMap.balloon.open().then(mapItemSlider()).then(console.log('asasd'))
-                // e.get('target').options.set('iconImageHref', './img/icons/map-active.svg');
-                // e.get('target').options.set('iconImageSize', [60, 60]);
-                // e.get('target').options.set('iconImageOffset', [-30, -30]);
-    
-                
+
+
+            
+
+            data.features.forEach(function(obj, index) {
+                let myGeocode = ymaps.geocode(obj.properties.address);
+                myGeocode.then(function(res) {
+                    let newCoords = res.geoObjects.get(0).geometry.getCoordinates();
+                    obj.geometry.coordinates = newCoords
+                    map.geoObjects.add(new ymaps.Placemark(obj.geometry.coordinates, {
+                        nid: obj.properties.address
+                    }, {
+                        iconLayout: 'default#image',
+                        iconImageHref:'./img/icons/map-point.svg',
+                        iconImageSize: [16, 16],
+                        iconImageOffset: [-8, -8]
+                    }))
+                })
             })
-        });
-    }
-    
-    
 
-    const trigger = document.querySelector('#mapCtTrigger');
-    const close = document.querySelector('.map__el_head_main_close');
-    const checkbox = document.querySelector('#ch1');
+            
 
-    if(checkbox) {
-        checkbox.addEventListener('input', (e) => {
-            if(e.target.checked) {
-                console.log('checked')
-                mapModal.style.display = 'block'
-            }
-            if(!e.target.checked) {
-                console.log('not checked')
-                mapModal.style.display = 'none';
-            }
-        })
-    }
+           function hideList() {
+                objList.forEach(i => {
+                    i.classList.remove('active');
+                    i.classList.add('hide');
+                })
+           }
 
-    if(trigger) {
-        trigger.addEventListener('click', () => {
-            mapModal.classList.add('active');
-        })
-    }
+            map.geoObjects.events.add('click', function(e){
 
-    if(close) {
-        close.addEventListener('click', () => {
-            mapModal.classList.remove('active');
-        })
+                
+
+                map.geoObjects.each(function(item){
+                    item.options.set(
+                        {
+                            iconLayout: 'default#image',
+                            iconImageHref:'./img/icons/map-point.svg',
+                            iconImageSize: [20, 20],
+                            iconImageOffset: [-10, -10]
+                        }
+                    )
+                })
+
+
+                objList.forEach(list => {
+                    if(e.get('target').properties.get('nid') == list.dataset.address) {
+                        hideList();
+                        list.classList.add('active')
+                        list.classList.remove('hide')
+                    }
+                })
+
+                e.get('target').options.set(
+                    {
+                        iconLayout: 'default#image',
+                        iconImageHref:'./img/icons/map-active.svg',
+                        iconImageSize: [30, 30],
+                        iconImageOffset: [-15, -15]
+                    }
+                )
+            })
+        }
     }
 }
