@@ -96,6 +96,39 @@
                     object-fit: cover;
                 }
             }
+
+            &_pag {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                bottom: 10 !important;
+                width: 100%;
+                left: 0;
+                padding: 0 20px;
+                z-index: 5;
+                &_item {
+                    width: 100%;
+                    margin: 0 2px;
+                    background: #FFFFFF;
+                    opacity: 0.8;
+                    border-radius: 2px;
+                    height: 2px;
+                    @include def-anim;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                &_item.active {
+                    opacity: 1;
+                    background-color: $green;
+                }
+            }
         }
     }
 

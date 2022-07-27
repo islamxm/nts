@@ -27,6 +27,9 @@
                     </div>
                     @@include('../components/fltr.html')
                 </div>
+                <div class="map__head_top_mob">
+                    Показать на карте
+                </div>
             </div>
             <div class="map__head_filter">
                 <div class="map__head_filter_item map__head_filter_item-date map__head_filter_item-date-enter">
@@ -82,7 +85,13 @@
                     </div>
                 </div>
                 
-                <div class="map__body_el" id="mapCt"></div>
+                <div class="map__body_el">
+                    <div class="map__body_el_head">
+                        <div class="map__body_el_head_name">Объекты на карте</div>
+                        <button class="map__body_el_head_close"></button>
+                    </div>
+                    <div id="mapCt"></div>
+                </div>
             </div>
             
         </div>

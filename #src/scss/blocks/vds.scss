@@ -1,0 +1,141 @@
+.vds {
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 60px;
+        padding-bottom: 30px;
+
+        &_title {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 135%;
+        }
+
+        &_nav {
+            display: flex;
+            align-items: center;
+
+            &_item {
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                background-color: $text;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 24px;
+                background-image: url('../img/icons/chevron.svg');
+                margin: 0 5px;
+                cursor: pointer;
+                @include def-anim;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            &_item-next {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__body {
+
+        &_slider {
+
+            &_sl {
+
+                &_video {
+                    height: 160px;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    position: relative;
+
+                    &_el {
+                        width: 100%;
+                        height: 100%;
+
+                        video {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    &_mask.hide {
+                        z-index: -1;
+                    }
+
+                    &_mask {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        z-index: 2;
+
+                        &_btn {
+                            width: 44px;
+                            height: 44px;
+                            background-color: $green;
+                            border-radius: 100%;
+                            background-image: url('../img/icons/play-white.svg');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 24px 24px;
+                            cursor: pointer;
+                            @include def-anim;
+
+                            &:hover {
+                                background-color: $text;
+                            }
+                        }
+                    }
+                }
+
+                &_name {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 135%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+    .vds {
+
+        &__head {
+            margin-bottom: 20px;
+        }
+    }
+} 
+
+@media (max-width: 768px) {
+
+    .vds {
+
+        &__head {
+
+            &_nav {
+                display: none;
+            }
+        }
+    }
+}

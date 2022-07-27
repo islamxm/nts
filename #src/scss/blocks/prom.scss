@@ -1,0 +1,91 @@
+.prom {
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__head {
+        margin-bottom: 75px;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 135%;
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: -15px;
+        margin-right: -15px;
+
+        &_item {
+            padding: 50px;
+            margin: 0 15px;
+            margin-bottom: 20px;
+            height: 400px;
+            width: calc((100% / 2) - 30px);
+            background: #F9FAFD;
+            border-radius: 6px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-image: url('../img/prom.png');
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: contain;
+
+            &_head {
+                max-width: 340px;
+                width: 100%;
+                &_title {
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 125%;
+                    margin-bottom: 25px;
+                }
+
+                &_text {
+
+                }
+            }
+
+            &_action {
+                display: flex;
+                align-items: center;
+                max-width: 340px;
+                width: 100%;
+
+                &_btn {
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .prom {
+
+        &__in {
+            padding: 25px 0;
+        }
+
+        &__body {
+
+            margin-left: 0;
+            margin-right: 0;
+
+            &_item {
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+
+                &_head {
+                    
+                }
+            }
+        }
+    }
+}

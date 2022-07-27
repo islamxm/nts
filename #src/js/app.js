@@ -33,6 +33,8 @@ import { careerGallery } from './modules/careerGallery.js';
 import { rentSlider } from './modules/rentSlider.js';
 import { btnTabs } from './modules/btnTabs.js';
 import { specSlider } from './modules/specSlider.js';
+import { restSlider } from './modules/restSlider.js';
+import { vds } from './modules/vds.js';
 
 flsFuncs.isWebp();
 
@@ -86,6 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
     btnTabs('.map__head_filter_item-rm', '.map__head_filter_item-rm_tab');
     btnTabs('.map__head_top_tabs', '.map__head_top_tabs_item')
     specSlider();
+    restSlider();
+    vds();
     
     Micromodal.init();
 

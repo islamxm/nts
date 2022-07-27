@@ -1,4 +1,4 @@
-import Swiper from 'swiper';
+import Swiper, {Pagination} from 'swiper';
 
 export const mapCt = () => {
     let data = {
@@ -14,11 +14,31 @@ export const mapCt = () => {
     const mapEl = document.getElementById('mapCt');
     const objList = document.querySelectorAll('.map__body_content_item');
     const sliders = document.querySelectorAll('.map__card_main_slider');
+    const mapMobileBtn = document.querySelector('.map__head_top_mob');
+    const mapBody = document.querySelector('.map__body');
+    const mapMobileClose = document.querySelector('.map__body_el_head_close');
+
+
+    if(mapMobileBtn && mapBody) {
+        mapMobileBtn.addEventListener('click', () => {
+            mapBody.classList.add('active');
+        })
+        mapMobileClose.addEventListener('click', () => {
+            mapBody.classList.remove('active');
+        })
+    }
 
     if(sliders.length > 0) {
         sliders.forEach(el => {
             const slider = new Swiper(el, {
-
+                modules: [Pagination],
+                pagination: {
+                    el: '.map__card_main_slider_pag',
+                    type: 'bullets',
+                    bulletClass: 'map__card_main_slider_pag_item',
+                    bulletActiveClass: 'active',
+                    clickable: true
+                }
             })
         })
     }
