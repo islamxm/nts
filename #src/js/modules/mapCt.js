@@ -16,7 +16,9 @@ export const mapCt = () => {
     const sliders = document.querySelectorAll('.map__card_main_slider');
     const mapMobileBtn = document.querySelector('.map__head_top_mob');
     const mapBody = document.querySelector('.map__body');
+    const mapList = document.querySelector('.map__list');
     const mapMobileClose = document.querySelector('.map__body_el_head_close');
+    const checkbox = document.querySelector('#mapToggle');
 
 
     if(mapMobileBtn && mapBody) {
@@ -120,6 +122,34 @@ export const mapCt = () => {
                         iconImageOffset: [-15, -15]
                     }
                 )
+            })
+        }
+
+        if(checkbox.checked) {
+            mapBody.classList.add('on');
+            mapList.classList.add('off')
+            mapBody.classList.remove('off');
+            mapList.classList.remove('on');
+        } else {
+            mapBody.classList.add('off')
+            mapList.classList.add('on')
+            mapBody.classList.remove('on')
+            mapList.classList.remove('off')
+        }
+
+        if(checkbox) {
+            checkbox.addEventListener('input', () => {
+                if(checkbox.checked) {
+                    mapBody.classList.add('on');
+                    mapList.classList.add('off')
+                    mapBody.classList.remove('off');
+                    mapList.classList.remove('on');
+                } else {
+                    mapBody.classList.add('off')
+                    mapList.classList.add('on')
+                    mapBody.classList.remove('on')
+                    mapList.classList.remove('off')
+                }
             })
         }
     }
