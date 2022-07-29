@@ -13237,6 +13237,41 @@ body {
   background-image: url("../img/icons/users.svg");
 }
 
+@media (max-width: 768px) {
+  .order__head_main_card {
+    max-width: unset;
+    margin-bottom: 20px;
+  }
+  .order__head_main_basket {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .order__head_main_basket_item {
+    width: 32.2580645161%;
+    margin: 0;
+  }
+}
+@media (max-width: 520px) {
+  .order__head_in {
+    padding-bottom: 10px;
+  }
+  .order__head_main_card {
+    flex-wrap: wrap;
+  }
+  .order__head_main_card_img {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 250px;
+    margin-right: 0;
+  }
+  .order__head_main_basket {
+    flex-wrap: wrap;
+  }
+  .order__head_main_basket_item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
 .order__body {
   background-color: #fff;
 }
@@ -13579,6 +13614,88 @@ body {
   width: 100%;
 }
 
+@media (max-width: 1000px) {
+  .order__body_main_part_body {
+    padding: 20px;
+  }
+  .order__body_main_part_body_input_el {
+    margin: 0;
+  }
+  .order__body_main_part_body-guestData_main {
+    flex-wrap: wrap;
+  }
+  .order__body_main_part_body-guestData_main_input-name {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .order__body_main_part_body-guestData_passport_tabs {
+    flex-wrap: wrap;
+  }
+  .order__body_main_part_body-guestData_passport_tabs_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .order__body_main_part_body-guestData_passport_content_row {
+    flex-wrap: wrap;
+  }
+  .order__body_main_part_body-guestData_passport_content_item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .order__body_main_part_body-guestData_passport_content_item input {
+    margin-right: 5px;
+  }
+  .order__body_main_part_body-contacts {
+    flex-wrap: wrap;
+  }
+  .order__body_main_part_body-contacts_item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .order__body_in {
+    flex-wrap: wrap;
+  }
+  .order__body_main {
+    width: 100%;
+  }
+  .order__body_ex {
+    width: 100%;
+  }
+}
+@media (max-width: 520px) {
+  .order__body_in {
+    padding-bottom: 100px;
+  }
+  .order__body_ex {
+    padding: 20px;
+  }
+  .order__body_ex_promo_body {
+    flex-wrap: wrap;
+  }
+  .order__body_ex_promo_body_inp {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .order__body_ex_promo_body_btn {
+    width: 100%;
+  }
+  .order__body_main_part_head_text {
+    font-size: 18px;
+  }
+  .order__body_main_part_body-ex_enter_list {
+    justify-content: space-between;
+  }
+  .order__body_main_part_body-ex_enter_item {
+    width: 48%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
 .mapCluster__in {
   padding: 50px 0;
 }

@@ -184,3 +184,56 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .order__head {
+
+        &_main {
+
+            &_card {
+                max-width: unset;
+                margin-bottom: 20px;
+            }
+
+            &_basket {
+                width: 100%;
+                justify-content: space-between;
+
+                &_item {
+                    width: calc(100% / 3.1);
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .order__head {
+        &_in {
+            padding-bottom: 10px;
+        }
+        &_main {
+
+            &_card {
+                flex-wrap: wrap;
+
+                &_img {
+                    width: 100%;
+                    margin-bottom: 15px;
+                    height: 250px;
+                    margin-right: 0;
+                }
+            }
+
+            &_basket {
+                flex-wrap: wrap;
+
+                &_item {
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

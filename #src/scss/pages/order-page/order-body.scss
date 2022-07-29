@@ -434,3 +434,157 @@
         }
     }
 }
+
+
+@media (max-width: 1000px) {
+    .order__body {
+
+        &_in {
+
+        }
+
+        &_main {
+
+            &_part {
+
+                &_body {
+                    padding: 20px;
+                    &_input {
+
+                        &_el {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                &_body-guestData {
+
+                    &_main {
+                        flex-wrap: wrap;
+
+                        &_input-name {
+                            width: 100%;
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    &_passport {
+
+                        &_tabs {
+                            flex-wrap: wrap;
+                            &_item {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        &_content {
+
+                            &_row {
+                                flex-wrap: wrap;
+                            }
+
+                            &_item {
+                                width: 100%;
+                                margin-bottom: 15px;
+
+
+                            }
+
+                            &_item input {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+
+                &_body-contacts {
+                    flex-wrap: wrap;
+
+                    &_item {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .order__body {
+
+        &_in {
+            flex-wrap: wrap;
+        }
+
+        &_main {
+            width: 100%;
+        }
+
+        &_ex {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+
+    .order__body {
+
+        &_in {
+            padding-bottom: 100px;
+        }
+
+        &_ex {
+            padding: 20px;
+
+            &_promo {
+                &_body {
+                    flex-wrap: wrap;
+
+                    &_inp {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+
+                    &_btn {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+
+        &_main {
+
+            &_part {
+
+                &_head {
+
+                    &_text {
+                        font-size: 18px;
+                    }
+                }
+                &_body-ex {
+
+                    &_enter {
+
+                        &_list {
+                            justify-content: space-between;
+
+                        }
+
+                        &_item {
+                            width: 48%;margin-right: 0;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
