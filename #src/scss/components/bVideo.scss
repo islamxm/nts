@@ -1,0 +1,27 @@
+.video {
+
+    &__el {
+        
+    }
+
+    &__mask {
+
+        &_btn {
+
+        }
+    }
+
+}
+
+.video.block {
+
+    .video__mask {
+        z-index: 3;
+    }
+}
+
+.video.show {
+    .video__mask {
+        z-index: -1;
+    }
+}

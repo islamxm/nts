@@ -23,7 +23,7 @@ import Micromodal from 'micromodal';
 import { sqSlider } from './modules/sqSlider.js';
 import { routeMap } from './modules/routeMap.js';
 import { revSlider } from './modules/revsSlider.js';
-import { indSliders } from './modules/indSliders.js';
+
 import { objectSliders } from './modules/objectSliders.js';
 import { objectRange } from './modules/objectRange.js';
 import { objectRevs } from './modules/objectRevs.js';
@@ -35,6 +35,8 @@ import { btnTabs } from './modules/btnTabs.js';
 import { specSlider } from './modules/specSlider.js';
 import { restSlider } from './modules/restSlider.js';
 import { vds } from './modules/vds.js';
+import { dbl } from './modules/dbl.js';
+import { bVideo } from './modules/bVideo.js';
 
 flsFuncs.isWebp();
 
@@ -71,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     sqSlider();
     routeMap();
     revSlider();
-    indSliders();
     tabs('.manage__ind', '.manage__ind_tabs', '.manage__ind_tabs_item', '.manage__ind_item');
     tabs('.contacts-page', '.contacts-page__tabs', '.contacts-page__tab', '.contacts-page__main_item');
     tabs('.contacts-page', '.contacts-page__mobile_tabs', '.contacts-page__mobile_tab', '.contacts-page__main_item');
@@ -90,7 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
     specSlider();
     restSlider();
     vds();
-    
+    dbl();
+    bVideo();
     Micromodal.init();
 
 })

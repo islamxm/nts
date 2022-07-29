@@ -19,6 +19,7 @@
 @import './components/modal.scss';
 @import './components/dropdown.scss';
 @import './components/mapCard.scss';
+@import './components/bVideo.scss';
 
 //BLOCKS
 @import './blocks/header.scss';
@@ -45,6 +46,7 @@
 @import './blocks/rest.scss';
 @import './blocks/vds.scss';
 @import './blocks/prom.scss';
+@import './blocks/dbl.scss';
 
 //PAGES
 @import './pages/contacts-page.scss';
@@ -84,7 +86,7 @@
 
 //invest page
 @import './pages/invest-page/invest-hero.scss';
-@import './pages/invest-page/invest-ind.scss';
+
 @import './pages/invest-page/invest-res.scss';
 @import './pages/invest-page/invest-dwn.scss';
 @import './pages/invest-page/invest-mng.scss';

@@ -117,6 +117,29 @@
                     margin-bottom: 10px;
                     
                     background-size: 25px;
+
+                    label {
+                        position: relative;
+                        padding-right: 0px;
+                        display: flex;
+                        align-items: center;
+
+                        &:after {
+                            position: absolute;
+                            right: 0px;
+                            top: calc(50% - 10px);
+                            content: '';
+                            background-image: url('../img/icons/calendar-gray.svg');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            width: 20px;
+                            height: 20px;
+                            // z-index: -1;
+                        }
+                    }
+
+
                     input {
                         display: flex;
                         align-items: center;
@@ -125,15 +148,15 @@
                         font-weight: 500;
                         font-size: 14px;
                         line-height: 135%;
-                        background-image: url('../img/icons/calendar-gray.svg');
-                        background-repeat: no-repeat;
-                        background-position: right center;
-                        background-size: 20px;
+                        
                         color: pointer;
                         // padding-right: 25px;
                         &::-webkit-calendar-picker-indicator {
                             opacity: 0;
                             color: pointer;
+                            z-index: 2;
+                            width: 20px;
+                            height: 20px;
                         }
                     }
                 }

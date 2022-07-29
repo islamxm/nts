@@ -1,0 +1,344 @@
+.dbl {
+    background-color: $text;
+
+    &__in {
+        padding: 80px 0;
+    }
+
+    &__head {
+        color: #fff;
+
+        &_title {
+            margin-bottom: 20px;
+        }
+
+        &_subtitle {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__head.center {
+
+        .dbl__head_title {
+            text-align: center;
+        }
+
+        .dbl__head_subtitle {
+            text-align: center;
+        }
+    }
+
+    &__body {
+
+        &_slider {
+            background-color: #fff;
+            border-radius: 6px;
+
+
+            &_nav {
+                position: absolute;
+                top: 35px;
+                right: 60px;
+                z-index: 2;
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+
+                &_frac {
+                    margin-right: 15px;
+                    font-weight: 700;
+                    .swiper-pagination-total {
+                        color: #99A8B4;
+                    }
+                    .swiper-pagination-current {
+
+                    }
+                }
+
+                &_item {
+                    margin: 0 5px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    background-color: #F3F5FA;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-image: url('../img/icons/chevron-black.svg');
+                    background-size: 24px;
+                    @include def-anim;
+                    flex: 0 0 auto;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                &_item.swiper-button-disabled {
+                    opacity: .5;
+                    pointer-events: none;
+                }
+
+                &_item-prev {
+                    transform: rotate(180deg);
+                }
+            }
+            &_sl {
+
+                &_top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 48px 60px;
+                    border-bottom: 1px solid #E3E8EC;
+                    padding-right: 230px;
+
+                    &_name {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 135%;
+                    }
+                }
+
+                &_content {
+                    padding: 20px 60px 40px;
+                    display: flex;
+                    
+
+                    &_descr {
+                        width: 50%;
+                        padding-right: 70px;
+                        &_part {
+                            margin-bottom: 40px;
+                            &_name {
+                                margin-bottom: 30px;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 135%;
+                                color: #99A8B4;
+                            }
+
+                            &_text {
+
+                            }
+                        }
+
+                        &_inds {
+                            padding: 15px 20px;
+                            border: 1px solid #E3E8EC;
+                            border-radius: 6px;
+                            display: flex;
+                            align-items: flex-end;
+                            justify-content: space-between;
+                            margin-bottom: 40px;
+
+                            &_item {
+                                
+
+                                &_name {
+                                    font-weight: 500;
+                                    font-size: 12px;
+                                    line-height: 135%;
+                                    color: #99A8B4;
+                                    margin-bottom: 30px;
+                                }
+
+                                &_val {
+                                    font-weight: 600;
+                                    font-size: 20px;
+                                    line-height: 135%;
+                                }
+                            }
+
+                            &_tm {
+                                color: $green;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 125%;
+                                position: relative;
+                                padding-left: 26px;
+
+                                &:after {
+                                    position: absolute;
+                                    width: 20px;
+                                    height: 20px;
+                                    background-image: url('../img/icons/clock.svg');
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                    background-size: 20px;
+                                    content: '';
+                                    top: calc(50% - 10px);
+                                    left: 0;
+                                }
+                            }
+                        }
+
+                        &_action {
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+
+                            &_btn {
+
+                            }
+                        }
+                    }
+
+                    &_slider {
+                        width: 50%;
+                        overflow: hidden;
+                        position: relative;
+
+                        &_wr {
+
+                        }
+
+                        &_sl {
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                display: flex;
+                            }
+                        }
+
+                        &_nav {
+                            position: absolute;
+                            z-index: 2;
+                            top: calc(50% - 20px);
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 100%;
+                            background-image: url('../img/icons/chevron-black.svg');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: 20px;
+                            background-color: rgba(#fff, .6);
+                        }
+
+                        &_nav.swiper-button-disabled {
+                            opacity: .5;
+                            pointer-events: none;
+                        }
+
+                        &_nav-prev {
+                            left: 20px;
+                            transform: rotate(180deg);
+                        }
+
+                        &_nav-next {
+                            right: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .dbl {
+
+        &__body {
+            &_slider {
+                &_sl {
+
+                    &_top {
+                        padding-bottom: 115px;
+                        padding-right: 60px;
+                        justify-content: center;
+
+                        &_name {
+                            text-align: center;
+                        }
+                    }
+
+                    &_content {
+                        flex-wrap: wrap;
+    
+                        &_descr {
+                            width: 100%;
+                            margin-bottom: 40px;
+                            padding-right: 0;
+                        }
+
+                        &_slider {
+                            width: 100%;
+                            height: 320px;
+                        }
+                    }
+                }
+
+                
+
+                &_nav {
+                    top: 120px;
+                    width: 100%;
+                    right: 0;
+                    padding: 0 60px;
+                    justify-content: space-between;
+
+                    &_frac {
+                        display: none;
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+
+    .dbl {
+
+        &__in {
+            padding: 50px 0;
+        }
+
+        &__head {
+
+            &_title {
+
+            }
+
+            &_subtitle {
+                margin-bottom: 20px;
+            }
+        }
+
+        &__body {
+            &_slider {
+
+                &_sl {
+                    &_top {
+                        padding: 40px 30px 115px 30px;
+                    }
+
+                    &_content {
+                        padding: 48px 15px 15px 15px;
+
+                        &_descr {
+                            padding: 0 15px;
+
+                            &_action {
+
+                                &_btn {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &_nav {
+                    padding: 0 30px;
+                }
+            }
+        }
+    }
+}
