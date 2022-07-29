@@ -85,6 +85,15 @@
                             color: #E3E8EC;
                         }
                     }
+
+                    &_el {
+
+                        &:disabled {
+                            opacity: .5;
+                            pointer-events: none;
+                            
+                        }
+                    }
                 }
             }
 

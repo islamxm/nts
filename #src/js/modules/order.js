@@ -74,4 +74,18 @@ export const order = () => {
             })
         })
     }
+
+    const ptrCheckbox = document.querySelectorAll('.ptrCheckbox');
+
+    if(ptrCheckbox.length > 0) {
+        ptrCheckbox.forEach(i => {
+            i.addEventListener('change', () => {
+                if(i.checked) {
+                    i.parentElement.parentElement.previousElementSibling.setAttribute('disabled', true);
+                } else {
+                    i.parentElement.parentElement.previousElementSibling.removeAttribute('disabled');
+                }
+            })
+        })
+    }
 }
