@@ -1,0 +1,186 @@
+.order__head {
+    background: #FFFFFF;
+    box-shadow: 0px 30px 40px rgba(57, 63, 110, 0.15);
+    z-index: 3;
+    position: relative;
+    &_in {
+        padding: 30px 0 40px;
+
+    }
+
+    &_top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        
+        &_btn {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 120%;
+            color: #99A8B4;
+            opacity: 0.6;
+            position: relative;
+            padding-right: 26px;
+
+            &:after {
+                position: absolute;
+                top: calc(50% - 8px);
+                right: 0;
+                width: 16px;
+                height: 16px;
+                background-image: url('../img/icons/close-gray.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                content: '';
+            }
+        }
+    }
+
+    &_main {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+
+        &_card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            max-width: 480px;
+            width: 100%;
+
+            &_img {
+                width: 182px;
+                height: 120px;  
+                margin-right: 30px;
+                border-radius: 8px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: flex;
+                }
+            }
+
+            &_body {
+
+                &_rate {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 135%;
+                    padding-left: 30px;
+                    position: relative;
+                    margin-bottom: 7px;
+
+                    &:after {
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        top: calc(50% - 10px);
+                        left: 0;
+                        content: '';
+                        background-image: url('../img/icons/star.svg');
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                    }
+                }
+                &_name {
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 135%;
+                    margin-bottom: 7px;
+                }
+
+                &_adr {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 135%;
+                    /* identical to box height, or 22px */
+
+
+                    /* Text / Grey */
+
+                    color: #99A8B4;
+                }
+            }
+        }
+
+        &_basket {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            &_item {
+                margin: 0 15px;
+                width: 182px;
+                height: 110px;
+                background: #F9FAFD;
+                border-radius: 8px;
+                padding: 56px 20px 15px;
+                position: relative;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 135%;
+                flex: 0 0 auto;
+
+                &:after {
+                    position: absolute;
+                    top: 15px;
+                    left: 20px;
+                    width: 30px;
+                    height: 30px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    content: '';
+                }
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &_date {
+
+                }
+
+                &_time {
+                    color: #99A8B4;
+                }
+
+                &_person {
+
+                }
+            }
+
+            &_item-enter {
+
+                &:after {
+                    background-image: url('../img/icons/enter-arrow.svg');
+                }
+            }
+
+            &_item-exit {
+
+                &:after {
+                    background-image: url('../img/icons/exit-arrow.svg');
+                }
+            }
+
+            &_item-cnt {
+
+                &:after {
+                    background-image: url('../img/icons/users.svg');
+                }
+            }
+        }
+    }
+}

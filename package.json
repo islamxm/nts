@@ -49,6 +49,7 @@
     "accordion-js": "^3.3.0",
     "apexcharts": "^3.35.3",
     "choices.js": "^10.1.0",
+    "imask": "^6.4.2",
     "micromodal": "^0.4.10",
     "nouislider": "^15.6.0",
     "swiper": "^8.1.6"

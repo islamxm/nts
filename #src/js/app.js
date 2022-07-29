@@ -37,6 +37,7 @@ import { restSlider } from './modules/restSlider.js';
 import { vds } from './modules/vds.js';
 import { dbl } from './modules/dbl.js';
 import { bVideo } from './modules/bVideo.js';
+import { order } from './modules/order.js';
 
 flsFuncs.isWebp();
 
@@ -93,6 +94,9 @@ document.addEventListener('DOMContentLoaded', () => {
     vds();
     dbl();
     bVideo();
+    order();
+    tabs('.order__body_main_part_body-guestData_passport', '.order__body_main_part_body-guestData_passport_tabs', '.order__body_main_part_body-guestData_passport_tabs_item', '.order__body_main_part_body-guestData_passport_content')
+    btnTabs('.order__body_main_part_body-ex_enter_list', '.order__body_main_part_body-ex_enter_item')
     Micromodal.init();
 
 })
