@@ -13572,6 +13572,56 @@ body {
 .order__body_main_part_body-payment_bottom_icns_item img {
   display: flex;
 }
+.order__body_main_part_body-order_head {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+}
+.order__body_main_part_body-order_num {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 165%;
+  color: #50A627;
+  margin-bottom: 20px;
+}
+.order__body_main_part_body-order_info {
+  margin-bottom: 40px;
+}
+.order__body_main_part_body-order_info_item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 145%;
+  color: #99A8B4;
+}
+.order__body_main_part_body-order_action_item {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid #E3E8EC;
+  border-radius: 6px;
+  padding: 0 40px;
+}
+.order__body_main_part_body-order_action_item_name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 135%;
+}
+.order__body_main_part_body-order_action_item_icon {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+.order__body_main_part_body-order_action_item_icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
 .order__body_ex {
   width: 394px;
   background: #FFFFFF;
@@ -13676,6 +13726,11 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 125%;
+}
+.order__body_ex_mail {
+  margin-bottom: 40px;
+  font-weight: 500;
+  display: inline-block;
 }
 .order__body_ex_action {
   display: flex;
@@ -13802,6 +13857,12 @@ body {
   }
   .order__body_main_part_body-payment_bottom_cvc {
     width: 100%;
+  }
+  .order__body_main_part_body-order_action_item {
+    padding: 0 20px;
+  }
+  .order__body_main_part_body-order_action_item_name {
+    font-size: 16px;
   }
 }
 .mapCluster__in {
