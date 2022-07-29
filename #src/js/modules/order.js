@@ -75,6 +75,47 @@ export const order = () => {
         })
     }
 
+
+    const cardNumber = document.querySelector('.input__cardNumber');
+
+    if(cardNumber) {
+        const cardNumberMask = IMask(cardNumber, {
+            mask: '0000 0000 0000 0000'
+        })
+    }
+
+
+    const cardName = document.querySelector('.input__cardName');
+
+    const cardMnth = document.querySelector('.input__cardMnth');
+
+    if(cardMnth) {
+        const cardMnthMask = IMask(cardMnth, {
+            mask: '00'
+        })
+    }
+
+
+    const cardYear = document.querySelector('.input__cardYear');
+
+    if(cardYear) {
+        const cardYearMask = IMask(cardYear, {
+            mask: '00'
+        })
+    }
+
+
+    const cardCvc = document.querySelector('.input__cardCvc');
+
+    if(cardCvc) {
+        const cardCvcMask = IMask(cardCvc, {
+            mask: '000'
+        })
+    }
+
+
+
+
     const ptrCheckbox = document.querySelectorAll('.ptrCheckbox');
 
     if(ptrCheckbox.length > 0) {

@@ -13354,6 +13354,28 @@ body {
   justify-content: flex-start;
   padding: 20px 0;
 }
+.order__body_main_part_action_pay {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 135%;
+  color: #99A8B4;
+  position: relative;
+  padding-left: 60px;
+}
+.order__body_main_part_action_pay:after {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icons/lock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  content: "";
+  top: calc(50% - 20px);
+  left: 0;
+  background-color: #F9FAFD;
+  border-radius: 8px;
+}
 .order__body_main_part_action_btn {
   position: relative;
   font-weight: 600;
@@ -13514,6 +13536,42 @@ body {
   background-color: #50A627;
   color: #fff;
 }
+.order__body_main_part_body-payment_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.order__body_main_part_body-payment_top_item {
+  width: 100%;
+}
+.order__body_main_part_body-payment_bottom {
+  display: flex;
+}
+.order__body_main_part_body-payment_bottom_tm {
+  width: 180px;
+  flex: 0 0 auto;
+}
+.order__body_main_part_body-payment_bottom_tm span {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 125%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.order__body_main_part_body-payment_bottom_icns {
+  display: flex;
+  align-items: flex-end;
+}
+.order__body_main_part_body-payment_bottom_icns_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 7px;
+}
+.order__body_main_part_body-payment_bottom_icns_item img {
+  display: flex;
+}
 .order__body_ex {
   width: 394px;
   background: #FFFFFF;
@@ -13614,6 +13672,15 @@ body {
   width: 100%;
 }
 
+@media (max-width: 1100px) {
+  .order__body_main_part_body-payment_bottom {
+    flex-wrap: wrap;
+  }
+  .order__body_main_part_body-payment_bottom_icns {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
 @media (max-width: 1000px) {
   .order__body_main_part_body {
     padding: 20px;
@@ -13655,6 +13722,26 @@ body {
     width: 100%;
     margin-bottom: 15px;
   }
+  .order__body_main_part_body-payment_top {
+    flex-wrap: wrap;
+  }
+  .order__body_main_part_body-payment_top_item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .order__body_main_part_body-payment_bottom {
+    justify-content: space-between;
+  }
+  .order__body_main_part_body-payment_bottom_tm {
+    width: 48%;
+  }
+  .order__body_main_part_body-payment_bottom_tm span {
+    margin: 0 5px;
+  }
+  .order__body_main_part_body-payment_bottom_cvc {
+    width: 48%;
+    min-width: unset;
+  }
 }
 @media (max-width: 800px) {
   .order__body_in {
@@ -13694,6 +13781,13 @@ body {
     width: 48%;
     margin-right: 0;
     margin-bottom: 15px;
+  }
+  .order__body_main_part_body-payment_bottom_tm {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .order__body_main_part_body-payment_bottom_cvc {
+    width: 100%;
   }
 }
 .mapCluster__in {
