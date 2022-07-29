@@ -408,6 +408,22 @@
             margin-bottom: 20px;
         }
 
+        &_num {
+            color: $green;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 165%;
+            margin-bottom: 15px;
+        }
+
+        &_info {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 145%;
+            color: #99A8B4;
+            margin-bottom: 20px;
+        }
+
         &_promo {
             margin-bottom: 60px;
 
