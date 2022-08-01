@@ -75,3 +75,28 @@
 
     }
 }
+
+
+@media (max-width: 768px) {
+
+    .rent__dec {
+
+        &_inds {
+            flex-wrap: wrap;
+
+            &_item {
+                width: 100%;
+                margin-bottom: 30px;
+                align-items: flex-start;
+
+                &_name {
+                    text-align: left;
+                }
+
+                &_value {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

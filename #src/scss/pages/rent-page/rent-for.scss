@@ -143,3 +143,38 @@
         
     }
 }
+
+@media (max-width: 850px) {
+    .rent__for {
+
+        &_in {
+            padding: 80px 0 40px;
+        }
+
+        &_body {
+            flex-wrap: wrap;
+
+            &_col {
+                width: 100%;
+            }
+
+            &_item {
+
+                &_card {
+                    padding: 10px;
+
+                    &_bottom {
+
+                        &_btn {
+                            padding: 15px 10px 15px 30px;
+
+                            &:after {
+                                left: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

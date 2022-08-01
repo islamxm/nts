@@ -5,7 +5,9 @@ export const tours = () => {
 
 
     if(parent) {
-        let fill = parent.offsetWidth - 320;
+        let rem = 80 * els.length;
+        console.log(rem)
+        let fill = parent.offsetWidth - rem;
 
         if(els.length > 0) {
 

@@ -6,13 +6,19 @@ export const rentSlider = () => {
     if(el) {
         const slider = new Swiper(el, {
             modules: [Autoplay],
-            spaceBetween: 30,
-            slidesPerView: 3,
+            slidesPerView: 1,
+            spaceBetween: 20,
             autoplay: {
                 delay: 3000                
             },
             speed: 1300,
-            loop: true
+            loop: true,
+            breakpoints: {
+                1000: {
+                    spaceBetween: 30,
+                    slidesPerView: 3,
+                }
+            }
         })
     }
 }

@@ -1,0 +1,194 @@
+.nt {
+    background-color: #fff;
+    
+    &__in {
+        padding: 60px 0;
+    }
+
+    &__head {
+        margin-bottom: 100px;
+
+        &_title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 125%;
+        }
+
+        &_subtitle {
+            text-align: center;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 165%;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        background-image: url('../img/macbook.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 70%;
+        justify-content: space-between;
+        &_content {
+            width: 390px;
+
+            &_text {
+                margin-bottom: 40px;
+                font-weight: 500;
+            }
+
+            &_list {
+                margin-bottom: 40px;
+            }
+
+            &_item {
+                margin-bottom: 15px;
+                padding-left: 36px;
+                position: relative;
+                font-weight: 500;
+                &:after {
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('../img/icons/plus-green.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+
+            &_action {
+                &_btn {
+
+                }
+            }
+        }
+
+        &_form {    
+            padding: 60px 50px;
+            max-width: 495px;
+            width: 100%;
+            background: #F9FAFD;
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            &_head {
+                margin-bottom: 40px;
+
+                &_title {
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 135%;
+                }
+                &_text {
+                    font-weight: 500;
+                }
+            }
+
+            &_input {
+                margin-bottom: 20px;
+                input {
+                    padding: 15px 0;
+                    border-bottom: 1px solid #99A8B4;
+                    @include def-anim;
+                    display: block;
+                    width: 100%;
+
+                    &:focus {
+                        border-color: $green;
+                    }
+                }
+            }
+
+            &_action {
+                padding: 20px 0 40px;
+
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            &_ex {
+                color: #99A8B4;
+
+                opacity: 0.6;
+                font-size: 12px;
+                line-height: 155%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .nt {
+
+        &__head {
+            margin-bottom: 35px;
+        }
+
+        &__body {
+            flex-wrap: wrap;
+            background-position: right top;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(#fff, .8);
+                content: '';
+            }
+            &_content {
+                width: 100%;
+                position: relative;
+                z-index: 3;
+            }
+
+            &_form {
+                z-index: 3;
+                position: relative;
+                max-width: unset;
+            }
+        }
+
+
+    }
+}
+
+
+@media (max-width: 620px) {
+
+    .nt {
+
+        &__body {
+            background-image: none;
+
+            &:after {
+                display: none;
+            }
+
+            &_form {
+                padding: 20px;
+
+                &_action {
+
+                    &_btn {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

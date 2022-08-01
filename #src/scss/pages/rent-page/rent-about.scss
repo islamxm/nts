@@ -66,3 +66,54 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+
+    .rent__about {
+
+        &_in {
+
+        }
+
+        &_body {
+            flex-wrap: wrap;
+
+            &_item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .rent__about {
+
+        &_in {
+
+        }
+
+        &_subtitle {
+            margin-bottom: 25px;
+        }
+
+        &_body {
+
+            &_item {
+
+                &_head {
+                    flex-wrap: wrap;
+
+                    &_icon {
+                        order: 1;
+                    }
+
+                    &_name {
+                        width: 100%;
+                        order: 2;
+                    }
+                }
+            }
+        }
+    }
+}

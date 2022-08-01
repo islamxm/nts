@@ -80,6 +80,7 @@
                     background-position: center;
                     background-size: 24px 24px;
                     @include def-anim;
+                    flex: 0 0 auto;
 
                     &:hover {
                         background-color: $green;
