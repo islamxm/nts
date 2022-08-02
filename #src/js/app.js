@@ -6,7 +6,6 @@ import * as flsFuncs from './modules/functions.js';
 import { galleryScript } from './modules/galleryScript.js';
 import { heroSlider } from './modules/heroSlider.js';
 import { intSlider } from './modules/intSlider.js';
-import { mapCluster } from './modules/mapCluster.js';
 import { mapCt } from './modules/mapCt.js';
 import { mapItemSlider } from './modules/mapItemSlider.js';
 import { mobmenu } from './modules/mobmenu.js';
@@ -57,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
     prodChart();
     tabs('.product__anl', '.product__anl_tabs', '.product__anl_tabs_item', '.product__anl_tabscontent_item');
     rangeSlider();
-    mapCluster();
     toursSlider();
     mobmenu();
     mapCt();
