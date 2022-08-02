@@ -1,0 +1,27 @@
+.about-map {
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__head {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 125%;
+        margin-bottom: 100px;
+    }
+
+    &__body .contacts__map {
+        width: 100%;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .about-map {
+
+        &__head {
+            margin-bottom: 35px;
+        }
+    }
+}

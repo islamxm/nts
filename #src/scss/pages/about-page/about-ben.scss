@@ -1,0 +1,182 @@
+.about-ben {
+    background-color: #fff;
+
+    &__in {
+        padding: 40px 0;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+
+        &_item {
+            width: calc(100% / 3.1);
+            height: 320px;
+            padding: 50px 40px;
+            background: #F9FAFD;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &_value {
+                color: $green;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 120%;
+            }
+
+            &_text {
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+
+        &_item {
+            height: 320px;
+            border-radius: 16px;
+        }
+
+        &_green {
+            background-color: $green;
+            width: 37%;
+            padding: 30px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &_head {    
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+
+                &_value {
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 110%;
+
+                    span {
+                        display: block;
+                        font-weight: 500;
+                        font-size: 36px;
+                        line-height: 155%;
+                    }
+                }
+
+                &_icon {
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 100%;
+                    background-image: url('../img/icons/shield.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 32px;
+                    background-color: #fff;
+                }
+            }
+
+            &_text {
+                color: #fff;
+                font-weight: 600;
+                max-width: 215px;
+
+            }
+        }
+
+        &_def {
+            width: 60%;
+            background: #F9FAFD;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 50px 40px;
+
+            &_name {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 155%;
+            }
+
+            &_text {
+                font-weight: 500;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .about-ben {
+
+        &__top {
+            flex-wrap: wrap;
+
+            &_item {
+                width: 100%;
+                margin-bottom: 20px;
+                height: auto;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &_value {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &__bottom {
+            flex-wrap: wrap;
+
+            &_item {
+                width: 100%;
+                margin-bottom: 20px;
+                height: auto;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &_green {
+                &_head {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &_def {
+                &_name {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+
+    .about-ben {
+
+        &__top {
+
+            &_item {
+                padding: 15px;
+            }
+        }
+
+        &__bottom {
+
+            &_item {
+                padding: 15px;
+            }
+        }
+    }
+}

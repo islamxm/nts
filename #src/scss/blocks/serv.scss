@@ -56,6 +56,17 @@
 
                 }
             }
+
+            &_title {
+                margin-bottom: 50px;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 125%;
+            }
+
+            &_text {
+                font-weight: 500;
+            }
         }
 
         &_video {

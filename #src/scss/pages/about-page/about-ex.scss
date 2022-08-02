@@ -1,0 +1,91 @@
+.about-ex {
+    background-color: #fff;
+    padding: 40px 0;
+
+
+    &__in {
+        padding: 60px;
+        background-color: #F9FAFD;
+        background-image: url('../img/about-ex.png');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: contain;
+        border-radius: 12px;
+    }
+
+    &__content {
+        max-width: 400px;
+        width: 100%;
+        
+        &_name {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 125%;
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            margin-bottom: 70px;
+        }
+
+        &_action {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .about-ex {
+
+        &__in {
+            padding: 30px;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(#fff, .8);
+                content: '';
+
+            }
+            
+        }
+
+        &__content {
+            z-index: 3;
+            position: relative;
+        }
+    }
+}
+
+@media (max-width: 620px) {
+
+    .about-ex {
+
+        &__in {
+
+        }
+
+        &__content {
+            max-width: unset;
+
+            &_name {
+                font-size: 30px;
+            }
+
+            &_action {
+                
+                &_btn {
+                    width: 100%;
+                } 
+
+            }
+        }
+    }
+}
