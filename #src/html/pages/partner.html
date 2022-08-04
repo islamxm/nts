@@ -4,38 +4,24 @@
         <div class="container">
             <div class="hero-nav__in">
                 <div class="hero-nav__list">
-                    <a href="#" class="hero-nav__item">Для кого</a>
-                    <a href="#" class="hero-nav__item">Вознаграждение</a>
-                    <a href="#" class="hero-nav__item">Форматы сотрудничества</a>
-                    <a href="#" class="hero-nav__item">О программе</a>
-                    <a href="#" class="hero-nav__item">Документы</a>
+                    <a href="#partnerCrd" class="hero-nav__item">Для кого</a>
+                    <a href="#partnerSrv" class="hero-nav__item">Вознаграждение</a>
+                    <a href="#partnerMet" class="hero-nav__item">Форматы сотрудничества</a>
+                    <a href="#partnerAbout" class="hero-nav__item">О программе</a>
+                    <a href="#partnerDocs" class="hero-nav__item">Документы</a>
                 </div>
-                <a href="#" class="hero-nav__link">
+                <button data-micromodal-trigger="modalPres" class="hero-nav__link">
                     Скачать презентацию
-                </a>
+                </button>
             </div>
         </div>
     </div>
-    @@include('../blocks/crd.html')
-    @@include('../blocks/crc.html')
+    @@include('./partner-page/partner-crd.html')
+    @@include('./partner-page/partner-crc.html')
+    
     @@include('./partner-page/partner-srv.html')
-    <div class="about-ex">
-        <div class="container">
-            <div class="about-ex__in" style="background-image: url('./img/partner-ex.png');">
-                <div class="about-ex__content">
-                    <h2 class="about-ex__content_name"><span>Net Asset</span> управляет
-                        активами</h2>
-                    <div class="about-ex__content_text">Как операционными активами, сданными в аренду, так и объектами на завершающей стадии строительства с целью, оснащения объекта, привлечения арендаторов и организации дальнейшего управления
-                    </div>
-                    <div class="about-ex__content_action">
-                        <button class="about-ex__content_action_btn button button-green">
-                            <div class="button__text">Стать партнером</div>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    @@include('./partner-page/partner-mn.html')
+    
     @@include('./partner-page/partner-pass.html')
     @@include('./partner-page/partner-met.html')
     @@include('./partner-page/partner-pr.html')

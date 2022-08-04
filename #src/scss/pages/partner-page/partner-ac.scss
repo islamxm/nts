@@ -39,3 +39,45 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+
+    .partner-ac {
+
+        &__body {
+
+            &_item {
+                width: calc((100% / 2) - 30px);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .partner-ac {
+
+        &__in {
+            padding: 50px 0;
+        }
+        
+        &__head {
+            margin-bottom: 30px;
+        }
+        &__body {
+            margin-left: 0;
+            margin-right: 0;
+
+            &_item {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 20px;
+                height: auto;
+
+                &_name {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

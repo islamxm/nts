@@ -1,4 +1,6 @@
 .partner-tr {
+    background-color: 
+    #F9FAFD;
 
     &__in {
         padding: 50px 0;
@@ -282,6 +284,41 @@
                 }
                 
             }
+        }
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .partner-tr {
+
+        &__body {
+            flex-wrap: wrap;
+
+            &_item {
+                width: 100%;
+                height: auto;
+                margin-bottom: 20px;
+                padding: 30px;
+
+                &_text {
+                    height: auto;
+                }
+
+                &_in {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .partner-tr {
+
+        &__head {
+            margin-bottom: 30px;
         }
     }
 }

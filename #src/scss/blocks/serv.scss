@@ -196,6 +196,11 @@
             
 
             &_descr {
+                margin-bottom: 30px;
+                &_title {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
                 &_item {
                     justify-content: space-between;
                     padding: 20px 0;

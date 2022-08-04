@@ -27,13 +27,14 @@
             &_filter {
                 display: flex;
                 align-items: center;
+                flex-wrap: wrap;
 
                 &_name {
                     font-weight: 700;
                     font-size: 14px;
                     line-height: 135%;
                     /* identical to box height, or 19px */
-
+                    white-space: nowrap;
                     text-align: center;
                     text-transform: uppercase;
 
@@ -41,18 +42,61 @@
 
                     color: #99A8B4;
                     margin-right: 25px;
+                    margin-bottom: 10px;
                 }
 
-                &_select {
+                &_date {
+                    margin-bottom: 10px;
+                    position: relative;
+                    background-color: #F9FAFD;
+                    
+                    border-radius: 8px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    // line-height: 135%;
+                    /* identical to box height, or 19px */
+                    color: #99A8B4;
+                    text-transform: uppercase;
+                    
 
+                    .choices__inner {
+                        position: relative;
+                        padding-left: 40px !important;
+
+                        &:after {
+                            width: 20px;
+                            height: 20px;
+                            background-image: url('../img/icons/calendar-gray.svg');
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-size: contain;
+                            content: '';
+                            position: absolute;
+                            top: calc(50% - 10px);
+                            left: 10px;
+                        }
+                    }
+                    
+                }
+
+                &_date .choices__list {
+                    width: 100% !important;
                 }
             }
+        }
+
+        &_wr {
+            width: 100%;
+            overflow-x: auto;
         }
 
         &_table {
             width: 100%;
             overflow: hidden;
             border-collapse: collapse;
+            overflow-x: auto;
+            
+
             &_headrow {
 
             }
@@ -79,6 +123,7 @@
 
             &_item {
                 padding: 20px 45px;
+                white-space: nowrap;
             }
 
             &_item-name {

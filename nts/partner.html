@@ -108,18 +108,19 @@
         <div class="container">
             <div class="hero-nav__in">
                 <div class="hero-nav__list">
-                    <a href="#" class="hero-nav__item">Для кого</a>
-                    <a href="#" class="hero-nav__item">Вознаграждение</a>
-                    <a href="#" class="hero-nav__item">Форматы сотрудничества</a>
-                    <a href="#" class="hero-nav__item">О программе</a>
-                    <a href="#" class="hero-nav__item">Документы</a>
+                    <a href="#partnerCrd" class="hero-nav__item">Для кого</a>
+                    <a href="#partnerSrv" class="hero-nav__item">Вознаграждение</a>
+                    <a href="#partnerMet" class="hero-nav__item">Форматы сотрудничества</a>
+                    <a href="#partnerAbout" class="hero-nav__item">О программе</a>
+                    <a href="#partnerDocs" class="hero-nav__item">Документы</a>
                 </div>
-                <a href="#" class="hero-nav__link">
+                <button data-micromodal-trigger="modalPres" class="hero-nav__link">
                     Скачать презентацию
-                </a>
+                </button>
             </div>
         </div>
     </div>
+    <div class="partner-crd" id="partnerCrd">
     <div class="crd">
     <div class="container">
         <div class="crd__in">
@@ -152,6 +153,8 @@
         </div>
     </div>
 </div>
+</div>
+    <div class="partner-crc">
     <div class="crc">
     <div class="container">
         <div class="crc__in">
@@ -189,7 +192,9 @@
         </div>
     </div>
 </div>
-    <div class="partner-srv">
+</div>
+    
+    <div class="partner-srv" id="partnerSrv">
     <div class="container">
         <div class="partner-srv__in">
             <h2 class="partner-srv__head">
@@ -302,6 +307,7 @@
         </div>
     </div>
 </div>
+    <div class="partner-mn">
     <div class="about-ex">
         <div class="container">
             <div class="about-ex__in" style="background-image: url('./img/partner-ex.png');">
@@ -319,6 +325,8 @@
             </div>
         </div>
     </div>
+</div>
+    
     <div class="partner-pass">
     <div class="container">
         <div class="partner-pass__in">
@@ -371,7 +379,7 @@
         </div>
     </div>
 </div>
-    <div class="partner-met">
+    <div class="partner-met" id="partnerMet">
     <div class="container">
         <div class="partner-met__in">
             <div class="partner-met__head">
@@ -422,7 +430,7 @@
                         </div>
                     </div>
                     <div class="partner-met__main_item_action">
-                        <a href="#" class="partner-met__main_item_action_btn"></a>
+                        <button data-micromodal-trigger="modalPres" class="partner-met__main_item_action_btn"></button>
                     </div>
                 </div>
             </div>
@@ -456,7 +464,7 @@
         </div>
     </div>
 </div>
-    <div class="partner-pr">
+    <div class="partner-pr" id="partnerAbout">
     <div class="container">
         <div class="partner-pr__in">
             <div class="partner-pr__head">
@@ -535,42 +543,48 @@
                 <div class="partner-pay__body_top">
                     <div class="partner-pay__body_top_filter">
                         <div class="partner-pay__body_top_filter_name">Статистика выплат за</div>
-                        <div class="partner-pay__body_top_filter_date">
-                            <input type="date">
+                        <div class="partner-pay__body_top_filter_date normalSelect">
+                            <select class="normalSelect__el">
+                                <option value="Октябрь 2021">Октябрь 2021</option>
+                                <option value="Ноябрь 2021">Ноябрь 2021</option>
+                                <option value="Декабрь 2021">Декабрь 2021</option>
+                            </select>
                         </div>
                     </div>
                 </div>
-                <table class="partner-pay__body_table">
-                    <tr class="partner-pay__body_table_headrow">
-                        <th class="partner-pay__body_table_head">Имя</th>
-                        <th class="partner-pay__body_table_head">Заявок</th>
-                        <th class="partner-pay__body_table_head">Платежная система</th>
-                        <th class="partner-pay__body_table_head">Форма занятости</th>
-                        <th class="partner-pay__body_table_head">Сумма выплат</th>
-                    </tr>
-                    <tr class="partner-pay__body_table_row">
-                        <td class="partner-pay__body_table_item partner-pay__body_table_item-name">
-                            Агент №152
-                        </td>
-                        <td class="partner-pay__body_table_item partner-pay__body_table_item-count">5</td>
-                        <td class="partner-pay__body_table_item partner-pay__body_table_item-pay">VISA</td>
-                        <td class="partner-pay__body_table_item partner-pay__body_table_item-form">
-                            <span>Самозанятый</span>
-                        </td>
-                        <td class="partner-pay__body_table_item partner-pay__body_table_item-total">443 877 ₽</td>
-                    </tr>
-                    <tr class="partner-pay__body_table_row">
-                        <td class="partner-pay__body_table_item partner-pay__body_table_item-name">
-                            Агентство №3220
-                        </td>
-                        <td class="partner-pay__body_table_item partner-pay__body_table_item-count">9</td>
-                        <td class="partner-pay__body_table_item partner-pay__body_table_item-pay">P/C</td>
-                        <td class="partner-pay__body_table_item partner-pay__body_table_item-form">
-                            <span class="dark">ООО</span>
-                        </td>
-                        <td class="partner-pay__body_table_item partner-pay__body_table_item-total">336 956 ₽</td>
-                    </tr>
-                </table>
+                <div class="partner-pay__body_wr">
+                    <table class="partner-pay__body_table">
+                        <tr class="partner-pay__body_table_headrow">
+                            <th class="partner-pay__body_table_head">Имя</th>
+                            <th class="partner-pay__body_table_head">Заявок</th>
+                            <th class="partner-pay__body_table_head">Платежная система</th>
+                            <th class="partner-pay__body_table_head">Форма занятости</th>
+                            <th class="partner-pay__body_table_head">Сумма выплат</th>
+                        </tr>
+                        <tr class="partner-pay__body_table_row">
+                            <td class="partner-pay__body_table_item partner-pay__body_table_item-name">
+                                Агент №152
+                            </td>
+                            <td class="partner-pay__body_table_item partner-pay__body_table_item-count">5</td>
+                            <td class="partner-pay__body_table_item partner-pay__body_table_item-pay">VISA</td>
+                            <td class="partner-pay__body_table_item partner-pay__body_table_item-form">
+                                <span>Самозанятый</span>
+                            </td>
+                            <td class="partner-pay__body_table_item partner-pay__body_table_item-total">443 877 ₽</td>
+                        </tr>
+                        <tr class="partner-pay__body_table_row">
+                            <td class="partner-pay__body_table_item partner-pay__body_table_item-name">
+                                Агентство №3220
+                            </td>
+                            <td class="partner-pay__body_table_item partner-pay__body_table_item-count">9</td>
+                            <td class="partner-pay__body_table_item partner-pay__body_table_item-pay">P/C</td>
+                            <td class="partner-pay__body_table_item partner-pay__body_table_item-form">
+                                <span class="dark">ООО</span>
+                            </td>
+                            <td class="partner-pay__body_table_item partner-pay__body_table_item-total">336 956 ₽</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
@@ -772,7 +786,7 @@
         </div>
     </div>
 </div>
-    <div class="partner-ac">
+    <div class="partner-ac" id="partnerDocs">
     <div class="container">
         <div class="partner-ac__in">
             <h2 class="partner-ac__head">Актуальная информация</h2>

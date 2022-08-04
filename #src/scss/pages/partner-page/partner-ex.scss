@@ -72,3 +72,49 @@
         }
     }
 }
+
+
+@media (max-width: 1000px) {
+    .partner-ex {
+
+        &__body {
+
+            &_item {
+                width: calc((100% / 2) - 30px);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .partner-ex {
+        &__in {
+            padding: 50px 0;
+        }
+        &__head {
+            margin-bottom: 30px;
+        }
+
+        &__body {
+            margin-left: 0;
+            margin-right: 0;
+
+            &_item {
+                margin-left: 0;
+                margin-right: 0;
+                width: 100%;
+                margin-bottom: 20px;
+                height: auto;
+                padding: 30px;
+
+                &_icon {
+                    margin-bottom: 20px;
+                }
+
+                &_name {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

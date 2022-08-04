@@ -4038,6 +4038,13 @@ body {
   }
 }
 @media (max-width: 620px) {
+  .serv__body_descr {
+    margin-bottom: 30px;
+  }
+  .serv__body_descr_title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
   .serv__body_descr_item {
     justify-content: space-between;
     padding: 20px 0;
@@ -15071,22 +15078,60 @@ body {
 .partner-pay__body_top_filter {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .partner-pay__body_top_filter_name {
   font-weight: 700;
   font-size: 14px;
   line-height: 135%;
   /* identical to box height, or 19px */
+  white-space: nowrap;
   text-align: center;
   text-transform: uppercase;
   /* Text / Grey */
   color: #99A8B4;
   margin-right: 25px;
+  margin-bottom: 10px;
+}
+.partner-pay__body_top_filter_date {
+  margin-bottom: 10px;
+  position: relative;
+  background-color: #F9FAFD;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  /* identical to box height, or 19px */
+  color: #99A8B4;
+  text-transform: uppercase;
+}
+.partner-pay__body_top_filter_date .choices__inner {
+  position: relative;
+  padding-left: 40px !important;
+}
+.partner-pay__body_top_filter_date .choices__inner:after {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icons/calendar-gray.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  content: "";
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 10px;
+}
+.partner-pay__body_top_filter_date .choices__list {
+  width: 100% !important;
+}
+.partner-pay__body_wr {
+  width: 100%;
+  overflow-x: auto;
 }
 .partner-pay__body_table {
   width: 100%;
   overflow: hidden;
   border-collapse: collapse;
+  overflow-x: auto;
 }
 .partner-pay__body_table_head {
   padding: 25px 45px;
@@ -15105,6 +15150,7 @@ body {
 }
 .partner-pay__body_table_item {
   padding: 20px 45px;
+  white-space: nowrap;
 }
 .partner-pay__body_table_item-name {
   font-weight: 600;
@@ -15139,6 +15185,9 @@ body {
   text-align: center;
 }
 
+.partner-tr {
+  background-color: #F9FAFD;
+}
 .partner-tr__in {
   padding: 50px 0;
 }
@@ -15372,6 +15421,28 @@ body {
   background: #E3E8EC;
 }
 
+@media (max-width: 1000px) {
+  .partner-tr__body {
+    flex-wrap: wrap;
+  }
+  .partner-tr__body_item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+  .partner-tr__body_item_text {
+    height: auto;
+  }
+  .partner-tr__body_item_in {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .partner-tr__head {
+    margin-bottom: 30px;
+  }
+}
 .partner-ex__in {
   padding: 100px 0;
 }
@@ -15435,6 +15506,37 @@ body {
   line-height: 155%;
 }
 
+@media (max-width: 1000px) {
+  .partner-ex__body_item {
+    width: calc(50% - 30px);
+  }
+}
+@media (max-width: 768px) {
+  .partner-ex__in {
+    padding: 50px 0;
+  }
+  .partner-ex__head {
+    margin-bottom: 30px;
+  }
+  .partner-ex__body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .partner-ex__body_item {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    height: auto;
+    padding: 30px;
+  }
+  .partner-ex__body_item_icon {
+    margin-bottom: 20px;
+  }
+  .partner-ex__body_item_name {
+    margin-bottom: 20px;
+  }
+}
 .partner-ac__in {
   padding: 100px 0;
 }
@@ -15469,6 +15571,33 @@ body {
   color: #50A627;
 }
 
+@media (max-width: 1000px) {
+  .partner-ac__body_item {
+    width: calc(50% - 30px);
+  }
+}
+@media (max-width: 768px) {
+  .partner-ac__in {
+    padding: 50px 0;
+  }
+  .partner-ac__head {
+    margin-bottom: 30px;
+  }
+  .partner-ac__body {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .partner-ac__body_item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .partner-ac__body_item_name {
+    margin-bottom: 20px;
+  }
+}
 .partner-serv .serv__head {
   margin: 0 auto;
   margin-bottom: 60px;
@@ -15495,4 +15624,10 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 120%;
+}
+
+@media (max-width: 768px) {
+  .partner-mn .about-ex__in {
+    background-position: top right !important;
+  }
 }
