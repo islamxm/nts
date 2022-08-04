@@ -14891,7 +14891,6 @@ body {
   .partner-met__main_item.partner-met__main_item-download {
     margin-top: 0;
     margin-bottom: 0;
-    background-image: none !important;
     align-items: center;
   }
   .partner-met__main_item.partner-met__main_item-download .partner-met__main_item_head {
