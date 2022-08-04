@@ -13,15 +13,16 @@
 }
 
 .hero-n {
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: contain;
+    
 
     &__in {
         height: 550px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
         
         
     }

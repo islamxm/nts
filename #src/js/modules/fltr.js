@@ -14,4 +14,12 @@ export const fltr = () => {
             el.classList.remove('active');
         })
     }
+
+    if(el) {
+        el.addEventListener('click', (e) => {
+            if(e.target.classList.contains('fltr')) {
+                el.classList.remove('active')
+            }
+        })
+    }
 }

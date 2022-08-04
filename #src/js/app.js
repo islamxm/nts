@@ -96,5 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     tabs('.order__body_main_part_body-guestData_passport', '.order__body_main_part_body-guestData_passport_tabs', '.order__body_main_part_body-guestData_passport_tabs_item', '.order__body_main_part_body-guestData_passport_content')
     btnTabs('.order__body_main_part_body-ex_enter_list', '.order__body_main_part_body-ex_enter_item')
     Micromodal.init();
+    btnTabs('.hero-nav__list', '.hero-nav__item');
+    btnTabs('.object__head_tabs', '.object__head_tabs_item');
 
 })

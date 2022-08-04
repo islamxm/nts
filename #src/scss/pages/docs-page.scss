@@ -18,35 +18,6 @@
             margin-bottom: 40px;
         }
 
-        &_tabs {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            padding-bottom: 20px;
-
-            &_item {
-                margin-right: 60px;
-                margin-bottom: 15px;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 135%;
-                color: #99A8B4;
-                cursor: pointer;
-                @include def-anim;
-                
-                &:hover {
-                    color: $text;
-                }
-
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-
-            &_item.active {
-                color: $text;
-            }
-        }
     }
 
     &__body {
@@ -178,16 +149,6 @@
 
             &_title {
 
-            }
-
-            &_tabs {
-                flex-wrap: nowrap;
-                overflow-y: auto;
-                padding-bottom: 10px;
-                &_item {
-                    white-space: nowrap;
-                    margin-bottom: 0;
-                }
             }
         }
 

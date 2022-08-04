@@ -61,6 +61,7 @@
                 background-position: center;
                 background-size: 24px 24px;
                 cursor: pointer;
+                
                 @include def-anim;
 
                 &:first-child {
@@ -91,11 +92,41 @@
             &_sl {  
                 height: 485px;
                 position: relative;
+                overflow: hidden;
                 &_img {
                     width: 100%;
                     height: 100%;
-                    object-fit: cover;
-                    display: flex;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: flex;
+                    }
+                }
+
+                &:hover{
+                    .rest__slider_el_sl_info {
+                        transform: translateX(0);
+                    }
+                    .rest__slider_el_sl_content {
+                        opacity: 0;
+                    }
+                }
+
+                &_info {
+                    position: absolute;
+                    transform: translateX(-100%);
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    padding: 40px 30px;
+                    color: #fff;
+                    z-index: 5;
+                    @include def-anim;
+                    color: #fff;
+                    background-color: rgba(0,0,0, .5);
                 }
 
                 &_content {
@@ -108,7 +139,8 @@
                     flex-direction: column;
                     padding: 40px 30px;
                     justify-content: space-between;
-                    background-color: rgba(#000, .6);
+                    // background-color: rgba(#000, .6);
+                    @include def-anim;
 
                     &_name {
                         font-weight: 600;

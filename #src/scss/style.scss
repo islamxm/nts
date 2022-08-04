@@ -49,6 +49,8 @@
 @import './blocks/prom.scss';
 @import './blocks/dbl.scss';
 @import './blocks/nt.scss';
+@import './blocks/crd.scss';
+@import './blocks/crc.scss';
 
 //PAGES
 @import './pages/contacts-page.scss';
@@ -75,16 +77,7 @@
 @import './pages/product-page/product-anl.scss';
 @import './pages/product-page/product-doc.scss';
 
-//partner-page
-@import './pages/partner-page/partner-hero.scss';
-@import './pages/partner-page/partner-rep.scss';
-@import './pages/partner-page/partner-services.scss';
-@import './pages/partner-page/partner-serv.scss';
-@import './pages/partner-page/partner-ls.scss';
-@import './pages/partner-page/partner-benefits.scss';
-@import './pages/partner-page/partner-feed.scss';
-@import './pages/partner-page/partner-pt.scss';
-@import './pages/partner-page/partner-revs.scss';
+
 
 //invest page
 @import './pages/invest-page/invest-hero.scss';
@@ -148,7 +141,20 @@
 @import './pages/about-page/about-map.scss';
 @import './pages/about-page/about-team.scss';
 
+// partner-page
+@import './pages/partner-page/partner-hero.scss';
+@import './pages/partner-page/partner-srv.scss';
+@import './pages/partner-page/partner-pass.scss';
+@import './pages/partner-page/partner-met.scss';
+@import './pages/partner-page/partner-pr.scss';
+@import './pages/partner-page/partner-pay.scss';
+@import './pages/partner-page/partner-tr.scss';
+@import './pages/partner-page/partner-ex.scss';
+@import './pages/partner-page/partner-ac.scss';
+@import './pages/partner-page/partner-serv.scss';
+@import './pages/partner-page/partner-ben.scss';
 
-//MAPS
-@import './maps/mapCluster.scss';
-@import './maps/mapItem.scss';
+
+// //MAPS
+// @import './maps/mapCluster.scss';
+// @import './maps/mapItem.scss';

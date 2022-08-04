@@ -1,9 +1,21 @@
-.partner__serv {
+.partner-serv {
 
     .serv {
 
-        &__in {
-            padding: 50px 0;
+        &__head {
+            margin: 0 auto;
+            margin-bottom: 60px;
+            &_title {
+                text-align: center;
+
+                span {
+                    color: $green;
+                }
+            }
+
+            &_text {
+                text-align: center;
+            }
         }
     }
 }

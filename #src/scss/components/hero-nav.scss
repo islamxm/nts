@@ -1,6 +1,9 @@
 .hero-nav {
     background-color: #fff;
-
+    position: relative;
+    z-index: 5;
+    box-shadow: 0px 30px 40px rgba(57, 63, 110, 0.15);
+    
     &__in {
         padding: 20px 0;
         display: flex;

@@ -1,0 +1,200 @@
+.partner-pr {
+    background-color: #fff;
+
+    &__in {
+        padding: 100px 0;
+    }
+
+    &__head {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 90px;
+        max-width: 500px;
+
+        &_title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 125%;
+        }
+
+        &_text {
+            text-align: center;
+            font-weight: 500;
+        }
+    }
+
+    &__body {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &_list {
+            max-width: 465px;
+            width: 100%;
+            &_item {
+                padding-bottom: 55px;
+                display: flex;
+                align-items: flex-start;
+                position: relative;
+
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    left: calc(30px - 1px);
+                    width: 2px;
+                    background-color: $green;
+                    height: 100%;
+                    content: '';
+
+                }
+
+                &_num {
+                    width: 60px;
+                    height: 60px;
+                    background: #F9FAFD;
+                    border-radius: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 135%;
+                    color: $green;
+                    margin-right: 45px;
+                    flex: 0 0 auto;
+                    position: relative;
+                    z-index: 3;
+                }
+
+                &_text {
+                    font-weight: 500;
+                    padding-top: 15px;
+                }
+            }
+        }
+
+        &_content {
+
+            &_main {
+                max-width: 500px;
+                margin: 0 0 0 auto;
+                padding: 50px 60px;
+                width: 100%;
+                background: #F9FAFD;
+                border-radius: 32px;
+
+                &_head {
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 125%;
+                    margin-bottom: 30px;
+                }
+
+                &_text {
+                    font-weight: 500;
+                    margin-bottom: 130px;
+                }
+
+                &_bottom {
+                    
+                    &_tel {
+                        display: block;
+                        font-weight: 600;
+                        font-size: 32px;
+                        line-height: 125%;
+                        color: $green;
+                        margin-bottom: 10px;
+                    }
+
+                    &_mail {
+                        display: block;
+                        font-weight: 500;
+                        margin-bottom: 40px;
+                    }
+
+                    &_action {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .partner-pr {
+
+        &__in {
+            padding: 50px 0;
+        }
+
+        &__head {
+            margin-bottom: 35px;
+        }
+
+        &__body {
+            flex-wrap: wrap;
+
+            &_list {
+                max-width: unset;
+            }
+
+            &_content {
+                width: 100%;
+
+                &_main {
+                    max-width: unset;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 620px) {
+    .partner-pr {
+
+        &__head {
+
+            &_title {
+                font-size: 25px;
+            }
+        }
+
+        &__body {
+
+            &_content {
+
+                &_main {
+                    padding: 20px;
+
+                    &_text {
+                        margin-bottom: 30px;
+                    }
+
+                    &_bottom {
+
+                        &_action {
+                            &_btn {
+                                width: 100%;
+                                padding: 17px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

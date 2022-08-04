@@ -1,6 +1,21 @@
 <div class="about">
     @@include('./about-page/about-hero.html')
-    @@include('../components/hero-nav.html')
+    <div class="hero-nav">
+        <div class="container">
+            <div class="hero-nav__in">
+                <div class="hero-nav__list">
+                    <a href="#aboutMain" class="hero-nav__item">О сервисе</a>
+                    <a href="#aboutPr" class="hero-nav__item">Проекты</a>
+                    <a href="#aboutTeam" class="hero-nav__item">Команда</a>
+                    <a href="#aboutPres" class="hero-nav__item">Презентации</a>
+                    <a href="#aboutCont" class="hero-nav__item">Контакты</a>
+                </div>
+                <button data-micromodal-trigger="modalPres" class="hero-nav__link">
+                    Скачать презентацию
+                </button>
+            </div>
+        </div>
+    </div>
     @@include('./about-page/about-serv.html')
     @@include('./about-page/about-ben.html')
     @@include('./about-page/about-prj.html')
