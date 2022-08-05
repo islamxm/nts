@@ -1,0 +1,27 @@
+.manage-ls {
+
+    .about-ben {
+
+        &__top {
+
+            &_item {
+
+                &:last-child {
+                    background-color: $green;
+                    color: #fff;
+                    .about-ben__top_item_value {
+                        color: #fff;
+
+                        span {
+                            display: block;
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 120%;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

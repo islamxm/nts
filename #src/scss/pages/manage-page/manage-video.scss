@@ -1,0 +1,43 @@
+.manage-video {
+    height: 600px;
+    background-image: url('../img/manage-video.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        height: 100%;
+    }
+
+    &__in {
+        height: 100%;
+        padding: 80px 0;
+        position: relative;
+    }
+
+    &__head {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 135%;
+        color: #fff;
+    }
+
+    &__btn {
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        background-color: $text;
+        background-image: url('../img/icons/play-fill.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 26px;
+        position: absolute;
+        top: calc(50% - (130px / 2));
+        left: calc(50% - (130px / 2));
+        @include def-anim;
+
+        &:hover {
+            background-color: $green;
+        }
+    }
+}

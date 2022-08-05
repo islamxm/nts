@@ -37,6 +37,7 @@ import { vds } from './modules/vds.js';
 import { dbl } from './modules/dbl.js';
 import { bVideo } from './modules/bVideo.js';
 import { order } from './modules/order.js';
+import { manageSlider } from './modules/manageSlider.js';
 
 flsFuncs.isWebp();
 
@@ -98,5 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
     Micromodal.init();
     btnTabs('.hero-nav__list', '.hero-nav__item');
     btnTabs('.object__head_tabs', '.object__head_tabs_item');
+    manageSlider();
 
 })
