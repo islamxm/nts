@@ -16,273 +16,117 @@
     &__in {
         overflow-y: auto;
         height: 100%;
-        padding-bottom: 135px;
+        padding-bottom: 30px;
     }
 
     &__head {
-        padding: 0 30px;
-        border-bottom: 1px solid #E7E9F2;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        &_logo {
-
-        }
-
-        &_city {
-            position: relative;
-            padding-left: 20px;
-    
-            &:after {
-                position: absolute;
-                top: calc(50% - (23px / 2));
-                left: 0;
-                content: url('../img/icons/location.svg');
-            }
-        }
+        padding: 50px 30px;
+        background-color: $green;
+        position: relative;
 
         &_btn {
             width: 40px;
             height: 40px;
-            background-image: url('../img/icons/close.svg');
+            background-image: url('../img/icons/close-white.svg');
             background-repeat: no-repeat;
             background-position: center;
-            background-size: contain;
+            background-size: 80px;
             cursor: pointer;
-        }
-    }
-
-   
-    &__tel {
-        padding: 24px 0;
-        border-bottom: 1px solid #E7E9F2;
-        display: flex;
-        align-items: center;
-
-        &_item {
-            width: 50%;
-            display: flex;
-            justify-content: center;
-
+            position: absolute;
+            top: 30px;
+            right: 30px;
         }
 
-        &_value {
-            font-weight: 600;
+        &_avatar {
+            width: 86px;
+            height: 86px;
+            border-radius: 100%;
+            background-color: #fff;
+            background-image: url('../img/icons/user-green.svg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 30px;
+            margin-bottom: 25px;
         }
 
-        &_text {
-            font-weight: 600;
-           
-            position: relative;
-            align-items: center;
-            position: relative;
-
-            &:after {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 1px;
-                background-color: #E3E8EC;
-                content: '';
+        &_links  {
+            color: #fff;
+            &_item {
+                font-weight: 500;
+                display: block;
             }
 
-            &_icon {
-                width: 20px;
-                height: 20px;
-                background-image: url('../img/icons/tel.svg');
-                background-repeat: no-repeat;
-                background-size: contain;
-                background-position: center;
-                margin-right: 20px;
+            &_item-login {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 135%;
+                margin-bottom: 12px;
             }
         }
     }
 
     &__menu {
 
-        &_part.is-active {
-
-            .mobmenu__menu_part_head {
-                .mobmenu__menu_part_head_btn {
-                    transform: rotate(270deg);
-                }
-            }
-        }
-        
         &_part {
-            margin: 0;
-            border: none;
             border-bottom: 1px solid #E7E9F2;
-            &_head {
-                padding: 30px !important;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+            padding: 40px 30px;
 
-                &_text {
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 135%;
-                    /* or 24px */
-
-
-                    /* Text / Black */
-
-                    color: #042742;
-                }
-
-                &_btn {
-                    width: 20px !important;
-                    height: 20px !important;
-                    padding: 0 !important;
-                    background-image: url('../img/icons/chevron-black.svg');
-                    transform: rotate(90deg);
-                    background-size: contain;
-                    background-position: center;
-                    background-repeat: no-repeat;
-
-                    &:after {
-                        display: none;
-                    }
+            &_item {
+                margin-bottom: 40px;
+                a {
+                    font-weight: 500;
                 }
             }
 
-            &_content {
-                padding: 0 30px;
-
-                &_list {
-
-                }
-
-                &_item {
-                    margin-bottom: 10px;
-                    display: block;
-
-                }
+            &:last-child {
+                border: none;
             }
         }
     }
 
     &__ex {
-        padding: 50px 30px 20px;
+        padding: 35px 30px;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
         flex-wrap: wrap;
         border-bottom: 1px solid #E7E9F2;
 
-        &_item {
-            width: 50%;
-            margin-bottom: 30px;
-            display: block;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 135%;
-            /* identical to box height, or 22px */
-
-
-            /* Text / Grey */
-
-            color: #99A8B4;
-
-        }
-    }
-
-    &__fav {
-
-        padding: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        &_name {
-            font-weight: 600;
+        &_tel {
+            font-weight: 700;
             font-size: 18px;
             line-height: 135%;
+            margin-bottom: 10px;
         }
 
-        &_info {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        &_city.normalSelect {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 10px;
 
-            &_icon {
-                width: 20px;
-                height: 20px;
-                background-image: url('../img/icons/heart.svg');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                margin-right: 20px;
-            }   
+            .choices__inner {
+                padding-left: 50px !important;
+                position: relative;
 
-            &_val {
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 135%;
-            }
-        }
-    }
-
-    &__action {
-        display: flex;  
-        align-items: center;
-        justify-content: space-between;
-        padding: 40px 30px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        border-top: 1px solid #E7E9F2;
-        z-index: 10;
-        background-color: #fff;
-
-
-        &_login {
-            display: flex;
-            align-items: center;
-            &_icon {
-                width: 50px;
-                height: 50px;
-                background-image: url('../img/icons/login.svg');
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: contain;
-                margin-right: 30px;
-            }
-
-            &_text {
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 135%;
-            }
-        }
-
-        &_lang {
-            display: flex;
-            align-items: center;
-
-            &_item {
-                padding: 0 20px;
-                font-weight: 600;
-                font-size: 16px;
-                line-height: 135%;
-                /* identical to box height, or 22px */
-                color: #99A8B4;
-                border-right: 1px solid #E7E9F2;
-
-                &:last-child {
-                    border: none;
+                &:after {
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url('../img/icons/location.svg');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    top: calc(50% - 10px);
+                    left: 10px;
+                    content: '';
                 }
-
             }
-
-            &_item.active {
-                color: $text;
+            .choices__list--dropdown {
+                width: 100% !important;
             }
         }
-        
     }
+
 }
 
 @media (max-width: 620px) {
