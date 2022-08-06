@@ -106,6 +106,42 @@
                 &_content {
                     padding: 20px 60px 40px;
                     display: flex;
+                    align-items: center;
+
+                    &_chart {
+
+                        &_top {
+                            display: flex;
+                            align-items: flex-start;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+
+                            &_item {
+                                margin-bottom: 20px;
+                                min-height: 90px;
+                                width: 48%;
+                                padding: 15px 20px;
+                                border: 1px solid #E3E8EC;
+                                border-radius: 6px;
+
+                                &_name {
+                                    margin-bottom: 10px;
+                                    font-weight: 500;
+                                    font-size: 14px;
+                                    line-height: 135%;
+                                    color: #99A8B4;
+                                }
+
+                                &_value {
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+
+                        &_el {
+                            height: 220px;
+                        }
+                    }
                     
 
                     &_descr {
@@ -236,6 +272,8 @@
                 }
             }
         }
+
+        
     }
 }
 
@@ -323,7 +361,7 @@
                         padding: 48px 15px 15px 15px;
 
                         &_descr {
-                            padding: 0 15px;
+                            padding: 0;
 
                             &_action {
 

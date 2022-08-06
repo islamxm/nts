@@ -1,0 +1,121 @@
+.catalog {
+
+    &__in {
+        padding: 50px 0;
+    }
+
+    &__head {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 145%;
+        margin-bottom: 20px;
+    }
+
+    &__tabs {
+        padding: 15px 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+
+        &_item {
+            font-weight: 600;
+            color: #99A8B4;
+            @include def-anim;
+            margin-right: 30px;
+            margin-bottom: 15px;
+            cursor: pointer;
+
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &_item.active {
+            color: $text;
+        }
+    }
+    &__body.active {
+        display: flex;
+    }
+    &__body {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &_item {
+            width: 40%;
+            margin-bottom: 25px;
+            height: 370px;
+            background: #FFFFFF;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        &_item-lg {
+            width: 58%;
+        }
+    }
+
+    &__action {
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid #E3E8EC;
+
+        &_item {
+            position: relative;
+            font-weight: 600;
+
+            &:after {
+                position: absolute;
+                top: calc(50% - 10px);
+                content: '';
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        &_item-more {
+            padding-left: 40px;
+
+            &:after {
+                left: 0;
+                background-image: url('../img/icons/plus.svg');
+            }
+        }
+
+        &_item-all {
+            padding-right: 40px;
+
+            &:after {
+                right: 0;
+                background-image: url('../img/icons/chevron-black.svg');
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .catalog {
+        &__tabs {
+            flex-wrap: nowrap;
+            overflow-x: auto;
+
+            &_item {
+                white-space: nowrap;
+            }
+        }
+        &__body {
+            &_item {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
