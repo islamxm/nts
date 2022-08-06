@@ -101,5 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
     btnTabs('.object__head_tabs', '.object__head_tabs_item');
     manageSlider();
     tabs('.catalogWithTabs', '.catalog__tabs', '.catalog__tabs_item', '.catalog__body')
+    tabs('.objects-page', '.catalog__tabs', '.catalog__tabs_item', '.catalog__body')
 
 })

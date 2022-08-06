@@ -16,6 +16,10 @@
         z-index: 2;
         &_title {
             margin-bottom: 40px;
+
+            span {
+                color: $green;
+            }
         }
 
     }

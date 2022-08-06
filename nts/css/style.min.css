@@ -8341,6 +8341,9 @@ body {
 .docs-page__head_title {
   margin-bottom: 40px;
 }
+.docs-page__head_title span {
+  color: #50A627;
+}
 .docs-page__body_head {
   font-weight: 600;
   font-size: 24px;
