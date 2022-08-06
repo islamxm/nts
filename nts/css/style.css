@@ -4338,11 +4338,20 @@ body {
 }
 .premium__body {
   position: relative;
+  height: 550px;
+  overflow: hidden;
+}
+.premium__body_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .premium__body_img img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: flex;
 }
 .premium__body_content {
@@ -4354,6 +4363,7 @@ body {
   display: flex;
   align-items: flex-end;
   padding: 70px 0;
+  z-index: 2 !important;
 }
 .premium__body_content_text {
   font-weight: 600;
@@ -4388,18 +4398,11 @@ body {
     margin-bottom: 30px;
   }
   .premium__body {
-    background-image: url("../img/premium/premium-img.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     height: 460px;
     display: flex;
   }
-  .premium__body_img {
-    display: none;
-  }
   .premium__body_content {
-    position: static;
+    position: relative;
   }
 }
 @media (max-width: 620px) {
