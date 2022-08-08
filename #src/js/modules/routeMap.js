@@ -4,7 +4,7 @@ export const routeMap = () => {
     ymaps.ready(function () {
         var myMap = new ymaps.Map(el, {
             center: [43.582612,39.760315],
-            zoom: 9,
+            zoom: 18,
         }),
         // MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
         //     '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
