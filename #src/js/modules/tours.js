@@ -6,8 +6,9 @@ export const tours = () => {
 
     if(parent) {
         let rem = 80 * els.length;
-            console.log(rem)
-            let fill = parent.offsetWidth - rem;
+        
+        let fill = parent.offsetWidth - rem;
+        
         if(els.length > 0) {
 
             els.forEach(i => {
@@ -39,9 +40,7 @@ export const tours = () => {
         }
         window.addEventListener('resize', () => {
             let rem = 80 * els.length;
-            console.log(rem)
             let fill = parent.offsetWidth - rem;
-
             if(els.length > 0) {
 
                 els.forEach(i => {

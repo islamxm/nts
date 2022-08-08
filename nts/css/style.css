@@ -6733,7 +6733,6 @@ body {
 .contacts-page__main_item_map iframe {
   width: 100%;
   height: 100%;
-  filter: grayscale(1);
 }
 .contacts-page__main_item_map #routeMap {
   height: 100%;
