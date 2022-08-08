@@ -4,7 +4,7 @@ import { filterSelect } from './modules/filterSelect.js';
 import { fltr } from './modules/fltr.js';
 import * as flsFuncs from './modules/functions.js';
 import { galleryScript } from './modules/galleryScript.js';
-import { heroSlider } from './modules/heroSlider.js';
+
 import { intSlider } from './modules/intSlider.js';
 import { mapCt } from './modules/mapCt.js';
 import { mapItemSlider } from './modules/mapItemSlider.js';
@@ -17,7 +17,6 @@ import { tabs } from './modules/tabs.js';
 import { tmSliders } from './modules/tmSliders.js';
 import { tours } from './modules/tours.js';
 import { toursSlider } from './modules/toursSlider.js';
-import { up } from './modules/up.js';
 import Micromodal from 'micromodal';
 import { sqSlider } from './modules/sqSlider.js';
 import { routeMap } from './modules/routeMap.js';
@@ -42,7 +41,7 @@ import { manageSlider } from './modules/manageSlider.js';
 flsFuncs.isWebp();
 
 document.addEventListener('DOMContentLoaded', () => {
-    heroSlider();
+    Micromodal.init();
     tours();
     benefitsSlider();
     intSlider();
@@ -51,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     tabs('.press-page__body_main', '.press-page__body_main_tabs', '.press-page__body_main_tabs_item', '.press-page__body_main_list');
     tabs('.contacts-page__body_main', '.contacts-page__body_main_tabs', '.contacts-page__body_main_tabs_item', '.contacts-page__body_main_tabscontent_item');
     pressSlider();
-    up();
     tabs('.product__tm_in', '.product__tm_tabs', '.product__tm_tabs_item', '.product__tm_tabscontent_item');
     tmSliders();
     prodChart();
@@ -65,7 +63,6 @@ document.addEventListener('DOMContentLoaded', () => {
     fltr();
     normalSelect();
     careerAcc();
-    tabs('.docs-page__body_ex', '.docs-page__body_ex_tabs', '.docs-page__body_ex_tabs_item', '.docs-page__body_ex_tabscontent_list');
     galleryScript();
     tabs('.partners__in', '.partners__tabs', '.partners__tabs_item', '.partners__body_list');
     tabs('.fav-page__body_in', '.fav-page__body_tabs', '.fav-page__body_tabs_item', '.fav-page__body_content_list');
@@ -96,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
     order();
     tabs('.order__body_main_part_body-guestData_passport', '.order__body_main_part_body-guestData_passport_tabs', '.order__body_main_part_body-guestData_passport_tabs_item', '.order__body_main_part_body-guestData_passport_content')
     btnTabs('.order__body_main_part_body-ex_enter_list', '.order__body_main_part_body-ex_enter_item')
-    Micromodal.init();
     btnTabs('.hero-nav__list', '.hero-nav__item');
     btnTabs('.object__head_tabs', '.object__head_tabs_item');
     manageSlider();
