@@ -3117,6 +3117,11 @@ body {
     margin-bottom: 15px;
   }
 }
+@media (max-width: 1000px) {
+  .map__list_item {
+    width: calc(50% - 30px);
+  }
+}
 @media (max-width: 768px) {
   .map__head_top_tabs {
     padding-bottom: 10px;
@@ -3246,6 +3251,21 @@ body {
   .map__body.active {
     transform: translateX(0);
     z-index: 5;
+  }
+  .map__list {
+    display: block !important;
+  }
+  .map__list_in {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .map__list_item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .map__list_item .map__card_info_bottom {
+    flex-wrap: wrap;
   }
 }
 .dwn__in {

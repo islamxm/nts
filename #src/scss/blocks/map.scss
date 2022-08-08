@@ -459,6 +459,25 @@
     }
 }
 
+@media (max-width: 1000px) {
+
+    .map {
+
+        &__list {
+
+            &_in {
+
+            }
+
+            &_item {
+                width: calc((100% / 2) - 30px);
+
+                
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
 
     .map {
@@ -616,6 +635,29 @@
         &__body.active {
             transform: translateX(0);
             z-index: 5;
+        }
+
+        &__list {
+            display: block !important;
+            &_in {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            &_item {
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+
+                .map__card {
+
+                    &_info {
+                        &_bottom {
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+            }
         }
     }
 }

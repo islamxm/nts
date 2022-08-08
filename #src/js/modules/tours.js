@@ -6,9 +6,8 @@ export const tours = () => {
 
     if(parent) {
         let rem = 80 * els.length;
-        console.log(rem)
-        let fill = parent.offsetWidth - rem;
-
+            console.log(rem)
+            let fill = parent.offsetWidth - rem;
         if(els.length > 0) {
 
             els.forEach(i => {
@@ -38,6 +37,44 @@ export const tours = () => {
                 })
             })
         }
+        window.addEventListener('resize', () => {
+            let rem = 80 * els.length;
+            console.log(rem)
+            let fill = parent.offsetWidth - rem;
+
+            if(els.length > 0) {
+
+                els.forEach(i => {
+                    if(i.classList.contains('active')) {
+                        els.forEach(remove => {
+                            let removeContent = remove.querySelector('.tours__body_item_main')
+                            remove.classList.remove('active');
+                            removeContent.style.cssText = `width: 0px`;
+                            
+                        })
+                        let content = i.querySelector('.tours__body_item_main');
+                        i.classList.add('active');
+                        content.style.cssText = `width: ${fill}px`;
+                    }
+                    i.addEventListener('click', (e) => {
+                        els.forEach(remove => {
+                            let removeContent = remove.querySelector('.tours__body_item_main')
+                            remove.classList.remove('active');
+                            removeContent.style.cssText = `width: 0px`;
+                            
+                        })
+                        let content = i.querySelector('.tours__body_item_main');
+                        i.classList.add('active');
+                        content.style.cssText = `width: ${fill}px`;
+        
+                        
+                    })
+                })
+            }
+        })
+        
+
+        
     }
     
 
