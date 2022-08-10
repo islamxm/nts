@@ -175,7 +175,7 @@
     .nt {
 
         &__body {
-            background-image: none;
+            background-image: unset;
 
             &:after {
                 display: none;

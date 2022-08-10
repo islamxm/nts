@@ -61,8 +61,32 @@
 @media (max-width: 1000px) {
 
     .hero-n {
-        background-position: center bottom;
+        
+
         &__in {
+            background-position: right bottom;
+            background-size: 50%;
+        }
+
+        &__in.ch {
+            height: 650px;
+        }
+
+        &__content {
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-n {
+
+        &__in {
+            background-size: 100%;
+            background-position: center bottom;
+        }
+
+        &__in.ch {
 
         }
 

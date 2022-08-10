@@ -2734,7 +2734,20 @@ body {
   justify-content: flex-start;
 }
 @media (max-width: 1000px) {
-  .hero-n {
+  .hero-n__in {
+    background-position: right bottom;
+    background-size: 50%;
+  }
+  .hero-n__in.ch {
+    height: 650px;
+  }
+  .hero-n__content {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .hero-n__in {
+    background-size: 100%;
     background-position: center bottom;
   }
   .hero-n__content {
@@ -6259,7 +6272,7 @@ body {
 }
 @media (max-width: 620px) {
   .nt__body {
-    background-image: none;
+    background-image: unset;
   }
   .nt__body:after {
     display: none;
@@ -15357,6 +15370,8 @@ body {
 .partner-pay__body_wr {
   width: 100%;
   overflow-x: auto;
+  max-height: 500px;
+  overflow-y: auto;
 }
 .partner-pay__body_table {
   width: 100%;

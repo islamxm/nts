@@ -20,6 +20,7 @@
         overflow: hidden;
         box-shadow: 0px 30px 40px rgba(57, 63, 110, 0.15);
         border-radius: 16px;
+        
 
         &_top {
             padding: 45px;
@@ -88,6 +89,8 @@
         &_wr {
             width: 100%;
             overflow-x: auto;
+            max-height: 500px;
+            overflow-y: auto;
         }
 
         &_table {
