@@ -37,6 +37,7 @@ import { dbl } from './modules/dbl.js';
 import { bVideo } from './modules/bVideo.js';
 import { order } from './modules/order.js';
 import { manageSlider } from './modules/manageSlider.js';
+import { inputMask } from './modules/inputMask.js';
 
 flsFuncs.isWebp();
 
@@ -98,5 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
     manageSlider();
     tabs('.catalogWithTabs', '.catalog__tabs', '.catalog__tabs_item', '.catalog__body')
     tabs('.objects-page', '.catalog__tabs', '.catalog__tabs_item', '.catalog__body')
+    inputMask();
 
 })

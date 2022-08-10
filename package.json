@@ -39,6 +39,7 @@
     "gulp-webp-html-nosvg": "^1.0.5",
     "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^5.1.0",
+    "imask": "^6.4.2",
     "sass": "^1.49.7",
     "vinyl-ftp": "^0.6.1",
     "webp-converter": "2.2.3",
@@ -49,7 +50,6 @@
     "accordion-js": "^3.3.0",
     "apexcharts": "^3.35.3",
     "choices.js": "^10.1.0",
-    "imask": "^6.4.2",
     "micromodal": "^0.4.10",
     "nouislider": "^15.6.0",
     "swiper": "^8.1.6"
